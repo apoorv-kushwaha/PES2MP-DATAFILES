@@ -1,0 +1,731 @@
+#####################################################################
+--- Date 2025-06-21 17:38:34 ---
+#####################################################################
+#####################    PES2MP Initiated    ########################
+#####################################################################
+ 
+ /data and /project folders created. 
+
+
+#-------------------------------------------------------------------#
+#-------------------#    Using PESGen module    #-------------------#
+#-------------------------------------------------------------------#
+
+
+Identifying collision type !!!: 
+ 	 RR1 has >1 atoms and RR2 has 1 atom: Using 2D Template for PES
+ 
+ The R coodinates are: 
+[  1.    1.1   1.2   1.3   1.4   1.5   1.6   1.7   1.8   1.9   2.    2.1
+   2.2   2.3   2.4   2.5   2.6   2.7   2.8   2.9   3.    3.1   3.2   3.3
+   3.4   3.5   3.6   3.7   3.8   3.9   4.    4.1   4.2   4.3   4.4   4.5
+   4.6   4.7   4.8   4.9   5.    5.1   5.2   5.3   5.4   5.5   5.6   5.7
+   5.8   5.9   6.    6.2   6.4   6.6   6.8   7.    7.2   7.4   7.6   7.8
+   8.    8.2   8.4   8.6   8.8   9.    9.5  10.   10.5  11.   11.5  12.
+  12.5  13.   13.5  14.   14.5  15.   16.   17.   18.   19.   20.   21.
+  22.   23.   24.   25.   50.  100. ]
+
+ Total number of data points in R coordinates are: 90 
+
+
+Creating matrix for 2D collision coordinates
+TQDM LOOP FINISHED:
+ |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100% |
+
+
+ Input coordinates (first 5, mid and last 5)
+
+[[ 1.  0.]
+ [ 1. 10.]
+ [ 1. 20.]
+ [ 1. 30.]
+ [ 1. 40.]]
+---
+[[  5.4 160. ]
+ [  5.4 170. ]
+ [  5.4 180. ]
+ [  5.5   0. ]
+ [  5.5  10. ]]
+---
+[[100. 140.]
+ [100. 150.]
+ [100. 160.]
+ [100. 170.]
+ [100. 180.]]
+
+Total number of input coordinates : 1710
+
+ Original Geometry without charge and multiplicity!
+-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+        {} {}
+        H         0.000000        0.000000        0.000000
+        C         0.000000        0.000000         1.06
+C         0.000000        0.000000         2.29
+C         0.000000        0.000000         3.6500000000000004
+C         0.000000        0.000000         4.92
+-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+
+
+ Geometry after moving molecule to COM 
+-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-1 1
+ H    0.000000000000    0.000000000000   -2.918717570223
+ C    0.000000000000    0.000000000000   -1.858717570223
+ C    0.000000000000    0.000000000000   -0.628717570223
+ C    0.000000000000    0.000000000000    0.731282429777
+ C    0.000000000000    0.000000000000    2.001282429777
+-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+ The estimated rotational constant  [x y z]  by Psi4 in cm-1 : 
+[0.         0.15428087 0.15428087]
+Extracted COM coordinates for RR : 
+ ['H', 'C', 'C', 'C', 'C']
+[-2.918717570223, -1.858717570223, -0.628717570223, 0.731282429777, 2.001282429777]
+
+
+Saving input coordinates in 'Projects/C4mp2/2D_input_coordinates.dat'
+ Create_GAUSSIAN_input_files = False : Skipping Gaussian (CP) Input! 
+ 
+ Create_MOLPRO_input_files = False : Skipping Molpro (CP) Input! 
+ 
+ Create_MOLPRO_CBS_input_files = False : Skipping Molpro (CBS) Input! 
+ 
+ Create_MOLPRO_custom_input_files = False : Skipping Molpro (custom) Input! 
+ 
+ Create_Psi4_custom_input_files = False : Skipping Psi4 (custom) Input! 
+ Generating Psi4 PES! 
+ Psi4 Input : 
+ -1 1
+ H    0.000000000000    0.000000000000   -2.918717570223
+ C    0.000000000000    0.000000000000   -1.858717570223
+ C    0.000000000000    0.000000000000   -0.628717570223
+ C    0.000000000000    0.000000000000    0.731282429777
+ C    0.000000000000    0.000000000000    2.001282429777
+He         {:.6f}           0.000000        {:.6f}
+ no_com 
+ no_reorient 
+
+ TQDM LOOP: Psi4 2D PES created:
+ |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100% |
+
+
+ Geometry at infinity: 
+ R = 100
+ Theta = 0
+
+ Energy at inifinity (Hartree): -155.51195243178284
+ Psi4 calculations finished! 
+ 
+#-------------------------------------------------------------------#
+#--------------#    PES Files Created Successfully    #-------------#
+#-------------------------------------------------------------------#
+
+
+#-------------------------------------------------------------------#
+#------------------#    Using PES Plot module    #------------------#
+#-------------------------------------------------------------------#
+
+
+Plotting PES from Psi4 output.
+
+If you have unconverged points, remove them, and replot PES using PESPlot input file! 
+
+      R  Gamma             E
+0  1.0      0  1.837075e+06
+1  1.0     10  1.386181e+06
+2  1.0     20  7.392173e+05
+3  1.0     30  3.659915e+05
+4  1.0     40  1.969745e+05#####################################################################
+--- Date 2025-06-22 13:24:03 ---
+#####################################################################
+#####################    PES2MP Initiated    ########################
+#####################################################################
+ 
+ /data and /project folders created. 
+
+
+ Create_PES_input = False : Checking input for external Plots! 
+  
+ No plots created. Create_PES_input / Run_psi4 and Plot_PES are False 
+
+ NNGen = False : Skipping NN Model! 
+ 
+ MPExp = False : Skipping Multipole Expansion! 
+ 
+#-------------------------------------------------------------------#
+#----------------#    Using Function Fit module    #----------------#
+#-------------------------------------------------------------------#
+
+
+ Fitting PES data into analytical function! 
+
+
+The loaded PES: --> 
+     0     1             2
+1  1.0   0.0  1.837075e+06
+2  1.0  10.0  1.386181e+06
+3  1.0  20.0  7.392173e+05
+4  1.0  30.0  3.659915e+05
+5  1.0  40.0  1.969745e+05
+ 2D Collision: Extracting end and start radial positions for each angular term: 
+
+ TQDM LOOP (end and start radial positions extracted from PES!) :
+ |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100% |
+
+Start End Positions: 
+Start Positions: 
+ [   0   88  178  268  358  448  538  628  718  808  898  988 1078 1168
+ 1258 1348 1438 1528 1618] 
+End Positions: 
+ [  88  178  268  358  448  538  628  718  808  898  988 1078 1168 1258
+ 1348 1438 1528 1618 1704] 
+ 
+
+ TQDM LOOP (R/Theta coordinates Generated!) :
+ |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100% |
+
+
+ Fitting PES each angle at a time: 
+
+
+Minima Fit:0 | Start position: 40 | Value (cm-1) 109.307091 
+
+
+ Coefficients for Angular coordinate: 0.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -38021681050.78459
+ Fitting Coefficients for full region fit : 
+[-3.54786504e+12  1.09567426e+12 -1.37234331e+11  9.12864753e+09
+ -3.32717738e+08  6.56448776e+06 -7.70117605e+04 -1.78168322e+00]
+
+Minima Fit:1 | Start position: 42 | Value (cm-1) 82.822422 
+
+
+ Coefficients for Angular coordinate: 10.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -37686875433.82205
+ Fitting Coefficients for full region fit : 
+[-3.50531310e+12  1.07695863e+12 -1.34470469e+11  8.90821802e+09
+ -3.24403811e+08  6.41306872e+06 -7.50659292e+04 -1.76885707e+00]
+
+Minima Fit:2 | Start position: 40 | Value (cm-1) 95.326571 
+
+
+ Coefficients for Angular coordinate: 20.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -17592728671.54847
+ Fitting Coefficients for full region fit : 
+[-1.72028020e+12  5.75576767e+11 -7.83545513e+10  5.66269218e+09
+ -2.25030170e+08  4.88124686e+06 -6.35232768e+04 -1.80680442e+00]
+
+Minima Fit:3 | Start position: 37 | Value (cm-1) 105.323107 
+
+
+ Coefficients for Angular coordinate: 30.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -4922224743.856661
+ Fitting Coefficients for full region fit : 
+[-5.28162955e+11  2.03288472e+11 -3.19538246e+10  2.67438573e+09
+ -1.23278557e+08  3.13499136e+06 -4.88816586e+04 -1.85935048e+00]
+
+Minima Fit:4 | Start position: 33 | Value (cm-1) 120.389177 
+
+
+ Coefficients for Angular coordinate: 40.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -827205141.0144124
+ Fitting Coefficients for full region fit : 
+[-1.05091654e+11  4.98595295e+10 -9.71055667e+09  1.00942963e+09
+ -5.76722432e+07  1.82701210e+06 -3.57179760e+04 -1.90506619e+00]
+
+Minima Fit:5 | Start position: 29 | Value (cm-1) 112.74099 
+
+
+ Coefficients for Angular coordinate: 50.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -160829656.8233197
+ Fitting Coefficients for full region fit : 
+[-2.50970780e+10  1.45143159e+10 -3.43647309e+09  4.31448546e+08
+ -2.97144209e+07  1.13201199e+06 -2.63895681e+04 -1.92089106e+00]
+
+Minima Fit:6 | Start position: 25 | Value (cm-1) 113.293125 
+
+
+ Coefficients for Angular coordinate: 60.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -25470782.967706006
+ Fitting Coefficients for full region fit : 
+[-5.22479368e+09  3.70285933e+09 -1.07183637e+09  1.64664062e+08
+ -1.39161074e+07  6.51535168e+05 -1.87714197e+04 -1.96449191e+00]
+
+Minima Fit:7 | Start position: 22 | Value (cm-1) 89.773784 
+
+
+ Coefficients for Angular coordinate: 70.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -6235192.883306137
+ Fitting Coefficients for full region fit : 
+[-1.66709724e+09  1.37347331e+09 -4.59574931e+08  8.15852314e+07
+ -8.00826855e+06  4.32396244e+05 -1.42834717e+04 -1.94165969e+00]
+
+Minima Fit:8 | Start position: 19 | Value (cm-1) 107.573451 
+
+
+ Coefficients for Angular coordinate: 80.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -1442597.9772110803
+ Fitting Coefficients for full region fit : 
+[-5.42254440e+08  5.14732686e+08 -1.96471488e+08  3.99876324e+07
+ -4.53510114e+06  2.80886164e+05 -1.08739331e+04 -1.96504562e+00]
+
+Minima Fit:9 | Start position: 18 | Value (cm-1) 80.243589 
+
+
+ Coefficients for Angular coordinate: 90.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -775492.0309453027
+ Fitting Coefficients for full region fit : 
+[-3.39230460e+08  3.36629904e+08 -1.33457501e+08  2.84154154e+07
+ -3.41247866e+06  2.22275990e+05 -9.24021382e+03 -1.90956388e+00]
+
+Minima Fit:10 | Start position: 18 | Value (cm-1) 122.922502 
+
+
+ Coefficients for Angular coordinate: 100.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -713954.3398297873
+ Fitting Coefficients for full region fit : 
+[-3.23151380e+08  3.21757989e+08 -1.27525368e+08  2.72463498e+07
+ -3.27093155e+06  2.10686136e+05 -8.74869146e+03 -1.79822180e+00]
+
+Minima Fit:11 | Start position: 21 | Value (cm-1) 82.583462 
+
+
+ Coefficients for Angular coordinate: 110.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -2947954.1119809947
+ Fitting Coefficients for full region fit : 
+[-8.74068758e+08  7.49901621e+08 -2.59724039e+08  4.83171542e+07
+ -5.00887410e+06  2.79628308e+05 -9.84810283e+03 -1.57382920e+00]
+
+Minima Fit:12 | Start position: 24 | Value (cm-1) 114.35 
+
+
+ Coefficients for Angular coordinate: 120.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -10068459.791313708
+ Fitting Coefficients for full region fit : 
+[-2.26351963e+09  1.68582715e+09 -5.10849374e+08  8.35535345e+07
+ -7.54352224e+06  3.67632255e+05 -1.12633671e+04 -1.40562872e+00]
+
+Minima Fit:13 | Start position: 28 | Value (cm-1) 100.170271 
+
+
+ Coefficients for Angular coordinate: 130.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -62734517.22589146
+ Fitting Coefficients for full region fit : 
+[-1.03301341e+10  6.21382689e+09 -1.52237274e+09  2.00683094e+08
+ -1.45876120e+07  5.73404321e+05 -1.39837516e+04 -1.23632578e+00]
+
+Minima Fit:14 | Start position: 32 | Value (cm-1) 78.855097 
+
+
+ Coefficients for Angular coordinate: 140.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -330669346.25376636
+ Fitting Coefficients for full region fit : 
+[-4.35285261e+10  2.13232752e+10 -4.24334639e+09  4.56127842e+08
+ -2.72768086e+07  8.81796100e+05 -1.74334934e+04 -1.09943031e+00]
+
+Minima Fit:15 | Start position: 35 | Value (cm-1) 88.219149 
+
+
+ Coefficients for Angular coordinate: 150.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -944351807.3462515
+ Fitting Coefficients for full region fit : 
+[-1.08896960e+11  4.56691910e+10 -7.68990797e+09  7.16892108e+08
+ -3.80487603e+07  1.09344333e+06 -1.96902423e+04 -1.03165120e+00]
+
+Minima Fit:16 | Start position: 38 | Value (cm-1) 80.803095 
+
+
+ Coefficients for Angular coordinate: 160.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -3250010410.1113234
+ Fitting Coefficients for full region fit : 
+[-3.44108884e+11  1.27707809e+11 -1.83510443e+10  1.43991971e+09
+ -6.47902066e+07  1.55899749e+06 -2.33250402e+04 -9.57140751e-01]
+
+Minima Fit:17 | Start position: 40 | Value (cm-1) 80.151418 
+
+
+ Coefficients for Angular coordinate: 170.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -5444910173.138408
+ Fitting Coefficients for full region fit : 
+[-5.84162990e+11  2.17017890e+11 -2.93796473e+10  2.13682326e+09
+ -8.91563113e+07  1.95716860e+06 -2.60095269e+04 -9.17043472e-01]
+
+Minima Fit:18 | Start position: 36 | Value (cm-1) 129.309759 
+
+
+ Coefficients for Angular coordinate: 180.0 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: -6220235273.763345
+ Fitting Coefficients for full region fit : 
+[-6.80600159e+11  2.56755309e+11 -3.39775609e+10  2.39229515e+09
+ -9.70112638e+07  2.07696582e+06 -2.67602912e+04 -9.07126756e-01]
+ TQDM LOOP (Function Fitting Done!) :
+ |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100% |
+
+
+
+Saving fitted PES (Fnfit_PES.dat) and residuals (residuals_Fnfit_PES.dat) to: 
+ /Volumes/Crucial_X6/Cn/CHn/Projects/C4mp2/PESFnFit/ 
+
+
+Plotting residuals for E fit (R) at location: 
+ /Volumes/Crucial_X6/Cn/CHn/Projects/C4mp2/PESFnFit/Plots/ 
+
+
+
+Saving a copy of fitted PES (Fnfit_PES.dat) to: 
+ /Volumes/Crucial_X6/Cn/CHn/Projects/C4mp2/ 
+
+
+#-------------------------------------------------------------------#
+#-------#    2D PES Fitted into analytical expression!    #---------#
+#-------------------------------------------------------------------#
+
+
+#####################################################################
+#####################    PES2MP Finished     ########################
+#####################################################################
+Run time: 0 hours, 0 minutes, 2.05 seconds
+#####################################################################
+
+
+#####################################################################
+--- Date 2025-06-22 13:24:05 ---
+#####################################################################
+#####################    PES2MP Initiated    ########################
+#####################################################################
+ 
+ /data and /project folders created. 
+
+
+ Create_PES_input = False : Checking input for external Plots! 
+  
+ No plots created. Create_PES_input / Run_psi4 and Plot_PES are False 
+
+ NNGen = False : Skipping NN Model! 
+ 
+#-------------------------------------------------------------------#
+#----------------#    Using MP Expansion module    #----------------#
+#-------------------------------------------------------------------#
+
+
+
+The loaded PES: --> 
+     0    1             2
+0  1.0  0.0 -3.802168e+10
+1  1.1  0.0 -2.475638e+10
+2  1.2  0.0 -1.609215e+10
+3  1.3  0.0 -1.044154e+10
+4  1.4  0.0 -6.762186e+09
+ Generating new legendre coefficient from scratch and saving 2D_L_coeff.npy in --> 
+/Volumes/Crucial_X6/Cn/CHn/Projects/C4mp2/MP_files/
+
+
+ A preview of radial terms: 
+      R             0             1  ...            16            17            18
+0  1.0 -1.670285e+09 -3.297278e+09  ...  1.526022e+09  2.247269e+09  1.066980e+09
+1  1.1 -1.082887e+09 -2.144759e+09  ...  9.990186e+08  1.469685e+09  6.985733e+08
+2  1.2 -7.006947e+08 -1.392719e+09  ...  6.531376e+08  9.598090e+08  4.567621e+08
+3  1.3 -4.524503e+08 -9.027440e+08  ...  4.264008e+08  6.258907e+08  2.982322e+08
+4  1.4 -2.915056e+08 -5.840267e+08  ...  2.779550e+08  4.074967e+08  1.944316e+08
+
+[5 rows x 20 columns]
+
+Saving final radial terms file 2D_Vlam.dat in above folder! 
+
+ Radial terms plots are available in above folder/MP_plots. 
+
+#-------------------------------------------------------------------#
+#---------------#    2D Mutipole Expansion Done!    #---------------#
+#-------------------------------------------------------------------#
+
+
+ FnFit = False : Skipping Analytical Fitting of Radial Coefficients! 
+ 
+#####################################################################
+#####################    PES2MP Finished     ########################
+#####################################################################
+Run time: 0 hours, 0 minutes, 2.41 seconds
+#####################################################################
+
+
+#####################################################################
+--- Date 2025-06-22 13:24:08 ---
+#####################################################################
+#####################    PES2MP Initiated    ########################
+#####################################################################
+ 
+ /data and /project folders created. 
+
+
+ Create_PES_input = False : Checking input for external Plots! 
+  
+ No plots created. Create_PES_input / Run_psi4 and Plot_PES are False 
+
+ NNGen = False : Skipping NN Model! 
+ 
+ MPExp = False : Skipping Multipole Expansion! 
+ 
+#-------------------------------------------------------------------#
+#----------------#    Using Function Fit module    #----------------#
+#-------------------------------------------------------------------#
+
+Fitting Radial coefficients obtained after multipole expansion!
+
+
+Minima Fit:0 | Start position: 0 | Value (cm-1) -1670284592.8594165 
+
+RMSE 0 | 4.9452259437405675e-08 
+
+
+Minima Fit:1 | Start position: 0 | Value (cm-1) -3297278068.042608 
+
+RMSE 1 | 1.267643418631243e-07 
+
+
+Minima Fit:2 | Start position: 0 | Value (cm-1) -6889910487.416105 
+
+RMSE 2 | 7.5950406080366605e-06 
+
+
+Minima Fit:3 | Start position: 0 | Value (cm-1) -5753363400.393104 
+
+RMSE 3 | 0.00010800422404876922 
+
+
+Minima Fit:4 | Start position: 0 | Value (cm-1) -7983383359.400127 
+
+RMSE 4 | 1.072322733002411e-05 
+
+
+Minima Fit:5 | Start position: 0 | Value (cm-1) -5357978085.010171 
+
+RMSE 5 | 5.761479408273611e-05 
+
+
+Minima Fit:6 | Start position: 0 | Value (cm-1) -5807275210.655203 
+
+RMSE 6 | 6.660191666395557e-06 
+
+
+Minima Fit:7 | Start position: 0 | Value (cm-1) -3354332267.277601 
+
+RMSE 7 | 0.00010002524483553999 
+
+
+Minima Fit:8 | Start position: 0 | Value (cm-1) -2859411800.824995 
+
+RMSE 8 | 5.722680230503889e-05 
+
+
+Minima Fit:9 | Start position: 0 | Value (cm-1) -1376880272.0150256 
+
+RMSE 9 | 9.947773771883873e-06 
+
+
+Minima Fit:10 | Start position: 0 | Value (cm-1) -718876051.8048428 
+
+RMSE 10 | 9.930372439404574e-08 
+
+
+Minima Fit:11 | Start position: 0 | Value (cm-1) -200517371.17457747 
+
+RMSE 11 | 1.0905329169678324e-07 
+
+
+Minima Fit:12 | Start position: 0 | Value (cm-1) 370681295.59610975 
+
+RMSE 12 | 7.60099337148732e-08 
+
+
+Minima Fit:13 | Start position: 0 | Value (cm-1) 347871764.1081771 
+
+RMSE 13 | 1.050792214376542e-07 
+
+
+Minima Fit:14 | Start position: 0 | Value (cm-1) 844499728.778677 
+
+RMSE 14 | 3.886448662915998e-07 
+
+
+Minima Fit:15 | Start position: 0 | Value (cm-1) 844486017.1475441 
+
+RMSE 15 | 2.539162994389242e-06 
+
+
+Minima Fit:16 | Start position: 0 | Value (cm-1) 1526022152.6981163 
+
+RMSE 16 | 3.669716613244198e-07 
+
+
+Minima Fit:17 | Start position: 0 | Value (cm-1) 2247268794.1466994 
+
+RMSE 17 | 5.443830516375509e-07 
+
+
+Minima Fit:18 | Start position: 0 | Value (cm-1) 1066980163.613819 
+
+RMSE 18 | 4.850402923648299e-07 
+
+ Start position for fitting each radial term : 
+start_pos = 
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.] 
+
+ Mean RMS Error | 1.9088798120367153e-05 
+
+
+Saving analytically fitted V_lam data (FnFitted_Vlam.dat) at locations: 
+  /Volumes/Crucial_X6/Cn/CHn/Projects/C4mp2/MP_files/ 
+ and 
+ /Volumes/Crucial_X6/Cn/CHn/Projects/C4mp2/MP_files/VlamFnFit/ 
+
+The coefficients for custom functions are saved in Raw format in Proj_name folder. The same can be converted manually!
+
+Saving V_lam raw coefficients at location: 
+ /Volumes/Crucial_X6/Cn/CHn/Projects/C4mp2/ 
+
+Saving MOLSCAT &POTL (MOLSCAT_POT.txt) at location: 
+ /Volumes/Crucial_X6/Cn/CHn/Projects/C4mp2/ 
+
+#-------------------------------------------------------------------#
+#-----------------#    MOLSCAT &POTL Generated    #-----------------#
+#-------------------------------------------------------------------#
+
+
+#####################################################################
+#####################    PES2MP Finished     ########################
+#####################################################################
+Run time: 0 hours, 0 minutes, 5.39 seconds
+#####################################################################
+
+
