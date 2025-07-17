@@ -1,0 +1,117 @@
+%nprocshared=10
+%mem=16GB
+%chk=tq.chk
+# BD(TQ)/aug-cc-pVDZ Counterpoise=2
+
+R = {:.4f}, Theta={:.2f}
+
+0,1 0,1 0,1
+C(Fragment=1)         0.000000        0.000000         -0.621250
+C(Fragment=1)         0.000000        0.000000         0.621250
+He(Fragment=2)        {:.6f}        0.000000         {:.6f}
+
+
+%nprocshared=10
+%mem=16GB
+%chk=tq.chk
+# CCSDT=(Q,SaveAmplitudes,ReadAmplitudes)/aug-cc-pVDZ Counterpoise=2
+
+R = {:.4f}, Theta={:.2f}
+
+0,1 0,1 0,1
+C(Fragment=1)         0.000000        0.000000         -0.621250
+C(Fragment=1)         0.000000        0.000000         0.621250
+He(Fragment=2)        {:.6f}        0.000000         {:.6f}
+
+
+%nprocshared=10
+%mem=16GB
+%chk=tq.chk
+# CCSD=(TQ,SaveAmplitudes,ReadAmplitudes)/aug-cc-pVDZ Counterpoise=2
+
+R = {:.4f}, Theta={:.2f}
+
+0,1 0,1 0,1
+C(Fragment=1)         0.000000        0.000000         -0.621250
+C(Fragment=1)         0.000000        0.000000         0.621250
+He(Fragment=2)        {:.6f}        0.000000         {:.6f}
+
+
+%nprocshared=10
+%mem=16GB
+%chk=tq.chk
+# QCI=(TQ,SaveAmplitudes,ReadAmplitudes)/aug-cc-pVDZ Counterpoise=2
+
+R = {:.4f}, Theta={:.2f}
+
+0,1 0,1 0,1
+C(Fragment=1)         0.000000        0.000000         -0.621250
+C(Fragment=1)         0.000000        0.000000         0.621250
+He(Fragment=2)        {:.6f}        0.000000         {:.6f}
+
+
+%nprocshared=10
+%mem=16GB
+%chk=tq.chk
+# QCI=(TQ,SaveAmplitudes,ReadAmplitudes)/aug-cc-pVDZ Counterpoise=2
+
+R = {:.4f}, Theta={:.2f}
+
+0,1 0,1 0,1
+C(Fragment=1)         0.000000        0.000000         -0.621250
+C(Fragment=1)         0.000000        0.000000         0.621250
+He(Fragment=2)        {:.6f}        0.000000         {:.6f}
+
+
+%nprocshared=10
+%mem=16GB
+%chk=tq.chk
+# QCI=(TQ,SaveAmplitudes,ReadAmplitudes)/aug-cc-pVDZ Counterpoise=2
+
+R = {:.4f}, Theta={:.2f}
+
+0,1 0,1 0,1
+C(Fragment=1)         0.000000        0.000000         -0.621250
+C(Fragment=1)         0.000000        0.000000         0.621250
+He(Fragment=2)        {:.6f}        0.000000         {:.6f}
+
+
+%nprocshared=10
+%mem=16GB
+%chk=tq.chk
+# BD(TQ)/aug-cc-pVDZ Counterpoise=2
+
+R = {:.4f}, Theta={:.2f}
+
+0,1 0,1 0,1
+C(Fragment=1)         0.000000        0.000000         -0.621250
+C(Fragment=1)         0.000000        0.000000         0.621250
+He(Fragment=2)        {:.6f}        0.000000         {:.6f}
+
+
+%nprocshared=10
+%mem=16GB
+%chk=tq.chk
+# qcisd(tq)/aug-cc-pVDZ Counterpoise=2
+
+R = {:.4f}, Theta={:.2f}
+
+0,1 0,1 0,1
+C(Fragment=1)         0.000000        0.000000         -0.621250
+C(Fragment=1)         0.000000        0.000000         0.621250
+He(Fragment=2)        {:.6f}        0.000000         {:.6f}
+
+
+%nprocshared=64
+%mem=120GB
+%chk=tq.chk
+# qcisd(tq)/aug-cc-pVDZ Counterpoise=2
+
+R = {:.4f}, Theta={:.2f}
+
+0,1 0,1 0,1
+C(Fragment=1)         0.000000        0.000000         -0.621250
+C(Fragment=1)         0.000000        0.000000         0.621250
+He(Fragment=2)        {:.6f}        0.000000         {:.6f}
+
+
