@@ -1,0 +1,2305 @@
+#####################################################################
+--- Date 2025-05-28 11:47:28 ---
+#####################################################################
+#####################    PES2MP Initiated    ########################
+#####################################################################
+ 
+ /data and /project folders created. 
+
+
+ Create_PES_input = False : Checking input for external Plots! 
+  
+ No plots created. Create_PES_input / Run_psi4 and Plot_PES are False 
+
+ NNGen = False : Skipping NN Model! 
+ 
+ MPExp = False : Skipping Multipole Expansion! 
+ 
+#-------------------------------------------------------------------#
+#----------------#    Using Function Fit module    #----------------#
+#-------------------------------------------------------------------#
+
+
+ Fitting PES data into analytical function! 
+
+
+The loaded PES: --> 
+     0    1    2      3             4
+1  2.5  0.0  0.0    0.0  2.411773e+06
+2  2.5  0.0  0.0   30.0  3.875786e+04
+3  2.5  0.0  0.0   60.0  5.814813e+03
+4  2.5  0.0  0.0   90.0  1.895639e+03
+5  2.5  0.0  0.0  120.0  5.814813e+03
+ 4D Collision: Extracting end and start radial positions for each angular term : 
+
+ TQDM LOOP (end and start radial positions extracted!) :
+ |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100% |
+
+Start End Positions: 
+Start Positions: 
+ [   0   65  130  195  260  330  400  470  540  608  676  744  813  881
+  949 1017 1085 1160 1235 1310 1385 1460 1535 1609 1684 1759 1834 1909
+ 1984 2059 2134 2209 2284 2359 2434 2509 2584 2659 2734 2809 2884 2959
+ 3034 3109 3184 3259 3334 3409 3484 3559 3634 3709 3784 3859 3934 4009
+ 4084 4159 4234 4309 4384 4459 4534 4609 4684 4759 4834 4909 4984 5059
+ 5134 5209 5284 5359 5434 5509 5584 5659 5734 5809 5884 5959 6034 6109
+ 6184 6259 6334 6409 6484 6559 6634 6708 6783 6858 6933 7008 7083 7148
+ 7213 7278 7343 7413 7483 7553 7623 7691 7759 7827 7896 7964 8032 8100] 
+End Positions: 
+ [  65  130  195  260  330  400  470  540  608  676  744  813  881  949
+ 1017 1085 1160 1235 1310 1385 1460 1535 1609 1684 1759 1834 1909 1984
+ 2059 2134 2209 2284 2359 2434 2509 2584 2659 2734 2809 2884 2959 3034
+ 3109 3184 3259 3334 3409 3484 3559 3634 3709 3784 3859 3934 4009 4084
+ 4159 4234 4309 4384 4459 4534 4609 4684 4759 4834 4909 4984 5059 5134
+ 5209 5284 5359 5434 5509 5584 5659 5734 5809 5884 5959 6034 6109 6184
+ 6259 6334 6409 6484 6559 6634 6708 6783 6858 6933 7008 7083 7148 7213
+ 7278 7343 7413 7483 7553 7623 7691 7759 7827 7896 7964 8032 8100 8168] 
+
+ TQDM LOOP (R/Phi/Theta2/Theta1 coordinates generated!) :
+ |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100% |
+
+
+ Fitting PES each angle at a time: 
+
+
+Minima Fit:0 | Start position: 26 | Value (cm-1) 96.161106 
+
+
+ Coefficients for Angular coordinate: [0. 0. 0.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 966552338.8491069
+ Fitting Coefficients for full region fit : 
+[ 5.18674413e+13 -1.24015465e+13  1.19457560e+12 -4.61083593e+10
+  8.01600766e+08 -6.00956583e+06 -1.35873669e+05 -6.94807018e+01]
+
+Minima Fit:1 | Start position: 26 | Value (cm-1) 96.161106 
+
+
+ Coefficients for Angular coordinate: [30.  0.  0.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 966553443.2535868
+ Fitting Coefficients for full region fit : 
+[ 5.18674878e+13 -1.24015545e+13  1.19457615e+12 -4.61083778e+10
+  8.01601084e+08 -6.00956847e+06 -1.35873659e+05 -6.94807038e+01]
+
+Minima Fit:2 | Start position: 26 | Value (cm-1) 96.161106 
+
+
+ Coefficients for Angular coordinate: [60.  0.  0.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 966550601.5493748
+ Fitting Coefficients for full region fit : 
+[ 5.18673672e+13 -1.24015333e+13  1.19457465e+12 -4.61083238e+10
+  8.01600037e+08 -6.00955793e+06 -1.35873706e+05 -6.94806995e+01]
+
+Minima Fit:3 | Start position: 26 | Value (cm-1) 96.161106 
+
+
+ Coefficients for Angular coordinate: [90.  0.  0.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 966554437.2731056
+ Fitting Coefficients for full region fit : 
+[ 5.18675307e+13 -1.24015623e+13  1.19457671e+12 -4.61083990e+10
+  8.01601507e+08 -6.00957259e+06 -1.35873645e+05 -6.94807023e+01]
+
+Minima Fit:4 | Start position: 31 | Value (cm-1) 189.727939 
+
+
+ Coefficients for Angular coordinate: [ 0. 30.  0.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 3035992695.7777023
+ Fitting Coefficients for full region fit : 
+[ 1.40115340e+14 -2.81845107e+13  2.36633282e+12 -9.34036439e+10
+  1.92007966e+09 -2.06468275e+07 -1.24291132e+04 -6.33166639e+01]
+
+Minima Fit:5 | Start position: 31 | Value (cm-1) 189.727939 
+
+
+ Coefficients for Angular coordinate: [30. 30.  0.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 3035996040.277447
+ Fitting Coefficients for full region fit : 
+[ 1.40115473e+14 -2.81845320e+13  2.36633414e+12 -9.34036842e+10
+  1.92008025e+09 -2.06468304e+07 -1.24291223e+04 -6.33166606e+01]
+
+Minima Fit:6 | Start position: 31 | Value (cm-1) 189.727939 
+
+
+ Coefficients for Angular coordinate: [60. 30.  0.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 3035995948.4095774
+ Fitting Coefficients for full region fit : 
+[ 1.40115473e+14 -2.81845329e+13  2.36633426e+12 -9.34036902e+10
+  1.92008039e+09 -2.06468320e+07 -1.24291122e+04 -6.33166622e+01]
+
+Minima Fit:7 | Start position: 31 | Value (cm-1) 189.727939 
+
+
+ Coefficients for Angular coordinate: [90. 30.  0.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 3035991418.725558
+ Fitting Coefficients for full region fit : 
+[ 1.40115289e+14 -2.81845024e+13  2.36633227e+12 -9.34036246e+10
+  1.92007926e+09 -2.06468223e+07 -1.24291474e+04 -6.33166603e+01]
+
+Minima Fit:8 | Start position: 30 | Value (cm-1) 148.657693 
+
+
+ Coefficients for Angular coordinate: [ 0. 60.  0.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 19479734406.50153
+ Fitting Coefficients for full region fit : 
+[ 7.85669629e+14 -1.29408169e+14  8.81386882e+12 -3.09449405e+11
+  6.02906022e+09 -6.38824130e+07  2.69000066e+05 -5.18330837e+01]
+
+Minima Fit:9 | Start position: 30 | Value (cm-1) 148.657693 
+
+
+ Coefficients for Angular coordinate: [30. 60.  0.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 19479761665.89252
+ Fitting Coefficients for full region fit : 
+[ 7.85670686e+14 -1.29408331e+14  8.81387866e+12 -3.09449705e+11
+  6.02906502e+09 -6.38824504e+07  2.69000179e+05 -5.18330871e+01]
+
+Minima Fit:10 | Start position: 30 | Value (cm-1) 148.657693 
+
+
+ Coefficients for Angular coordinate: [60. 60.  0.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 19479752172.722202
+ Fitting Coefficients for full region fit : 
+[ 7.85670313e+14 -1.29408272e+14  8.81387495e+12 -3.09449585e+11
+  6.02906289e+09 -6.38824308e+07  2.69000102e+05 -5.18330851e+01]
+
+Minima Fit:11 | Start position: 31 | Value (cm-1) 148.657693 
+
+
+ Coefficients for Angular coordinate: [90. 60.  0.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 19479744010.318214
+ Fitting Coefficients for full region fit : 
+[ 7.85669987e+14 -1.29408220e+14  8.81387155e+12 -3.09449472e+11
+  6.02906092e+09 -6.38824136e+07  2.69000043e+05 -5.18330817e+01]
+
+Minima Fit:12 | Start position: 31 | Value (cm-1) 101.117737 
+
+
+ Coefficients for Angular coordinate: [ 0. 90.  0.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 57216137289.57994
+ Fitting Coefficients for full region fit : 
+[ 2.16286475e+15 -3.19038295e+14  1.93180323e+13 -6.09765704e+11
+  1.07586351e+10 -1.03963954e+08  4.58495146e+05 -4.70045409e+01]
+
+Minima Fit:13 | Start position: 31 | Value (cm-1) 101.117737 
+
+
+ Coefficients for Angular coordinate: [30. 90.  0.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 57216151945.396385
+ Fitting Coefficients for full region fit : 
+[ 2.16286530e+15 -3.19038377e+14  1.93180372e+13 -6.09765856e+11
+  1.07586376e+10 -1.03963974e+08  4.58495212e+05 -4.70045411e+01]
+
+Minima Fit:14 | Start position: 31 | Value (cm-1) 101.117737 
+
+
+ Coefficients for Angular coordinate: [60. 90.  0.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 57216155902.05255
+ Fitting Coefficients for full region fit : 
+[ 2.16286542e+15 -3.19038387e+14  1.93180374e+13 -6.09765846e+11
+  1.07586372e+10 -1.03963970e+08  4.58495197e+05 -4.70045422e+01]
+
+Minima Fit:15 | Start position: 31 | Value (cm-1) 101.117737 
+
+
+ Coefficients for Angular coordinate: [90. 90.  0.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 57216139850.55322
+ Fitting Coefficients for full region fit : 
+[ 2.16286488e+15 -3.19038324e+14  1.93180346e+13 -6.09765789e+11
+  1.07586367e+10 -1.03963970e+08  4.58495209e+05 -4.70045423e+01]
+
+Minima Fit:16 | Start position: 30 | Value (cm-1) 79.807194 
+
+
+ Coefficients for Angular coordinate: [ 0.  0. 30.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 271266794.3001004
+ Fitting Coefficients for full region fit : 
+[ 1.63230251e+13 -4.25266100e+12  4.41225958e+11 -2.27913130e+10
+  6.30987741e+08 -8.74021549e+06  1.61906651e+04 -6.12036518e+01]
+
+Minima Fit:17 | Start position: 30 | Value (cm-1) 79.681961 
+
+
+ Coefficients for Angular coordinate: [30.  0. 30.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 306589811.01156753
+ Fitting Coefficients for full region fit : 
+[ 1.84296104e+13 -4.80079851e+12  4.99278745e+11 -2.59968976e+10
+  7.28879465e+08 -1.03399365e+07  2.79404330e+04 -6.37284670e+01]
+
+Minima Fit:18 | Start position: 30 | Value (cm-1) 79.982973 
+
+
+ Coefficients for Angular coordinate: [60.  0. 30.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 224838629.79772586
+ Fitting Coefficients for full region fit : 
+[ 1.35591685e+13 -3.53475301e+12  3.65339686e+11 -1.86096469e+10
+  5.03570220e+08 -6.66295765e+06  9.70206707e+02 -5.79663402e+01]
+
+Minima Fit:19 | Start position: 30 | Value (cm-1) 79.99952 
+
+
+ Coefficients for Angular coordinate: [90.  0. 30.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 220183847.6894517
+ Fitting Coefficients for full region fit : 
+[ 1.32805920e+13 -3.46202139e+12  3.57607777e+11 -1.81810460e+10
+  4.90435287e+08 -6.44776168e+06 -6.12384189e+02 -5.76229815e+01]
+
+Minima Fit:20 | Start position: 30 | Value (cm-1) 113.659046 
+
+
+ Coefficients for Angular coordinate: [ 0. 30. 30.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 428470927.05703247
+ Fitting Coefficients for full region fit : 
+[ 2.56553475e+13 -6.68295194e+12  7.02763412e+11 -3.79053158e+10
+  1.12976265e+09 -1.81114124e+07  1.22753021e+05 -5.12104911e+01]
+
+Minima Fit:21 | Start position: 30 | Value (cm-1) 112.036392 
+
+
+ Coefficients for Angular coordinate: [30. 30. 30.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 452329800.8043063
+ Fitting Coefficients for full region fit : 
+[ 2.70736502e+13 -7.05025621e+12  7.41252528e+11 -3.99799136e+10
+  1.19056688e+09 -1.90151855e+07  1.26446817e+05 -5.45129968e+01]
+
+Minima Fit:22 | Start position: 29 | Value (cm-1) 103.407289 
+
+
+ Coefficients for Angular coordinate: [60. 30. 30.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 334642816.3688793
+ Fitting Coefficients for full region fit : 
+[ 2.00555760e+13 -5.22272457e+12  5.46963644e+11 -2.91307082e+10
+  8.52646316e+08 -1.32608639e+07  7.54539417e+04 -5.09473473e+01]
+
+Minima Fit:23 | Start position: 30 | Value (cm-1) 79.362878 
+
+
+ Coefficients for Angular coordinate: [90. 30. 30.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 275333243.2639176
+ Fitting Coefficients for full region fit : 
+[ 1.65332113e+13 -4.30746389e+12  4.49258727e+11 -2.35603156e+10
+  6.72131464e+08 -9.97712397e+06  3.73252570e+04 -5.38257149e+01]
+
+Minima Fit:24 | Start position: 29 | Value (cm-1) 97.191362 
+
+
+ Coefficients for Angular coordinate: [ 0. 60. 30.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 331602297.0809498
+ Fitting Coefficients for full region fit : 
+[ 2.08781311e+13 -5.69714669e+12  6.30803080e+11 -3.60957503e+10
+  1.15388465e+09 -2.04127224e+07  1.60404693e+05 -4.38839974e+01]
+
+Minima Fit:25 | Start position: 29 | Value (cm-1) 110.017561 
+
+
+ Coefficients for Angular coordinate: [30. 60. 30.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 350945486.0571723
+ Fitting Coefficients for full region fit : 
+[ 2.20912659e+13 -6.02608100e+12  6.66830387e+11 -3.81380703e+10
+  1.21771046e+09 -2.14269456e+07  1.67526975e+05 -4.69079647e+01]
+
+Minima Fit:26 | Start position: 30 | Value (cm-1) 88.201421 
+
+
+ Coefficients for Angular coordinate: [60. 60. 30.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 464028322.2539046
+ Fitting Coefficients for full region fit : 
+[ 2.75607477e+13 -7.13796684e+12  7.49346106e+11 -4.05976457e+10
+  1.22403380e+09 -2.02026658e+07  1.45500012e+05 -4.37163318e+01]
+
+Minima Fit:27 | Start position: 30 | Value (cm-1) 77.525408 
+
+
+ Coefficients for Angular coordinate: [90. 60. 30.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 408678233.0873885
+ Fitting Coefficients for full region fit : 
+[ 2.42610574e+13 -6.27825400e+12  6.57560976e+11 -3.53951229e+10
+  1.05750279e+09 -1.71879925e+07  1.12021309e+05 -4.63333073e+01]
+
+Minima Fit:28 | Start position: 27 | Value (cm-1) 110.202789 
+
+
+ Coefficients for Angular coordinate: [ 0. 90. 30.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 84504620.88552314
+ Fitting Coefficients for full region fit : 
+[ 6.43477523e+12 -2.03054526e+12  2.57153466e+11 -1.64788430e+10
+  5.92000035e+08 -1.20148831e+07  8.50730974e+04 -4.59867008e+01]
+
+Minima Fit:29 | Start position: 28 | Value (cm-1) 80.464691 
+
+
+ Coefficients for Angular coordinate: [30. 90. 30.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 174547431.77717853
+ Fitting Coefficients for full region fit : 
+[ 1.19344531e+13 -3.48435895e+12  4.11612581e+11 -2.49252039e+10
+  8.43774784e+08 -1.59036768e+07  1.15159541e+05 -4.85462715e+01]
+
+Minima Fit:30 | Start position: 29 | Value (cm-1) 90.336392 
+
+
+ Coefficients for Angular coordinate: [60. 90. 30.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 282548862.0035762
+ Fitting Coefficients for full region fit : 
+[ 1.78136936e+13 -4.86544762e+12  5.38533543e+11 -3.06934806e+10
+  9.77493720e+08 -1.72215525e+07  1.25592954e+05 -4.27746341e+01]
+
+Minima Fit:31 | Start position: 29 | Value (cm-1) 118.040903 
+
+
+ Coefficients for Angular coordinate: [90. 90. 30.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 291661004.47966737
+ Fitting Coefficients for full region fit : 
+[ 1.83527792e+13 -5.00317053e+12  5.52593536e+11 -3.14537373e+10
+  1.00141739e+09 -1.76059847e+07  1.32542639e+05 -4.19576973e+01]
+
+Minima Fit:32 | Start position: 11 | Value (cm-1) 108.368962 
+
+
+ Coefficients for Angular coordinate: [ 0.  0. 60.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 14551.422770707328
+ Fitting Coefficients for full region fit : 
+[ 3.66966666e+09 -2.43422768e+09  6.56349614e+08 -8.55431587e+07
+  6.40809133e+06 -3.37841917e+05  7.14107200e+03 -2.98155658e+01]
+
+Minima Fit:33 | Start position: 11 | Value (cm-1) 107.550981 
+
+
+ Coefficients for Angular coordinate: [30.  0. 60.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 27186.458542805056
+ Fitting Coefficients for full region fit : 
+[ 9.91259974e+09 -6.61410850e+09  1.79650465e+09 -2.47950038e+08
+  1.92333535e+07 -8.81779264e+05  1.75622123e+04 -4.02170873e+01]
+
+Minima Fit:34 | Start position: 11 | Value (cm-1) 107.57506 
+
+
+ Coefficients for Angular coordinate: [60.  0. 60.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 27065.31282921215
+ Fitting Coefficients for full region fit : 
+[ 9.84793539e+09 -6.56998646e+09  1.78423011e+09 -2.46165870e+08
+  1.90895497e+07 -8.75553345e+05  1.74406415e+04 -4.00914884e+01]
+
+Minima Fit:35 | Start position: 11 | Value (cm-1) 107.910319 
+
+
+ Coefficients for Angular coordinate: [90.  0. 60.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 21786.462001542965
+ Fitting Coefficients for full region fit : 
+[ 7.24627310e+09 -4.82915856e+09  1.30968066e+09 -1.78611561e+08
+  1.37578381e+07 -6.49534519e+05  1.31115475e+04 -3.57695550e+01]
+
+Minima Fit:36 | Start position: 10 | Value (cm-1) 121.32119 
+
+
+ Coefficients for Angular coordinate: [ 0. 30. 60.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 13089.331124359513
+ Fitting Coefficients for full region fit : 
+[ 4.56548093e+09 -3.23973118e+09  9.43727633e+08 -1.40181476e+08
+  1.22458635e+07 -6.72996688e+05  1.42850404e+04 -2.53597116e+01]
+
+Minima Fit:37 | Start position: 10 | Value (cm-1) 124.833828 
+
+
+ Coefficients for Angular coordinate: [30. 30. 60.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 19272.222917410498
+ Fitting Coefficients for full region fit : 
+[ 8.40688909e+09 -5.94865835e+09  1.72165724e+09 -2.56651420e+08
+  2.18873162e+07 -1.10006912e+06  2.29256445e+04 -3.60494298e+01]
+
+Minima Fit:38 | Start position: 11 | Value (cm-1) 65.09397 
+
+
+ Coefficients for Angular coordinate: [60. 30. 60.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 31769.949979030516
+ Fitting Coefficients for full region fit : 
+[ 1.22693971e+10 -8.16017607e+09  2.21645057e+09 -3.10288141e+08
+  2.46406722e+07 -1.14468694e+06  2.24320433e+04 -3.80375611e+01]
+
+Minima Fit:39 | Start position: 11 | Value (cm-1) 76.539772 
+
+
+ Coefficients for Angular coordinate: [90. 30. 60.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 22379.6234121431
+ Fitting Coefficients for full region fit : 
+[ 7.51977443e+09 -4.97883280e+09  1.34516746e+09 -1.84396541e+08
+  1.43873482e+07 -6.82692133e+05  1.27794408e+04 -3.62861469e+01]
+
+Minima Fit:40 | Start position: 9 | Value (cm-1) 129.996705 
+
+
+ Coefficients for Angular coordinate: [ 0. 60. 60.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 9458.794947326014
+ Fitting Coefficients for full region fit : 
+[ 3.20557862e+09 -2.34169450e+09  7.01429776e+08 -1.06499299e+08
+  9.58897858e+06 -5.33131199e+05  7.08031097e+03 -2.84279088e+01]
+
+Minima Fit:41 | Start position: 9 | Value (cm-1) 134.055266 
+
+
+ Coefficients for Angular coordinate: [30. 60. 60.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 12888.681533813344
+ Fitting Coefficients for full region fit : 
+[ 5.99342553e+09 -4.40770323e+09  1.32506780e+09 -2.04817774e+08
+  1.81879124e+07 -9.40058753e+05  1.62909494e+04 -3.83530034e+01]
+
+Minima Fit:42 | Start position: 10 | Value (cm-1) 62.465919 
+
+
+ Coefficients for Angular coordinate: [60. 60. 60.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 20105.768716085542
+ Fitting Coefficients for full region fit : 
+[ 8.92881237e+09 -6.23000334e+09  1.77432371e+09 -2.60499402e+08
+  2.17911286e+07 -1.05666824e+06  1.86532539e+04 -3.92911288e+01]
+
+Minima Fit:43 | Start position: 10 | Value (cm-1) 77.728079 
+
+
+ Coefficients for Angular coordinate: [90. 60. 60.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 14148.86088792469
+ Fitting Coefficients for full region fit : 
+[ 5.31641144e+09 -3.72986187e+09  1.07043097e+09 -1.56671433e+08
+  1.32273757e+07 -6.70620071e+05  1.09642900e+04 -3.71008571e+01]
+
+Minima Fit:44 | Start position: 9 | Value (cm-1) 125.394581 
+
+
+ Coefficients for Angular coordinate: [ 0. 90. 60.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 4987.9783993552155
+ Fitting Coefficients for full region fit : 
+[-1.38293451e+08  5.69155911e+07 -1.94030280e+05  1.96589675e+06
+  1.51809079e+04 -3.96190804e+04 -7.17439132e+03 -3.59648662e+01]
+
+Minima Fit:45 | Start position: 9 | Value (cm-1) 124.251794 
+
+
+ Coefficients for Angular coordinate: [30. 90. 60.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 9317.331686901563
+ Fitting Coefficients for full region fit : 
+[ 3.31545169e+09 -2.47809242e+09  7.57840043e+08 -1.16716030e+08
+  1.03673894e+07 -5.33133301e+05  4.30890654e+03 -4.48411676e+01]
+
+Minima Fit:46 | Start position: 9 | Value (cm-1) 123.075822 
+
+
+ Coefficients for Angular coordinate: [60. 90. 60.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 10738.68715384817
+ Fitting Coefficients for full region fit : 
+[ 4.49678715e+09 -3.32044898e+09  1.00208805e+09 -1.54230980e+08
+  1.36610624e+07 -7.05997005e+05  1.00623274e+04 -4.25605042e+01]
+
+Minima Fit:47 | Start position: 9 | Value (cm-1) 122.756175 
+
+
+ Coefficients for Angular coordinate: [90. 90. 60.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 9968.192701885646
+ Fitting Coefficients for full region fit : 
+[ 3.92346127e+09 -2.88374064e+09  8.66496484e+08 -1.32519533e+08
+  1.17819634e+07 -6.27486422e+05  9.44609969e+03 -3.73501109e+01]
+
+Minima Fit:48 | Start position: 6 | Value (cm-1) 90.889911 
+
+
+ Coefficients for Angular coordinate: [ 0.  0. 90.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 2879.3098305065023
+ Fitting Coefficients for full region fit : 
+[ 1.70512797e+09 -1.46132676e+09  5.15985382e+08 -9.23167358e+07
+  9.00528823e+06 -5.03009468e+05  1.25471026e+04 -2.84672551e+01]
+
+Minima Fit:49 | Start position: 6 | Value (cm-1) 91.361589 
+
+
+ Coefficients for Angular coordinate: [30.  0. 90.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 2636.0250690746766
+ Fitting Coefficients for full region fit : 
+[ 1.19767083e+09 -1.02589746e+09  3.63835975e+08 -6.45706358e+07
+  6.20258130e+06 -3.51167560e+05  8.83916694e+03 -2.30392382e+01]
+
+Minima Fit:50 | Start position: 6 | Value (cm-1) 91.099544 
+
+
+ Coefficients for Angular coordinate: [60.  0. 90.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 2775.845938040505
+ Fitting Coefficients for full region fit : 
+[ 1.48914195e+09 -1.27593101e+09  4.51172840e+08 -8.04903352e+07
+  7.80980580e+06 -4.38189610e+05  1.09631701e+04 -2.61467704e+01]
+
+Minima Fit:51 | Start position: 6 | Value (cm-1) 90.890081 
+
+
+ Coefficients for Angular coordinate: [90.  0. 90.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 2880.1292005214445
+ Fitting Coefficients for full region fit : 
+[ 1.70634933e+09 -1.46229113e+09  5.16288158e+08 -9.23646416e+07
+  9.00927190e+06 -5.03173469e+05  1.25497988e+04 -2.84684007e+01]
+
+Minima Fit:52 | Start position: 5 | Value (cm-1) 133.718625 
+
+
+ Coefficients for Angular coordinate: [ 0. 30. 90.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 2055.68472204234
+ Fitting Coefficients for full region fit : 
+[ 7.86307976e+08 -7.20094474e+08  2.74841526e+08 -5.21869136e+07
+  5.38803848e+06 -3.28685471e+05  7.83256606e+03 -3.12253244e+01]
+
+Minima Fit:53 | Start position: 5 | Value (cm-1) 135.205682 
+
+
+ Coefficients for Angular coordinate: [30. 30. 90.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 1951.4367810779802
+ Fitting Coefficients for full region fit : 
+[ 4.65398965e+08 -4.30156363e+08  1.68155001e+08 -3.17277443e+07
+  3.22198221e+06 -2.06548116e+05  4.80151176e+03 -2.56794618e+01]
+
+Minima Fit:54 | Start position: 5 | Value (cm-1) 136.719692 
+
+
+ Coefficients for Angular coordinate: [60. 30. 90.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 2015.9163470489407
+ Fitting Coefficients for full region fit : 
+[ 6.98033840e+08 -6.39530681e+08  2.44802148e+08 -4.64063613e+07
+  4.79038869e+06 -2.97973824e+05  7.34149873e+03 -2.82270299e+01]
+
+Minima Fit:55 | Start position: 5 | Value (cm-1) 137.346236 
+
+
+ Coefficients for Angular coordinate: [90. 30. 90.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 2061.454321749757
+ Fitting Coefficients for full region fit : 
+[ 8.59753185e+08 -7.85521344e+08  2.98421897e+08 -5.66998929e+07
+  5.89041209e+06 -3.61793957e+05  9.07804378e+03 -3.02512728e+01]
+
+Minima Fit:56 | Start position: 4 | Value (cm-1) 128.515079 
+
+
+ Coefficients for Angular coordinate: [ 0. 60. 90.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 1451.951446361687
+ Fitting Coefficients for full region fit : 
+[ 2.24039421e+08 -2.23898517e+08  9.74743478e+07 -1.99030658e+07
+  2.19382090e+06 -1.53517641e+05  1.48305487e+03 -3.78315500e+01]
+
+Minima Fit:57 | Start position: 4 | Value (cm-1) 131.552604 
+
+
+ Coefficients for Angular coordinate: [30. 60. 90.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 1406.509520342719
+ Fitting Coefficients for full region fit : 
+[ 3.16086085e+07 -4.17241351e+07  2.71402522e+07 -5.77227950e+06
+  6.35190577e+05 -6.33218098e+04 -6.81465352e+02 -3.18894943e+01]
+
+Minima Fit:58 | Start position: 4 | Value (cm-1) 135.662116 
+
+
+ Coefficients for Angular coordinate: [60. 60. 90.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 1428.2265241406408
+ Fitting Coefficients for full region fit : 
+[ 2.38653828e+08 -2.37535087e+08  1.02297889e+08 -2.08999865e+07
+  2.34876701e+06 -1.71356873e+05  2.73929036e+03 -3.33182370e+01]
+
+Minima Fit:59 | Start position: 4 | Value (cm-1) 137.440755 
+
+
+ Coefficients for Angular coordinate: [90. 60. 90.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 1444.251974481085
+ Fitting Coefficients for full region fit : 
+[ 3.72239972e+08 -3.64109201e+08  1.51030170e+08 -3.07347102e+07
+  3.46254198e+06 -2.41011304e+05  4.87348673e+03 -3.47718038e+01]
+
+Minima Fit:60 | Start position: 4 | Value (cm-1) 59.974953 
+
+
+ Coefficients for Angular coordinate: [ 0. 90. 90.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 1301.9256144888673
+ Fitting Coefficients for full region fit : 
+[ 2.86800863e+08 -2.63473605e+08  1.04323273e+08 -1.97134932e+07
+  1.99558326e+06 -1.26864435e+05 -6.01758494e+02 -4.15266429e+01]
+
+Minima Fit:61 | Start position: 4 | Value (cm-1) 64.232734 
+
+
+ Coefficients for Angular coordinate: [30. 90. 90.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 1253.502221456227
+ Fitting Coefficients for full region fit : 
+[ 8.94232802e+07 -7.83454515e+07  3.35597594e+07 -5.65715338e+06
+  4.67579730e+05 -4.04383267e+04 -2.56061152e+03 -3.52974065e+01]
+
+Minima Fit:62 | Start position: 4 | Value (cm-1) 70.620276 
+
+
+ Coefficients for Angular coordinate: [60. 90. 90.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 1269.3870198856744
+ Fitting Coefficients for full region fit : 
+[ 2.86061709e+08 -2.67527217e+08  1.07504145e+08 -2.08510377e+07
+  2.23240193e+06 -1.55426722e+05  1.26023302e+03 -3.61617571e+01]
+
+Minima Fit:63 | Start position: 4 | Value (cm-1) 73.485403 
+
+
+ Coefficients for Angular coordinate: [90. 90. 90.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 1282.6466885472876
+ Fitting Coefficients for full region fit : 
+[ 4.17897219e+08 -3.93917570e+08  1.56735201e+08 -3.09091086e+07
+  3.38793440e+06 -2.29144543e+05  3.60053542e+03 -3.73275766e+01]
+
+Minima Fit:64 | Start position: 11 | Value (cm-1) 108.368786 
+
+
+ Coefficients for Angular coordinate: [  0.   0. 120.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 14561.440081730067
+ Fitting Coefficients for full region fit : 
+[ 3.67354587e+09 -2.43666038e+09  6.56969931e+08 -8.56258249e+07
+  6.41421045e+06 -3.38083261e+05  7.14511276e+03 -2.98163854e+01]
+
+Minima Fit:65 | Start position: 11 | Value (cm-1) 107.551357 
+
+
+ Coefficients for Angular coordinate: [ 30.   0. 120.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 27192.580658770537
+ Fitting Coefficients for full region fit : 
+[ 9.91430161e+09 -6.61507874e+09  1.79673065e+09 -2.47978151e+08
+  1.92353982e+07 -8.81866599e+05  1.75640904e+04 -4.02189878e+01]
+
+Minima Fit:66 | Start position: 11 | Value (cm-1) 107.575364 
+
+
+ Coefficients for Angular coordinate: [ 60.   0. 120.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 27085.590208133963
+ Fitting Coefficients for full region fit : 
+[ 9.85673132e+09 -6.57558459e+09  1.78565434e+09 -2.46349426e+08
+  1.91020164e+07 -8.75968609e+05  1.74458397e+04 -4.00920185e+01]
+
+Minima Fit:67 | Start position: 11 | Value (cm-1) 107.910548 
+
+
+ Coefficients for Angular coordinate: [ 90.   0. 120.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 21794.958647931988
+ Fitting Coefficients for full region fit : 
+[ 7.24932376e+09 -4.83098770e+09  1.31011658e+09 -1.78664388e+08
+  1.37613299e+07 -6.49662008e+05  1.31138977e+04 -3.57713556e+01]
+
+Minima Fit:68 | Start position: 11 | Value (cm-1) 94.554444 
+
+
+ Coefficients for Angular coordinate: [  0.  30. 120.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 5035.868075124985
+ Fitting Coefficients for full region fit : 
+[-1.02958835e+09  7.09157433e+08 -2.08607689e+08  4.15531886e+07
+ -4.37652252e+06  2.01445563e+05 -8.04050723e+03 -3.71881162e+01]
+
+Minima Fit:69 | Start position: 11 | Value (cm-1) 91.948019 
+
+
+ Coefficients for Angular coordinate: [ 30.  30. 120.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 19072.359197091882
+ Fitting Coefficients for full region fit : 
+[ 5.84255734e+09 -3.87948129e+09  1.04211372e+09 -1.37257723e+08
+  9.89366077e+06 -4.18823398e+05  4.58512356e+03 -4.65085653e+01]
+
+Minima Fit:70 | Start position: 11 | Value (cm-1) 85.916864 
+
+
+ Coefficients for Angular coordinate: [ 60.  30. 120.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 22796.936034580187
+ Fitting Coefficients for full region fit : 
+[ 7.65393364e+09 -5.07443885e+09  1.36796401e+09 -1.85365068e+08
+  1.40480154e+07 -6.30169554e+05  1.02617708e+04 -4.37107676e+01]
+
+Minima Fit:71 | Start position: 11 | Value (cm-1) 76.540721 
+
+
+ Coefficients for Angular coordinate: [ 90.  30. 120.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 22378.182090200244
+ Fitting Coefficients for full region fit : 
+[ 7.51758145e+09 -4.97717926e+09  1.34467724e+09 -1.84323699e+08
+  1.43816723e+07 -6.82474274e+05  1.27762013e+04 -3.62851942e+01]
+
+Minima Fit:72 | Start position: 10 | Value (cm-1) 101.828594 
+
+
+ Coefficients for Angular coordinate: [  0.  60. 120.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 1256.8542141416453
+ Fitting Coefficients for full region fit : 
+[-2.94473853e+09  2.03355425e+09 -5.74732132e+08  9.22608853e+07
+ -8.16097921e+06  3.72448712e+05 -1.54538289e+04 -4.01541063e+01]
+
+Minima Fit:73 | Start position: 10 | Value (cm-1) 98.576251 
+
+
+ Coefficients for Angular coordinate: [ 30.  60. 120.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 9334.366448882758
+ Fitting Coefficients for full region fit : 
+[ 2.10879336e+09 -1.51698620e+09  4.43887953e+08 -6.12157043e+07
+  4.76737790e+06 -2.23883407e+05 -2.21690319e+03 -4.87548229e+01]
+
+Minima Fit:74 | Start position: 10 | Value (cm-1) 90.366512 
+
+
+ Coefficients for Angular coordinate: [ 60.  60. 120.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 12770.6503521911
+ Fitting Coefficients for full region fit : 
+[ 4.36374173e+09 -3.08813073e+09  8.93635913e+08 -1.30144056e+08
+  1.08454741e+07 -5.35781500e+05  6.56452262e+03 -4.49480012e+01]
+
+Minima Fit:75 | Start position: 10 | Value (cm-1) 77.728488 
+
+
+ Coefficients for Angular coordinate: [ 90.  60. 120.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 14148.964607793088
+ Fitting Coefficients for full region fit : 
+[ 5.31675473e+09 -3.73017213e+09  1.07054393e+09 -1.56692557e+08
+  1.32295151e+07 -6.70731616e+05  1.09666487e+04 -3.71014454e+01]
+
+Minima Fit:76 | Start position: 9 | Value (cm-1) 125.395038 
+
+
+ Coefficients for Angular coordinate: [  0.  90. 120.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 4987.916350240661
+ Fitting Coefficients for full region fit : 
+[-1.38606340e+08  5.71981713e+07 -2.97415261e+05  1.98552781e+06
+  1.31400056e+04 -3.95079573e+04 -7.17700329e+03 -3.59626713e+01]
+
+Minima Fit:77 | Start position: 9 | Value (cm-1) 124.252188 
+
+
+ Coefficients for Angular coordinate: [ 30.  90. 120.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 9314.626623691705
+ Fitting Coefficients for full region fit : 
+[ 3.31442812e+09 -2.47745529e+09  7.57675793e+08 -1.16692850e+08
+  1.03654421e+07 -5.33040808e+05  4.30703161e+03 -4.48409712e+01]
+
+Minima Fit:78 | Start position: 9 | Value (cm-1) 123.075795 
+
+
+ Coefficients for Angular coordinate: [ 60.  90. 120.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 10737.80878128793
+ Fitting Coefficients for full region fit : 
+[ 4.49598298e+09 -3.31986042e+09  1.00191740e+09 -1.54206297e+08
+  1.36592383e+07 -7.05936001e+05  1.00617752e+04 -4.25609642e+01]
+
+Minima Fit:79 | Start position: 9 | Value (cm-1) 122.756401 
+
+
+ Coefficients for Angular coordinate: [ 90.  90. 120.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 9967.233930428878
+ Fitting Coefficients for full region fit : 
+[ 3.92235448e+09 -2.88288971e+09  8.66235133e+08 -1.32478905e+08
+  1.17786377e+07 -6.27352812e+05  9.44407927e+03 -3.73498713e+01]
+
+Minima Fit:80 | Start position: 30 | Value (cm-1) 79.80702 
+
+
+ Coefficients for Angular coordinate: [  0.   0. 150.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 271118459.44882685
+ Fitting Coefficients for full region fit : 
+[ 1.63143615e+13 -4.25046464e+12  4.41003267e+11 -2.27798539e+10
+  6.30676463e+08 -8.73609567e+06  1.61712213e+04 -6.12040551e+01]
+
+Minima Fit:81 | Start position: 30 | Value (cm-1) 79.682611 
+
+
+ Coefficients for Angular coordinate: [ 30.   0. 150.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 306720458.63534844
+ Fitting Coefficients for full region fit : 
+[ 1.84368240e+13 -4.80252231e+12  4.99440852e+11 -2.60043891e+10
+  7.29049881e+08 -1.03414875e+07  2.79411468e+04 -6.37281238e+01]
+
+Minima Fit:82 | Start position: 30 | Value (cm-1) 79.983138 
+
+
+ Coefficients for Angular coordinate: [ 60.   0. 150.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 224760107.14031678
+ Fitting Coefficients for full region fit : 
+[ 1.35540616e+13 -3.53334621e+12  3.65188092e+11 -1.86015036e+10
+  5.03341175e+08 -6.65975410e+06  9.52316535e+02 -5.79654452e+01]
+
+Minima Fit:83 | Start position: 30 | Value (cm-1) 79.999898 
+
+
+ Coefficients for Angular coordinate: [ 90.   0. 150.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 220190472.23260614
+ Fitting Coefficients for full region fit : 
+[ 1.32815144e+13 -3.46238447e+12  3.57658501e+11 -1.81844146e+10
+  4.90549818e+08 -6.44971043e+06 -5.97878788e+02 -5.76264979e+01]
+
+Minima Fit:84 | Start position: 28 | Value (cm-1) 106.618833 
+
+
+ Coefficients for Angular coordinate: [  0.  30. 150.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 91242364.26369187
+ Fitting Coefficients for full region fit : 
+[ 6.17888763e+12 -1.76136227e+12  1.94284351e+11 -1.00063628e+10
+  2.62200881e+08 -3.09285415e+06 -4.42642093e+04 -6.39975381e+01]
+
+Minima Fit:85 | Start position: 28 | Value (cm-1) 124.418641 
+
+
+ Coefficients for Angular coordinate: [ 30.  30. 150.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 109979818.2610226
+ Fitting Coefficients for full region fit : 
+[ 7.42276561e+12 -2.11799772e+12  2.36451455e+11 -1.26712480e+10
+  3.57590226e+08 -4.94413183e+06 -2.36841330e+04 -6.53484983e+01]
+
+Minima Fit:86 | Start position: 29 | Value (cm-1) 93.495805 
+
+
+ Coefficients for Angular coordinate: [ 60.  30. 150.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 171310812.23254284
+ Fitting Coefficients for full region fit : 
+[ 1.06990378e+13 -2.87477873e+12  3.05556766e+11 -1.59068355e+10
+  4.40587759e+08 -6.07585177e+06 -6.01600657e+03 -5.74535158e+01]
+
+Minima Fit:87 | Start position: 30 | Value (cm-1) 79.362328 
+
+
+ Coefficients for Angular coordinate: [ 90.  30. 150.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 275370635.48458624
+ Fitting Coefficients for full region fit : 
+[ 1.65351702e+13 -4.30791900e+12  4.49303550e+11 -2.35627555e+10
+  6.72208885e+08 -9.97844198e+06  3.73340207e+04 -5.38256950e+01]
+
+Minima Fit:88 | Start position: 27 | Value (cm-1) 98.933128 
+
+
+ Coefficients for Angular coordinate: [  0.  60. 150.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 58167783.93728073
+ Fitting Coefficients for full region fit : 
+[ 4.49217348e+12 -1.41628942e+12  1.74526622e+11 -1.03559217e+10
+  3.34632984e+08 -5.96614084e+06 -2.29564301e+03 -5.66357446e+01]
+
+Minima Fit:89 | Start position: 27 | Value (cm-1) 135.871394 
+
+
+ Coefficients for Angular coordinate: [ 30.  60. 150.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 68510808.57238552
+ Fitting Coefficients for full region fit : 
+[ 5.24237304e+12 -1.64719649e+12  2.03993892e+11 -1.23896572e+10
+  4.14725366e+08 -7.64419519e+06  1.97759106e+04 -5.76246265e+01]
+
+Minima Fit:90 | Start position: 28 | Value (cm-1) 70.977762 
+
+
+ Coefficients for Angular coordinate: [ 60.  60. 150.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 234595968.15111735
+ Fitting Coefficients for full region fit : 
+[ 1.47106280e+13 -3.98940761e+12  4.35196941e+11 -2.40697123e+10
+  7.34093225e+08 -1.21222102e+07  6.08074950e+04 -5.00114320e+01]
+
+Minima Fit:91 | Start position: 30 | Value (cm-1) 77.524968 
+
+
+ Coefficients for Angular coordinate: [ 90.  60. 150.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 408288329.236165
+ Fitting Coefficients for full region fit : 
+[ 2.42400746e+13 -6.27336388e+12  6.57111049e+11 -3.53744961e+10
+  1.05701648e+09 -1.71826222e+07  1.12002076e+05 -4.63348240e+01]
+
+Minima Fit:92 | Start position: 27 | Value (cm-1) 110.20285 
+
+
+ Coefficients for Angular coordinate: [  0.  90. 150.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 84528055.56198859
+ Fitting Coefficients for full region fit : 
+[ 6.43632322e+12 -2.03098278e+12  2.57203314e+11 -1.64817974e+10
+  5.92098102e+08 -1.20166795e+07  8.50883098e+04 -4.59896511e+01]
+
+Minima Fit:93 | Start position: 28 | Value (cm-1) 80.465791 
+
+
+ Coefficients for Angular coordinate: [ 30.  90. 150.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 174704530.30765086
+ Fitting Coefficients for full region fit : 
+[ 1.19443673e+13 -3.48706611e+12  4.11911993e+11 -2.49422961e+10
+  8.44303416e+08 -1.59120642e+07  1.15213930e+05 -4.85487573e+01]
+
+Minima Fit:94 | Start position: 29 | Value (cm-1) 90.335648 
+
+
+ Coefficients for Angular coordinate: [ 60.  90. 150.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 282471338.9620729
+ Fitting Coefficients for full region fit : 
+[ 1.78096981e+13 -4.86456426e+12  5.38458206e+11 -3.06903926e+10
+  9.77432229e+08 -1.72210198e+07  1.25591368e+05 -4.27754101e+01]
+
+Minima Fit:95 | Start position: 29 | Value (cm-1) 118.040747 
+
+
+ Coefficients for Angular coordinate: [ 90.  90. 150.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 291531533.12396467
+ Fitting Coefficients for full region fit : 
+[ 1.83454149e+13 -5.00135584e+12  5.52416240e+11 -3.14450225e+10
+  1.00119160e+09 -1.76030343e+07  1.32526102e+05 -4.19559350e+01]
+
+Minima Fit:96 | Start position: 26 | Value (cm-1) 96.160354 
+
+
+ Coefficients for Angular coordinate: [  0.   0. 180.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 972735407.1835772
+ Fitting Coefficients for full region fit : 
+[ 5.21284002e+13 -1.24471751e+13  1.19778452e+12 -4.62241707e+10
+  8.03858640e+08 -6.03221195e+06 -1.35779075e+05 -6.94845097e+01]
+
+Minima Fit:97 | Start position: 26 | Value (cm-1) 96.160354 
+
+
+ Coefficients for Angular coordinate: [ 30.   0. 180.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 972738664.8719395
+ Fitting Coefficients for full region fit : 
+[ 5.21285306e+13 -1.24471961e+13  1.19778588e+12 -4.62242158e+10
+  8.03859449e+08 -6.03221934e+06 -1.35779049e+05 -6.94845092e+01]
+
+Minima Fit:98 | Start position: 26 | Value (cm-1) 96.160354 
+
+
+ Coefficients for Angular coordinate: [ 60.   0. 180.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 972739845.7409436
+ Fitting Coefficients for full region fit : 
+[ 5.21285751e+13 -1.24472026e+13  1.19778624e+12 -4.62242253e+10
+  8.03859583e+08 -6.03222043e+06 -1.35779044e+05 -6.94845098e+01]
+
+Minima Fit:99 | Start position: 26 | Value (cm-1) 96.160354 
+
+
+ Coefficients for Angular coordinate: [ 90.   0. 180.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 972741822.3165307
+ Fitting Coefficients for full region fit : 
+[ 5.21286589e+13 -1.24472172e+13  1.19778724e+12 -4.62242590e+10
+  8.03860142e+08 -6.03222437e+06 -1.35779039e+05 -6.94845083e+01]
+
+Minima Fit:100 | Start position: 31 | Value (cm-1) 189.728007 
+
+
+ Coefficients for Angular coordinate: [  0.  30. 180.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 3029214233.188732
+ Fitting Coefficients for full region fit : 
+[ 1.39852053e+14 -2.81443746e+13  2.36396660e+12 -9.33365970e+10
+  1.91917495e+09 -2.06422941e+07 -1.24274826e+04 -6.33178684e+01]
+
+Minima Fit:101 | Start position: 31 | Value (cm-1) 189.728007 
+
+
+ Coefficients for Angular coordinate: [ 30.  30. 180.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 3029210342.25505
+ Fitting Coefficients for full region fit : 
+[ 1.39851893e+14 -2.81443476e+13  2.36396480e+12 -9.33365365e+10
+  1.91917388e+09 -2.06422847e+07 -1.24275149e+04 -6.33178677e+01]
+
+Minima Fit:102 | Start position: 31 | Value (cm-1) 189.728007 
+
+
+ Coefficients for Angular coordinate: [ 60.  30. 180.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 3029214233.188732
+ Fitting Coefficients for full region fit : 
+[ 1.39852053e+14 -2.81443746e+13  2.36396660e+12 -9.33365970e+10
+  1.91917495e+09 -2.06422941e+07 -1.24274826e+04 -6.33178684e+01]
+
+Minima Fit:103 | Start position: 31 | Value (cm-1) 189.728007 
+
+
+ Coefficients for Angular coordinate: [ 90.  30. 180.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 3029214825.6066976
+ Fitting Coefficients for full region fit : 
+[ 1.39852077e+14 -2.81443787e+13  2.36396688e+12 -9.33366067e+10
+  1.91917513e+09 -2.06422958e+07 -1.24274761e+04 -6.33178686e+01]
+
+Minima Fit:104 | Start position: 30 | Value (cm-1) 148.657368 
+
+
+ Coefficients for Angular coordinate: [  0.  60. 180.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 19477698331.326214
+ Fitting Coefficients for full region fit : 
+[ 7.85580088e+14 -1.29391390e+14  8.81255666e+12 -3.09395635e+11
+  6.02786191e+09 -6.38687047e+07  2.68934832e+05 -5.18287279e+01]
+
+Minima Fit:105 | Start position: 30 | Value (cm-1) 148.657368 
+
+
+ Coefficients for Angular coordinate: [ 30.  60. 180.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 19477691299.64258
+ Fitting Coefficients for full region fit : 
+[ 7.85579813e+14 -1.29391348e+14  8.81255402e+12 -3.09395553e+11
+  6.02786054e+09 -6.38686933e+07  2.68934793e+05 -5.18287260e+01]
+
+Minima Fit:106 | Start position: 30 | Value (cm-1) 148.657369 
+
+
+ Coefficients for Angular coordinate: [ 60.  60. 180.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 19477693304.07556
+ Fitting Coefficients for full region fit : 
+[ 7.85579892e+14 -1.29391360e+14  8.81255485e+12 -3.09395582e+11
+  6.02786114e+09 -6.38687000e+07  2.68934826e+05 -5.18287288e+01]
+
+Minima Fit:107 | Start position: 31 | Value (cm-1) 148.657369 
+
+
+ Coefficients for Angular coordinate: [ 90.  60. 180.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 19477697275.20158
+ Fitting Coefficients for full region fit : 
+[ 7.85580032e+14 -1.29391378e+14  8.81255562e+12 -3.09395594e+11
+  6.02786109e+09 -6.38686966e+07  2.68934801e+05 -5.18287267e+01]
+
+Minima Fit:108 | Start position: 31 | Value (cm-1) 101.117029 
+
+
+ Coefficients for Angular coordinate: [  0.  90. 180.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 57212726772.96025
+ Fitting Coefficients for full region fit : 
+[ 2.16276344e+15 -3.19030292e+14  1.93178997e+13 -6.09769131e+11
+  1.07587443e+10 -1.03964493e+08  4.58492154e+05 -4.70044836e+01]
+
+Minima Fit:109 | Start position: 31 | Value (cm-1) 101.117029 
+
+
+ Coefficients for Angular coordinate: [ 30.  90. 180.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 57212751475.30184
+ Fitting Coefficients for full region fit : 
+[ 2.16276437e+15 -3.19030429e+14  1.93179077e+13 -6.09769373e+11
+  1.07587481e+10 -1.03964524e+08  4.58492241e+05 -4.70044842e+01]
+
+Minima Fit:110 | Start position: 31 | Value (cm-1) 101.117029 
+
+
+ Coefficients for Angular coordinate: [ 60.  90. 180.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 57212732072.893364
+ Fitting Coefficients for full region fit : 
+[ 2.16276363e+15 -3.19030321e+14  1.93179013e+13 -6.09769179e+11
+  1.07587450e+10 -1.03964499e+08  4.58492172e+05 -4.70044847e+01]
+
+Minima Fit:111 | Start position: 31 | Value (cm-1) 101.117029 
+
+
+ Coefficients for Angular coordinate: [ 90.  90. 180.] 
+
+ No High Energy fitting! 
+
+ No Long Range fitting! 
+
+
+ Using Custom Function for full range fitting!
+ Potential at initial R value: 57212746143.34145
+ Fitting Coefficients for full region fit : 
+[ 2.16276416e+15 -3.19030394e+14  1.93179054e+13 -6.09769295e+11
+  1.07587467e+10 -1.03964510e+08  4.58492187e+05 -4.70044825e+01]
+ TQDM LOOP (Function Fitting Done!) :
+ |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100% |
+
+
+
+Saving fitted PES (Fnfit_PES.dat) and residuals (residuals_Fnfit_PES.dat) to: 
+ /Volumes/Crucial_X6/Cn/4D/Projects/C6/PESFnFit/ 
+
+
+Plotting residuals for E fit (R) at location: 
+ /Volumes/Crucial_X6/Cn/4D/Projects/C6/PESFnFit/Plots/ 
+
+
+
+Saving a copy of fitted PES (Fnfit_PES.dat) to: 
+ /Volumes/Crucial_X6/Cn/4D/Projects/C6/ 
+
+
+#-------------------------------------------------------------------#
+#-------#    4D PES Fitted into analytical expression!    #---------#
+#-------------------------------------------------------------------#
+
+
+#####################################################################
+#####################    PES2MP Finished     ########################
+#####################################################################
+Run time: 0 hours, 0 minutes, 4.65 seconds
+#####################################################################
+
+
+#####################################################################
+--- Date 2025-05-28 11:47:33 ---
+#####################################################################
+#####################    PES2MP Initiated    ########################
+#####################################################################
+ 
+ /data and /project folders created. 
+
+
+ Create_PES_input = False : Checking input for external Plots! 
+  
+ No plots created. Create_PES_input / Run_psi4 and Plot_PES are False 
+
+ NNGen = False : Skipping NN Model! 
+ 
+#-------------------------------------------------------------------#
+#----------------#    Using MP Expansion module    #----------------#
+#-------------------------------------------------------------------#
+
+
+
+The loaded PES: --> 
+     0    1    2    3             4
+0  2.5  0.0  0.0  0.0  9.665523e+08
+1  2.6  0.0  0.0  0.0  6.180549e+08
+2  2.7  0.0  0.0  0.0  3.943175e+08
+3  2.8  0.0  0.0  0.0  2.510014e+08
+4  2.9  0.0  0.0  0.0  1.594139e+08
+
+Number of angular terms: 
+ 112 
+
+
+ List of angular terms: 
+ [[  0.   0.   0.]
+ [  0.   0.  30.]
+ [  0.   0.  60.]
+ [  0.   0.  90.]
+ [  0.   0. 120.]
+ [  0.   0. 150.]
+ [  0.   0. 180.]
+ [  0.  30.   0.]
+ [  0.  30.  30.]
+ [  0.  30.  60.]
+ [  0.  30.  90.]
+ [  0.  30. 120.]
+ [  0.  30. 150.]
+ [  0.  30. 180.]
+ [  0.  60.   0.]
+ [  0.  60.  30.]
+ [  0.  60.  60.]
+ [  0.  60.  90.]
+ [  0.  60. 120.]
+ [  0.  60. 150.]
+ [  0.  60. 180.]
+ [  0.  90.   0.]
+ [  0.  90.  30.]
+ [  0.  90.  60.]
+ [  0.  90.  90.]
+ [  0.  90. 120.]
+ [  0.  90. 150.]
+ [  0.  90. 180.]
+ [ 30.   0.   0.]
+ [ 30.   0.  30.]
+ [ 30.   0.  60.]
+ [ 30.   0.  90.]
+ [ 30.   0. 120.]
+ [ 30.   0. 150.]
+ [ 30.   0. 180.]
+ [ 30.  30.   0.]
+ [ 30.  30.  30.]
+ [ 30.  30.  60.]
+ [ 30.  30.  90.]
+ [ 30.  30. 120.]
+ [ 30.  30. 150.]
+ [ 30.  30. 180.]
+ [ 30.  60.   0.]
+ [ 30.  60.  30.]
+ [ 30.  60.  60.]
+ [ 30.  60.  90.]
+ [ 30.  60. 120.]
+ [ 30.  60. 150.]
+ [ 30.  60. 180.]
+ [ 30.  90.   0.]
+ [ 30.  90.  30.]
+ [ 30.  90.  60.]
+ [ 30.  90.  90.]
+ [ 30.  90. 120.]
+ [ 30.  90. 150.]
+ [ 30.  90. 180.]
+ [ 60.   0.   0.]
+ [ 60.   0.  30.]
+ [ 60.   0.  60.]
+ [ 60.   0.  90.]
+ [ 60.   0. 120.]
+ [ 60.   0. 150.]
+ [ 60.   0. 180.]
+ [ 60.  30.   0.]
+ [ 60.  30.  30.]
+ [ 60.  30.  60.]
+ [ 60.  30.  90.]
+ [ 60.  30. 120.]
+ [ 60.  30. 150.]
+ [ 60.  30. 180.]
+ [ 60.  60.   0.]
+ [ 60.  60.  30.]
+ [ 60.  60.  60.]
+ [ 60.  60.  90.]
+ [ 60.  60. 120.]
+ [ 60.  60. 150.]
+ [ 60.  60. 180.]
+ [ 60.  90.   0.]
+ [ 60.  90.  30.]
+ [ 60.  90.  60.]
+ [ 60.  90.  90.]
+ [ 60.  90. 120.]
+ [ 60.  90. 150.]
+ [ 60.  90. 180.]
+ [ 90.   0.   0.]
+ [ 90.   0.  30.]
+ [ 90.   0.  60.]
+ [ 90.   0.  90.]
+ [ 90.   0. 120.]
+ [ 90.   0. 150.]
+ [ 90.   0. 180.]
+ [ 90.  30.   0.]
+ [ 90.  30.  30.]
+ [ 90.  30.  60.]
+ [ 90.  30.  90.]
+ [ 90.  30. 120.]
+ [ 90.  30. 150.]
+ [ 90.  30. 180.]
+ [ 90.  60.   0.]
+ [ 90.  60.  30.]
+ [ 90.  60.  60.]
+ [ 90.  60.  90.]
+ [ 90.  60. 120.]
+ [ 90.  60. 150.]
+ [ 90.  60. 180.]
+ [ 90.  90.   0.]
+ [ 90.  90.  30.]
+ [ 90.  90.  60.]
+ [ 90.  90.  90.]
+ [ 90.  90. 120.]
+ [ 90.  90. 150.]
+ [ 90.  90. 180.]] 
+
+Angular terms will be saved in Ang_Mat.dat at --> 
+/Volumes/Crucial_X6/Cn/4D/Projects/C6/MP_files/
+
+The list of Lambda terms will be saved in Lambda_ref.dat at --> 
+/Volumes/Crucial_X6/Cn/4D/Projects/C6/MP_files/
+
+
+ Number of Lambda terms are: 
+28
+
+The list of Lambda terms are: 
+[[ 0  0  0  0]
+ [ 1  0  2  2]
+ [ 2  0  4  4]
+ [ 3  2  0  2]
+ [ 4  2  2  0]
+ [ 5  2  2  2]
+ [ 6  2  2  4]
+ [ 7  2  4  2]
+ [ 8  2  4  4]
+ [ 9  2  4  6]
+ [10  4  0  4]
+ [11  4  2  2]
+ [12  4  2  4]
+ [13  4  2  6]
+ [14  4  4  0]
+ [15  4  4  2]
+ [16  4  4  4]
+ [17  4  4  6]
+ [18  4  4  8]
+ [19  6  0  6]
+ [20  6  2  4]
+ [21  6  2  6]
+ [22  6  2  8]
+ [23  6  4  2]
+ [24  6  4  4]
+ [25  6  4  6]
+ [26  6  4  8]
+ [27  6  4 10]]
+
+Generating new Spherical Harmonics coefficient from scratch and saving 4D_BiSp_coeff.npy in --> 
+/Volumes/Crucial_X6/Cn/4D/Projects/C6/MP_files/
+
+ TQDM LOOP (BiSpherical Harmonics calculated!) :
+ |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100% |
+
+
+
+ A preview of radial terms: 
+      R             0             1  ...            25            26            27
+0  2.5  2.767887e+09 -1.950912e+09  ...  3.517230e+09 -2.773322e+09  2.410115e+09
+1  2.6  1.794996e+09 -1.270892e+09  ...  2.295058e+09 -1.809576e+09  1.572453e+09
+2  2.7  1.161936e+09 -8.265513e+08  ...  1.495261e+09 -1.178917e+09  1.024343e+09
+3  2.8  7.506842e+08 -5.366305e+08  ...  9.725864e+08 -7.667898e+08  6.661913e+08
+4  2.9  4.839933e+08 -3.477575e+08  ...  6.315110e+08 -4.978638e+08  4.325056e+08
+
+[5 rows x 29 columns]
+
+Saving final radial terms file 4D_Vlam.dat in above folder 
+
+ Plotting radial terms at :--> 
+ /Volumes/Crucial_X6/Cn/4D/Projects/C6/MP_files/MP_plots/
+
+#-------------------------------------------------------------------#
+#---------------#    4D Mutipole Expansion Done!    #---------------#
+#-------------------------------------------------------------------#
+
+
+ FnFit = False : Skipping Analytical Fitting of Radial Coefficients! 
+ 
+#####################################################################
+#####################    PES2MP Finished     ########################
+#####################################################################
+Run time: 0 hours, 0 minutes, 4.55 seconds
+#####################################################################
+
+
+#####################################################################
+--- Date 2025-05-28 11:47:38 ---
+#####################################################################
+#####################    PES2MP Initiated    ########################
+#####################################################################
+ 
+ /data and /project folders created. 
+
+
+ Create_PES_input = False : Checking input for external Plots! 
+  
+ No plots created. Create_PES_input / Run_psi4 and Plot_PES are False 
+
+ NNGen = False : Skipping NN Model! 
+ 
+ MPExp = False : Skipping Multipole Expansion! 
+ 
+#-------------------------------------------------------------------#
+#----------------#    Using Function Fit module    #----------------#
+#-------------------------------------------------------------------#
+
+Fitting Radial coefficients obtained after multipole expansion!
+
+
+Minima Fit:0 | Start position: 0 | Value (cm-1) 2767886875.635096 
+
+RMSE 0 | 7.713018127604291e-08 
+
+
+Minima Fit:1 | Start position: 0 | Value (cm-1) -1950912226.146771 
+
+RMSE 1 | 7.675262764325512e-07 
+
+
+Minima Fit:2 | Start position: 0 | Value (cm-1) 717004000.9777358 
+
+RMSE 2 | 2.1200062018261585e-08 
+
+
+Minima Fit:3 | Start position: 0 | Value (cm-1) 6607334115.900974 
+
+RMSE 3 | 1.4016252111249656e-07 
+
+
+Minima Fit:4 | Start position: 0 | Value (cm-1) -10443988364.60945 
+
+RMSE 4 | 2.8129529081040404e-07 
+
+
+Minima Fit:5 | Start position: 0 | Value (cm-1) 5697190861.732818 
+
+RMSE 5 | 1.6999079200414373e-07 
+
+
+Minima Fit:6 | Start position: 0 | Value (cm-1) -5972811915.018409 
+
+RMSE 6 | 8.936365359110196e-08 
+
+
+Minima Fit:7 | Start position: 0 | Value (cm-1) 2663199730.792493 
+
+RMSE 7 | 9.179039526115736e-08 
+
+
+Minima Fit:8 | Start position: 0 | Value (cm-1) -2004377082.2635424 
+
+RMSE 8 | 2.511097316763953e-06 
+
+
+Minima Fit:9 | Start position: 0 | Value (cm-1) 2399484405.322234 
+
+RMSE 9 | 2.656811502958962e-07 
+
+
+Minima Fit:10 | Start position: 0 | Value (cm-1) 13010930295.873793 
+
+RMSE 10 | 2.790444648121749e-07 
+
+
+Minima Fit:11 | Start position: 0 | Value (cm-1) -15326113209.782951 
+
+RMSE 11 | 0.003357772915506341 
+
+
+Minima Fit:12 | Start position: 0 | Value (cm-1) 11388224947.970888 
+
+RMSE 12 | 4.4451101462679176e-06 
+
+
+Minima Fit:13 | Start position: 0 | Value (cm-1) -13400245437.709463 
+
+RMSE 13 | 6.2712540650486164e-06 
+
+
+Minima Fit:14 | Start position: 0 | Value (cm-1) 9605249847.395449 
+
+RMSE 14 | 6.004436324347483e-05 
+
+
+Minima Fit:15 | Start position: 0 | Value (cm-1) -5033075005.2444 
+
+RMSE 15 | 5.770146780787986e-07 
+
+
+Minima Fit:16 | Start position: 0 | Value (cm-1) 4226645285.085404 
+
+RMSE 16 | 9.051043001785731e-06 
+
+
+Minima Fit:17 | Start position: 0 | Value (cm-1) -4299910120.130479 
+
+RMSE 17 | 1.7887116929526944e-06 
+
+
+Minima Fit:18 | Start position: 0 | Value (cm-1) 5768911031.247318 
+
+RMSE 18 | 0.00035709689596475584 
+
+
+Minima Fit:19 | Start position: 0 | Value (cm-1) 8892435819.718311 
+
+RMSE 19 | 0.004292379620689532 
+
+
+Minima Fit:20 | Start position: 0 | Value (cm-1) -12298665976.010271 
+
+RMSE 20 | 9.430179155952192e-06 
+
+
+Minima Fit:21 | Start position: 0 | Value (cm-1) 8238775854.543619 
+
+RMSE 21 | 1.1671895640040779e-05 
+
+
+Minima Fit:22 | Start position: 0 | Value (cm-1) -7877958711.744794 
+
+RMSE 22 | 1.7692523708761581e-06 
+
+
+Minima Fit:23 | Start position: 0 | Value (cm-1) 7524626392.691441 
+
+RMSE 23 | 9.481036809814781e-07 
+
+
+Minima Fit:24 | Start position: 0 | Value (cm-1) -4654377963.212231 
+
+RMSE 24 | 9.439709014396433e-07 
+
+
+Minima Fit:25 | Start position: 0 | Value (cm-1) 3517229595.7282906 
+
+RMSE 25 | 1.188296113526342e-05 
+
+
+Minima Fit:26 | Start position: 0 | Value (cm-1) -2773321976.903091 
+
+RMSE 26 | 1.1578335661016719e-07 
+
+
+Minima Fit:27 | Start position: 0 | Value (cm-1) 2410114982.4592533 
+
+RMSE 27 | 5.042624028309147e-07 
+
+ Start position for fitting each radial term : 
+start_pos = 
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0.] 
+
+ Mean RMS Error | 0.00029040670070487883 
+
+
+Saving analytically fitted V_lam data (FnFitted_Vlam.dat) at locations: 
+  /Volumes/Crucial_X6/Cn/4D/Projects/C6/MP_files/ 
+ and 
+ /Volumes/Crucial_X6/Cn/4D/Projects/C6/MP_files/VlamFnFit/ 
+
+The coefficients for custom functions are saved in Raw format in Proj_name folder. The same can be converted manually!
+
+Saving V_lam raw coefficients at location: 
+ /Volumes/Crucial_X6/Cn/4D/Projects/C6/ 
+
+Saving MOLSCAT &POTL (MOLSCAT_POT.txt) at location: 
+ /Volumes/Crucial_X6/Cn/4D/Projects/C6/ 
+
+#-------------------------------------------------------------------#
+#-----------------#    MOLSCAT &POTL Generated    #-----------------#
+#-------------------------------------------------------------------#
+
+
+#####################################################################
+#####################    PES2MP Finished     ########################
+#####################################################################
+Run time: 0 hours, 0 minutes, 7.24 seconds
+#####################################################################
+
+

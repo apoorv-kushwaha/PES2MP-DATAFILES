@@ -1,0 +1,80 @@
+***,single point energies 
+memory,1 g
+basis= AVDZ
+run_method={{rhf;rccsd(t)-f12b,SCALE_TRIP=1}}
+
+Angstrom
+!****************************************************************
+!                      Energy of Complex                        !
+!****************************************************************
+
+text, complex
+geometry={{
+C1         {:.6f}        {:.6f}         {:.6f} 
+C2         {:.6f}        {:.6f}         {:.6f} 
+H3         0.000000        {:.6f}         {:.6f} 
+H4         0.000000        {:.6f}         {:.6f} 
+}}
+set, charge=0, spin=0
+run_method
+E_complex = energy
+
+!****************************************************************
+!                Energy by ghosting other fragment              !
+!****************************************************************
+
+text, cp for RR1
+dummy, H3, H4
+set, charge=0, spin=0
+run_method
+E_RR1 = energy
+
+!**************************************************************** 
+text, cp for RR2
+dummy, C1, C2
+set, charge=0, spin=0
+run_method
+E_RR2 = energy
+
+!**************************************************************** 
+!                  Energy of fragments at Infinity              !
+!****************************************************************
+
+text, inf E for RR1
+Angstrom
+geometry={{
+C1         {:.6f}        {:.6f}         {:.6f} 
+C2         {:.6f}        {:.6f}         {:.6f} 
+}}
+set, charge=0, spin=0
+run_method
+E_RR1_inf = energy
+
+!****************************************************************
+
+text, inf E for RR2
+Angstrom
+geometry={{
+H3         0.000000         {:.6f}        {:.6f} 
+H4         0.000000         {:.6f}        {:.6f} 
+}}
+set, charge=0, spin=0
+run_method
+E_RR2_inf = energy
+
+!****************************************************************
+!****************************************************************
+
+BSSE_RR1 = (E_RR1 - E_RR1_inf)         !BSSE for RR
+BSSE_RR2 = (E_RR2 - E_RR2_inf)         !BSSE for Atom
+bsse_tot = BSSE_RR1 + BSSE_RR2         !total BSSE
+E_CP = E_complex - bsse_tot            !CP correced E
+    
+
+R = {:.4f}
+Phi={:.4f}
+Theta2={:.4f}
+Theta1={:.4f}
+
+table,R,Phi,Theta2,Theta1,E_CP
+digits, 4, 4, 4, 4, 12
