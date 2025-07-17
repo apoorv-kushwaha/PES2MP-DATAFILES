@@ -1,0 +1,1924 @@
+  ---- MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ---
+ |                                                                            |
+ |                Non-reactive quantum scattering calculations                |
+ |                     on atomic and molecular collisions                     |
+ |                                                                            |
+ |              Copyright (C) 2022 J. M. Hutson & C. R. Le Sueur              |
+ |                                                                            |
+ |                               Version 2022.0                               |
+ |                                                                            |
+ |                       Run on 07 Jun 2025   at 14:03:26                     |
+ |                                                                            |
+  ---- MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ---
+
+
+  This program is free software: you can redistribute it and/or modify it under
+  the terms of the GNU General Public License, version 3, as published by
+  the Free Software Foundation.
+
+  Publications resulting from the use of this program should cite both the
+  version of the program used:
+
+  J. M. Hutson & C. R. Le Sueur, MOLSCAT: a program for non-reactive quantum
+  scattering calculation on atomic and molecular collisions,
+  Version 2022.0, https//github.com/molscat/molscat
+
+  and the published paper:
+
+  J. M. Hutson & C. R. Le Sueur, Comput. Phys. Commun., 241, 9-18 (2019).
+
+
+  USING CODATA 2018 RECOMMENDED VALUES OF FUNDAMENTAL PHYSICAL CONSTANTS
+
+  MEMORY ALLOCATED TO MAIN WORKING ARRAY IS 100000000 (8-BYTE) WORDS (  762.94 MB)
+  2 INTEGERS CAN BE STORED IN EACH WORD.
+
+  PRINT LEVEL (IPRINT) =  1     OTHER PRINT CONTROLS  ISIGPR = 1
+
+  REDUCED MASS FOR INTERACTION =   1.908900000 ATOMIC MASS UNITS (DALTONS)
+
+  ======================================================================================================================
+
+  COUPLED STATES APPROXIMATION OF MCGUIRE AND KOURI (C.F.  J. CHEM. PHYS. 60, 2488 (1974))  WILL BE USED.
+
+           ITYPE = 23
+           L(I) = JTOT + ( 0) * (J(I)-2*M)
+
+  INTERACTION TYPE IS    LINEAR ROTOR - LINEAR ROTOR.  
+
+  QUANTUM NUMBERS OF ROTOR 1 OBTAINED FROM J1MIN =  0, J1MAX = 21, J1STEP = 2
+
+  QUANTUM NUMBERS OF ROTOR 2 OBTAINED FROM J2MIN =  0, J2MAX =  2, J2STEP = 1
+
+  ENERGY LEVELS OF ROTOR 1 OBTAINED FROM B(E) =    0.430500
+
+  ENERGY LEVELS OF ROTOR 2 OBTAINED FROM B(E) =   60.853000
+
+  *** NOTE.  IN CS CALCULATION MINUS/PLUS M-VALUE ASSUMED TO BE IDENTICAL.
+
+  QUANTUM NUMBERS FOR INTERACTING PAIR:
+  EACH PAIR STATE IS LABELLED BY  3 QUANTUM NUMBERS
+  EACH CHANNEL FUNCTION IS FORMED BY COMBINING A PAIR STATE WITH A VALUE OF L.
+  THE RESULTING BASIS SET IS ASYMPTOTICALLY DIAGONAL.
+
+  PAIR STATE    - PAIR STATE QUANTUM NUMBERS -   PAIR LEVEL     PAIR ENERGY (CM-1)
+                       J1        J2       J12
+        1               0         0         0       1             0.0000000
+        2               0         1         1       2           121.7060000
+        3               0         2         2       3           365.1180000
+        4               2         0         2       4             2.5830000
+        5               2         1         1       5           124.2890000
+        6               2         1         2       5           124.2890000
+        7               2         1         3       5           124.2890000
+        8               2         2         0       6           367.7010000
+        9               2         2         1       6           367.7010000
+       10               2         2         2       6           367.7010000
+       11               2         2         3       6           367.7010000
+       12               2         2         4       6           367.7010000
+       13               4         0         4       7             8.6100000
+       14               4         1         3       8           130.3160000
+       15               4         1         4       8           130.3160000
+       16               4         1         5       8           130.3160000
+       17               4         2         2       9           373.7280000
+       18               4         2         3       9           373.7280000
+       19               4         2         4       9           373.7280000
+       20               4         2         5       9           373.7280000
+       21               4         2         6       9           373.7280000
+       22               6         0         6      10            18.0810000
+       23               6         1         5      11           139.7870000
+       24               6         1         6      11           139.7870000
+       25               6         1         7      11           139.7870000
+       26               6         2         4      12           383.1990000
+       27               6         2         5      12           383.1990000
+       28               6         2         6      12           383.1990000
+       29               6         2         7      12           383.1990000
+       30               6         2         8      12           383.1990000
+       31               8         0         8      13            30.9960000
+       32               8         1         7      14           152.7020000
+       33               8         1         8      14           152.7020000
+       34               8         1         9      14           152.7020000
+       35               8         2         6      15           396.1140000
+       36               8         2         7      15           396.1140000
+       37               8         2         8      15           396.1140000
+       38               8         2         9      15           396.1140000
+       39               8         2        10      15           396.1140000
+       40              10         0        10      16            47.3550000
+       41              10         1         9      17           169.0610000
+       42              10         1        10      17           169.0610000
+       43              10         1        11      17           169.0610000
+       44              10         2         8      18           412.4730000
+       45              10         2         9      18           412.4730000
+       46              10         2        10      18           412.4730000
+       47              10         2        11      18           412.4730000
+       48              10         2        12      18           412.4730000
+       49              12         0        12      19            67.1580000
+       50              12         1        11      20           188.8640000
+       51              12         1        12      20           188.8640000
+       52              12         1        13      20           188.8640000
+       53              12         2        10      21           432.2760000
+       54              12         2        11      21           432.2760000
+       55              12         2        12      21           432.2760000
+       56              12         2        13      21           432.2760000
+       57              12         2        14      21           432.2760000
+       58              14         0        14      22            90.4050000
+       59              14         1        13      23           212.1110000
+       60              14         1        14      23           212.1110000
+       61              14         1        15      23           212.1110000
+       62              14         2        12      24           455.5230000
+       63              14         2        13      24           455.5230000
+       64              14         2        14      24           455.5230000
+       65              14         2        15      24           455.5230000
+       66              14         2        16      24           455.5230000
+       67              16         0        16      25           117.0960000
+       68              16         1        15      26           238.8020000
+       69              16         1        16      26           238.8020000
+       70              16         1        17      26           238.8020000
+       71              16         2        14      27           482.2140000
+       72              16         2        15      27           482.2140000
+       73              16         2        16      27           482.2140000
+       74              16         2        17      27           482.2140000
+       75              16         2        18      27           482.2140000
+       76              18         0        18      28           147.2310000
+       77              18         1        17      29           268.9370000
+       78              18         1        18      29           268.9370000
+       79              18         1        19      29           268.9370000
+       80              18         2        16      30           512.3490000
+       81              18         2        17      30           512.3490000
+       82              18         2        18      30           512.3490000
+       83              18         2        19      30           512.3490000
+       84              18         2        20      30           512.3490000
+       85              20         0        20      31           180.8100000
+       86              20         1        19      32           302.5160000
+       87              20         1        20      32           302.5160000
+       88              20         1        21      32           302.5160000
+       89              20         2        18      33           545.9280000
+       90              20         2        19      33           545.9280000
+       91              20         2        20      33           545.9280000
+       92              20         2        21      33           545.9280000
+       93              20         2        22      33           545.9280000
+
+  ======================================================================================================================
+  GENERAL-PURPOSE POTENL ROUTINE (MAY 18)
+  IHOMO  = 2 SPECIFIES HOMONUCLEAR SYMMETRY FOR ROTOR 1.
+  IHOMO2 = 2 SPECIFIES HOMONUCLEAR SYMMETRY FOR ROTOR 2.
+
+  ANGULAR DEPENDENCE OF POTENTIAL EXPANDED IN TERMS OF
+  CONTRACTED NORMALISED SPHERICAL HARMONICS,
+  SUM(M1,M2,M) C(L1,M1,L2,M2,L,M) Y(L1,M1) Y(L2,M2) Y(L,M)
+  SEE GREEN, J. CHEM. PHYS. 62, 2271 (1975)
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   1
+  WHICH HAS LAM1 =   0,  LAM2 =   0,  LAM =   0
+
+                 6.85292124E+10 * EXP(   -4.0000 * R )
+                -3.44066272E+10 * EXP(   -3.5000 * R )
+                 7.30097888E+09 * EXP(   -3.0000 * R )
+                -7.93063276E+08 * EXP(   -2.5000 * R )
+                 4.80115511E+07 * EXP(   -2.0000 * R )
+                -1.66876123E+06 * EXP(   -1.5000 * R )
+                 1.67823286E+04 * EXP(   -1.0000 * R )
+                -6.76741979E+01 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   2
+  WHICH HAS LAM1 =   0,  LAM2 =   2,  LAM =   2
+
+                -1.64098009E+10 * EXP(   -4.0000 * R )
+                 7.37789666E+09 * EXP(   -3.5000 * R )
+                -1.38032714E+09 * EXP(   -3.0000 * R )
+                 1.45038284E+08 * EXP(   -2.5000 * R )
+                -9.42535774E+06 * EXP(   -2.0000 * R )
+                 3.72939122E+05 * EXP(   -1.5000 * R )
+                -7.98565979E+03 * EXP(   -1.0000 * R )
+                -9.03083510E-01 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   3
+  WHICH HAS LAM1 =   0,  LAM2 =   4,  LAM =   4
+
+                 6.95067888E+08 * EXP(   -4.0000 * R )
+                -4.86744986E+08 * EXP(   -3.5000 * R )
+                 1.24986874E+08 * EXP(   -3.0000 * R )
+                -1.53340299E+07 * EXP(   -2.5000 * R )
+                 9.56856437E+05 * EXP(   -2.0000 * R )
+                -2.86221422E+04 * EXP(   -1.5000 * R )
+                 2.79604003E+02 * EXP(   -1.0000 * R )
+                 2.48211257E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   4
+  WHICH HAS LAM1 =   2,  LAM2 =   0,  LAM =   2
+
+                 1.04530821E+11 * EXP(   -4.0000 * R )
+                -5.01603001E+10 * EXP(   -3.5000 * R )
+                 1.00850087E+10 * EXP(   -3.0000 * R )
+                -1.03322921E+09 * EXP(   -2.5000 * R )
+                 5.85687190E+07 * EXP(   -2.0000 * R )
+                -1.80082734E+06 * EXP(   -1.5000 * R )
+                 2.01493438E+04 * EXP(   -1.0000 * R )
+                -1.44513222E+01 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   5
+  WHICH HAS LAM1 =   2,  LAM2 =   2,  LAM =   0
+
+                -5.05308762E+10 * EXP(   -4.0000 * R )
+                 2.16606369E+10 * EXP(   -3.5000 * R )
+                -3.85795993E+09 * EXP(   -3.0000 * R )
+                 3.80620314E+08 * EXP(   -2.5000 * R )
+                -2.24814610E+07 * EXP(   -2.0000 * R )
+                 7.62888005E+05 * EXP(   -1.5000 * R )
+                -1.75030750E+04 * EXP(   -1.0000 * R )
+                -4.14507852E+00 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   6
+  WHICH HAS LAM1 =   2,  LAM2 =   2,  LAM =   2
+
+                 3.25696102E+10 * EXP(   -4.0000 * R )
+                -1.40739377E+10 * EXP(   -3.5000 * R )
+                 2.51463425E+09 * EXP(   -3.0000 * R )
+                -2.46243493E+08 * EXP(   -2.5000 * R )
+                 1.42837676E+07 * EXP(   -2.0000 * R )
+                -4.73205617E+05 * EXP(   -1.5000 * R )
+                 1.05777962E+04 * EXP(   -1.0000 * R )
+                 2.70304588E+00 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   7
+  WHICH HAS LAM1 =   2,  LAM2 =   2,  LAM =   4
+
+                -4.47329008E+10 * EXP(   -4.0000 * R )
+                 1.95933301E+10 * EXP(   -3.5000 * R )
+                -3.53635858E+09 * EXP(   -3.0000 * R )
+                 3.46746235E+08 * EXP(   -2.5000 * R )
+                -1.99919283E+07 * EXP(   -2.0000 * R )
+                 6.57267424E+05 * EXP(   -1.5000 * R )
+                -1.45725369E+04 * EXP(   -1.0000 * R )
+                -3.50713598E+00 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   8
+  WHICH HAS LAM1 =   2,  LAM2 =   4,  LAM =   2
+
+                 3.11535593E+09 * EXP(   -4.0000 * R )
+                -1.51679588E+09 * EXP(   -3.5000 * R )
+                 2.94532662E+08 * EXP(   -3.0000 * R )
+                -2.76241823E+07 * EXP(   -2.5000 * R )
+                 1.23004543E+06 * EXP(   -2.0000 * R )
+                -2.13427750E+04 * EXP(   -1.5000 * R )
+                -1.92809492E+01 * EXP(   -1.0000 * R )
+                -9.20430453E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   9
+  WHICH HAS LAM1 =   2,  LAM2 =   4,  LAM =   4
+
+                -2.59736719E+09 * EXP(   -4.0000 * R )
+                 1.24733106E+09 * EXP(   -3.5000 * R )
+                -2.40243690E+08 * EXP(   -3.0000 * R )
+                 2.25922899E+07 * EXP(   -2.5000 * R )
+                -1.02958692E+06 * EXP(   -2.0000 * R )
+                 1.95001844E+04 * EXP(   -1.5000 * R )
+                -3.48167005E+01 * EXP(   -1.0000 * R )
+                 9.10029829E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  10
+  WHICH HAS LAM1 =   2,  LAM2 =   4,  LAM =   6
+
+                 3.77413430E+09 * EXP(   -4.0000 * R )
+                -1.77059885E+09 * EXP(   -3.5000 * R )
+                 3.34480282E+08 * EXP(   -3.0000 * R )
+                -3.11750484E+07 * EXP(   -2.5000 * R )
+                 1.43280330E+06 * EXP(   -2.0000 * R )
+                -2.84698440E+04 * EXP(   -1.5000 * R )
+                 8.91239906E+01 * EXP(   -1.0000 * R )
+                -9.56893042E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  11
+  WHICH HAS LAM1 =   4,  LAM2 =   0,  LAM =   4
+
+                 5.72959460E+10 * EXP(   -4.0000 * R )
+                -2.32475059E+10 * EXP(   -3.5000 * R )
+                 3.94790945E+09 * EXP(   -3.0000 * R )
+                -3.30907534E+08 * EXP(   -2.5000 * R )
+                 1.46521814E+07 * EXP(   -2.0000 * R )
+                -3.19481709E+05 * EXP(   -1.5000 * R )
+                 1.85028554E+03 * EXP(   -1.0000 * R )
+                 5.71526548E-01 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  12
+  WHICH HAS LAM1 =   4,  LAM2 =   2,  LAM =   2
+
+                -4.96874745E+10 * EXP(   -4.0000 * R )
+                 1.90153311E+10 * EXP(   -3.5000 * R )
+                -2.94674345E+09 * EXP(   -3.0000 * R )
+                 2.39960980E+08 * EXP(   -2.5000 * R )
+                -1.11213475E+07 * EXP(   -2.0000 * R )
+                 2.66874305E+05 * EXP(   -1.5000 * R )
+                -4.33673109E+03 * EXP(   -1.0000 * R )
+                 2.60169449E-01 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  13
+  WHICH HAS LAM1 =   4,  LAM2 =   2,  LAM =   4
+
+                 4.15186833E+10 * EXP(   -4.0000 * R )
+                -1.62758472E+10 * EXP(   -3.5000 * R )
+                 2.59515468E+09 * EXP(   -3.0000 * R )
+                -2.18562481E+08 * EXP(   -2.5000 * R )
+                 1.05039541E+07 * EXP(   -2.0000 * R )
+                -2.64590453E+05 * EXP(   -1.5000 * R )
+                 4.39753568E+03 * EXP(   -1.0000 * R )
+                -1.15947501E-01 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  14
+  WHICH HAS LAM1 =   4,  LAM2 =   2,  LAM =   6
+
+                -5.54327693E+10 * EXP(   -4.0000 * R )
+                 2.21991017E+10 * EXP(   -3.5000 * R )
+                -3.62431973E+09 * EXP(   -3.0000 * R )
+                 3.13420194E+08 * EXP(   -2.5000 * R )
+                -1.54882837E+07 * EXP(   -2.0000 * R )
+                 4.04142862E+05 * EXP(   -1.5000 * R )
+                -6.95702794E+03 * EXP(   -1.0000 * R )
+                -6.25625339E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  15
+  WHICH HAS LAM1 =   4,  LAM2 =   4,  LAM =   0
+
+                 1.88162828E+10 * EXP(   -4.0000 * R )
+                -6.85127401E+09 * EXP(   -3.5000 * R )
+                 9.94019178E+08 * EXP(   -3.0000 * R )
+                -7.32876279E+07 * EXP(   -2.5000 * R )
+                 2.88292738E+06 * EXP(   -2.0000 * R )
+                -5.86801997E+04 * EXP(   -1.5000 * R )
+                 4.48082824E+02 * EXP(   -1.0000 * R )
+                -4.92402790E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  16
+  WHICH HAS LAM1 =   4,  LAM2 =   4,  LAM =   2
+
+                -9.83614907E+09 * EXP(   -4.0000 * R )
+                 3.58912115E+09 * EXP(   -3.5000 * R )
+                -5.22333129E+08 * EXP(   -3.0000 * R )
+                 3.86721932E+07 * EXP(   -2.5000 * R )
+                -1.52966056E+06 * EXP(   -2.0000 * R )
+                 3.13742780E+04 * EXP(   -1.5000 * R )
+                -2.42047136E+02 * EXP(   -1.0000 * R )
+                 2.68646890E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  17
+  WHICH HAS LAM1 =   4,  LAM2 =   4,  LAM =   4
+
+                 8.24680290E+09 * EXP(   -4.0000 * R )
+                -3.02546196E+09 * EXP(   -3.5000 * R )
+                 4.43676942E+08 * EXP(   -3.0000 * R )
+                -3.31878127E+07 * EXP(   -2.5000 * R )
+                 1.33060647E+06 * EXP(   -2.0000 * R )
+                -2.78032447E+04 * EXP(   -1.5000 * R )
+                 2.20461802E+02 * EXP(   -1.0000 * R )
+                -2.67761785E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  18
+  WHICH HAS LAM1 =   4,  LAM2 =   4,  LAM =   6
+
+                -8.44408895E+09 * EXP(   -4.0000 * R )
+                 3.12626799E+09 * EXP(   -3.5000 * R )
+                -4.64198812E+08 * EXP(   -3.0000 * R )
+                 3.52886834E+07 * EXP(   -2.5000 * R )
+                -1.44407674E+06 * EXP(   -2.0000 * R )
+                 3.09677887E+04 * EXP(   -1.5000 * R )
+                -2.54733561E+02 * EXP(   -1.0000 * R )
+                 3.37939362E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  19
+  WHICH HAS LAM1 =   4,  LAM2 =   4,  LAM =   8
+
+                 1.15785905E+10 * EXP(   -4.0000 * R )
+                -4.34279566E+09 * EXP(   -3.5000 * R )
+                 6.55859795E+08 * EXP(   -3.0000 * R )
+                -5.09270815E+07 * EXP(   -2.5000 * R )
+                 2.13841380E+06 * EXP(   -2.0000 * R )
+                -4.72702446E+04 * EXP(   -1.5000 * R )
+                 4.05675194E+02 * EXP(   -1.0000 * R )
+                -5.95441333E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  20
+  WHICH HAS LAM1 =   6,  LAM2 =   0,  LAM =   6
+
+                 1.09873842E+10 * EXP(   -4.0000 * R )
+                -1.70898605E+09 * EXP(   -3.5000 * R )
+                -2.34517604E+08 * EXP(   -3.0000 * R )
+                 8.11985435E+07 * EXP(   -2.5000 * R )
+                -7.55233502E+06 * EXP(   -2.0000 * R )
+                 3.09211758E+05 * EXP(   -1.5000 * R )
+                -5.26952252E+03 * EXP(   -1.0000 * R )
+                 3.66467302E+00 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  21
+  WHICH HAS LAM1 =   6,  LAM2 =   2,  LAM =   4
+
+                -3.67589028E+10 * EXP(   -4.0000 * R )
+                 1.36941622E+10 * EXP(   -3.5000 * R )
+                -2.04451162E+09 * EXP(   -3.0000 * R )
+                 1.59049892E+08 * EXP(   -2.5000 * R )
+                -7.06016202E+06 * EXP(   -2.0000 * R )
+                 1.69887174E+05 * EXP(   -1.5000 * R )
+                -3.01257143E+03 * EXP(   -1.0000 * R )
+                -4.66561285E-01 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  22
+  WHICH HAS LAM1 =   6,  LAM2 =   2,  LAM =   6
+
+                 2.43528564E+10 * EXP(   -4.0000 * R )
+                -8.89282465E+09 * EXP(   -3.5000 * R )
+                 1.28316185E+09 * EXP(   -3.0000 * R )
+                -9.34270926E+07 * EXP(   -2.5000 * R )
+                 3.67912168E+06 * EXP(   -2.0000 * R )
+                -7.10712921E+04 * EXP(   -1.5000 * R )
+                 9.08350176E+02 * EXP(   -1.0000 * R )
+                 4.57393059E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  23
+  WHICH HAS LAM1 =   6,  LAM2 =   2,  LAM =   8
+
+                -2.24371859E+10 * EXP(   -4.0000 * R )
+                 7.81925763E+09 * EXP(   -3.5000 * R )
+                -1.03418139E+09 * EXP(   -3.0000 * R )
+                 6.15901716E+07 * EXP(   -2.5000 * R )
+                -1.36628148E+06 * EXP(   -2.0000 * R )
+                -1.82353543E+04 * EXP(   -1.5000 * R )
+                 1.25775188E+03 * EXP(   -1.0000 * R )
+                 2.41569968E-01 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  24
+  WHICH HAS LAM1 =   6,  LAM2 =   4,  LAM =   2
+
+                 1.47864001E+10 * EXP(   -4.0000 * R )
+                -5.29800254E+09 * EXP(   -3.5000 * R )
+                 7.49476162E+08 * EXP(   -3.0000 * R )
+                -5.30860030E+07 * EXP(   -2.5000 * R )
+                 1.95234286E+06 * EXP(   -2.0000 * R )
+                -3.51419915E+04 * EXP(   -1.5000 * R )
+                 2.00590893E+02 * EXP(   -1.0000 * R )
+                -1.04689311E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  25
+  WHICH HAS LAM1 =   6,  LAM2 =   4,  LAM =   4
+
+                -9.20201429E+09 * EXP(   -4.0000 * R )
+                 3.27200008E+09 * EXP(   -3.5000 * R )
+                -4.57196140E+08 * EXP(   -3.0000 * R )
+                 3.17422384E+07 * EXP(   -2.5000 * R )
+                -1.12737763E+06 * EXP(   -2.0000 * R )
+                 1.89178214E+04 * EXP(   -1.5000 * R )
+                -8.55857779E+01 * EXP(   -1.0000 * R )
+                -5.54788911E-03 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  26
+  WHICH HAS LAM1 =   6,  LAM2 =   4,  LAM =   6
+
+                 7.05016825E+09 * EXP(   -4.0000 * R )
+                -2.47211000E+09 * EXP(   -3.5000 * R )
+                 3.37491475E+08 * EXP(   -3.0000 * R )
+                -2.25234247E+07 * EXP(   -2.5000 * R )
+                 7.42313900E+05 * EXP(   -2.0000 * R )
+                -1.04110624E+04 * EXP(   -1.5000 * R )
+                 1.17592846E+01 * EXP(   -1.0000 * R )
+                 1.95806599E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  27
+  WHICH HAS LAM1 =   6,  LAM2 =   4,  LAM =   8
+
+                -5.73033513E+09 * EXP(   -4.0000 * R )
+                 1.96041900E+09 * EXP(   -3.5000 * R )
+                -2.56275299E+08 * EXP(   -3.0000 * R )
+                 1.57740501E+07 * EXP(   -2.5000 * R )
+                -4.32396426E+05 * EXP(   -2.0000 * R )
+                 2.73363499E+03 * EXP(   -1.5000 * R )
+                 6.49712366E+01 * EXP(   -1.0000 * R )
+                -3.46577591E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  28
+  WHICH HAS LAM1 =   6,  LAM2 =   4,  LAM =  10
+
+                 5.35609964E+09 * EXP(   -4.0000 * R )
+                -1.74639767E+09 * EXP(   -3.5000 * R )
+                 2.07767858E+08 * EXP(   -3.0000 * R )
+                -1.02841584E+07 * EXP(   -2.5000 * R )
+                 1.03992854E+05 * EXP(   -2.0000 * R )
+                 7.45257983E+03 * EXP(   -1.5000 * R )
+                -1.88749696E+02 * EXP(   -1.0000 * R )
+                 5.90574762E-02 * EXP(   -0.2000 * R )
+
+  POTENL PROCESSING FINISHED.
+
+  POTENTIAL RETURNED IN UNITS OF EPSIL  =  1.0000000     CM-1
+        CODED WITH R IN UNITS OF RM     =  1.0000000     ANGSTROM
+
+  ALL LENGTHS ARE IN UNITS OF ANGSTROM UNLESS OTHERWISE STATED
+
+  INTERACTION MATRIX USES  28 BLOCKS OF VL ARRAY FOR R-DEPENDENT TERMS IN POTENTIAL
+
+  ======================================================================================================================
+
+  PROPAGATION METHODS FOR COUPLED EQUATIONS SPECIFIED BY IPROPS =  6
+
+  COUPLED EQUATIONS WILL BE PROPAGATED OUTWARDS IN 1 SEGMENT 
+
+  PROPAGATION RANGE IS CONTROLLED BY VARIABLES RMIN AND RMAX, WITH INPUT VALUES
+  RMIN =   2.500     RMAX =   50.00    
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  SEGMENT 1 WILL BE PROPAGATED OUTWARDS
+
+  FROM RMIN CHOSEN USING IRMSET =  9 TO RMAX =     50.00
+
+  COUPLED EQUATIONS SOLVED BY DIABATIC MODIFIED LOG-DERIVATIVE PROPAGATOR OF MANOLOPOULOS
+
+  PROPAGATION STEP SIZE DETERMINED USING STEP =   20.0     (PER HALF WAVELENGTH)
+  STEP SIZE CONSTANT THROUGHOUT RANGE
+  STEP SIZE MAY BE ADJUSTED SLIGHTLY SO THAT RANGE IS A WHOLE NUMBER OF STEPS
+
+  LOG-DERIVATIVE MATRIX INITIALISED IN THE LOCAL EIGENBASIS AT RMIN
+  LOCALLY CLOSED CHANNELS INITIALISED WITH A WKB BOUNDARY CONDITION
+  LOCALLY  OPEN  CHANNELS INITIALISED WITH THE VALUE  1.000E+04
+
+  ======================================================================================================================
+
+  INPUT ENERGIES IN UNITS OF CM-1 BY DEFAULT.
+
+  CALCULATIONS WILL BE PERFORMED FOR    1 ENERGY  
+  ENERGY    1           =   500.0000000     CM-1
+
+  ======================================================================================================================
+
+  TOTAL ANGULAR MOMENTUM JTOT RUNS FROM   0  TO     10  IN STEPS OF   1
+
+  EACH JTOT IS SPLIT INTO A MAXIMUM OF  23 SYMMETRY BLOCKS
+
+  STATE-TO-STATE INTEGRAL CROSS-SECTIONS WILL BE COMPUTED BUT NOT STORED ON DISK
+
+  ======================================================================================================================
+
+  INITIALIZATION DONE.  TIME WAS   0.00 CPU SECS.      3681 WORDS OF STORAGE USED.
+
+  ==================================================== C2-H2 system ====================================================
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  1, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.69E-02 &   9.19E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  2, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.19E-01 &   2.09E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  3, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.47E-01 &   1.75E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  4, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.52E-01 &   1.76E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  5, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.39E-01 &   1.35E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  6, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.63E-01 &   1.73E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  7, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.37E-01 &   2.11E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  8, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.53E-01 &   2.00E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  9, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.43E-01 &   2.49E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 10, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.65E-01 &   2.07E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 11, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.40E-02 &   2.32E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 12, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.46E-01 &   1.43E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 13, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.74E-02 &   2.30E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 14, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.65E-01 &   2.66E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 15, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.64E-01 &   2.20E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 16, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.16E-01 &   1.17E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 17, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.07E-01 &   7.54E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 18, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.16E-02 &   3.17E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 19, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.18E-02 &   5.80E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 20, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.28E-02 &   9.22E-04
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 21, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.68E-02 &   9.81-117
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 22, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.60E-03 &   0.00E+00
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK =  1, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.07E-01 &   2.71E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK =  2, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.85E-01 &   6.49E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK =  3, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.80E-01 &   5.34E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK =  4, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.50E-01 &   5.29E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK =  5, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.98E-01 &   4.03E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK =  6, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.37E-01 &   5.21E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK =  7, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.70E-01 &   6.36E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK =  8, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.29E-01 &   6.07E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK =  9, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.76E-01 &   7.57E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 10, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.98E-01 &   6.17E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 11, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.05E-01 &   6.99E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 12, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.90E-01 &   4.32E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 13, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.89E-01 &   6.91E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 14, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  3.41E-01 &   7.94E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 15, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  3.42E-01 &   6.92E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 16, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.91E-01 &   3.17E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 17, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.19E-01 &   2.89E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 18, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.71E-01 &   9.51E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 19, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.44E-02 &   1.66E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 20, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  3.63E-02 &   2.75E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 21, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.11E-02 &   7.90-147
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 22, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.44E-02 &   0.00E+00
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK =  1, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.55E-01 &   4.36E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK =  2, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.89E-01 &   1.15E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK =  3, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.90E-01 &   9.15E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK =  4, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.90E-01 &   8.79E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK =  5, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  5.35E-01 &   6.70E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK =  6, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  5.54E-01 &   8.71E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK =  7, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  5.19E-01 &   1.07E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK =  8, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.92E-01 &   1.03E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK =  9, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.14E-01 &   1.29E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK = 10, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.12E-01 &   1.02E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK = 11, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.95E-01 &   1.18E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK = 12, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.22E+00 &   7.33E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK = 13, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.37E-01 &   1.16E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK = 14, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.59E-01 &   1.30E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK = 15, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.11E-01 &   1.28E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK = 16, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.11E+00 &   4.43E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK = 17, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  5.29E-01 &   5.88E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK = 18, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.00E-01 &   1.58E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK = 19, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.11E-02 &   2.24E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK = 20, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.85E-02 &   4.55E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK = 21, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.48E-02 &   7.44-148
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    2, SYMMETRY BLOCK = 22, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.11E-02 &   0.00E+00
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK =  1, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.43E-01 &   5.72E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK =  2, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.09E+00 &   1.73E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK =  3, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.34E+00 &   1.31E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK =  4, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.29E+00 &   1.24E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK =  5, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.15E+00 &   9.49E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK =  6, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.26E+00 &   1.21E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK =  7, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.14E+00 &   1.51E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK =  8, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.09E+00 &   1.47E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK =  9, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.20E-01 &   1.86E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK = 10, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.30E-01 &   1.41E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK = 11, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  5.92E-01 &   1.70E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK = 12, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.83E-01 &   1.05E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK = 13, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  3.33E-01 &   1.64E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK = 14, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.88E-01 &   1.76E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK = 15, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.67E-01 &   1.77E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK = 16, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.22E-01 &   5.47E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK = 17, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.93E-01 &   6.53E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK = 18, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.94E-01 &   2.20E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK = 19, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.04E-01 &   2.53E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK = 20, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  5.44E-02 &   6.31E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK = 21, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.50E-02 &   3.58-147
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    3, SYMMETRY BLOCK = 22, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  3.23E-02 &   0.00E+00
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK =  1, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.54E-01 &   7.53E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK =  2, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.25E-01 &   2.36E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK =  3, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.92E-01 &   1.69E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK =  4, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.60E-01 &   1.67E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK =  5, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.59E-01 &   1.20E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK =  6, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.57E-01 &   1.68E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK =  7, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.33E-01 &   1.95E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK =  8, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  5.96E-01 &   1.90E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK =  9, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.71E-01 &   2.43E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK = 10, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.77E-01 &   1.78E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK = 11, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.54E-01 &   2.26E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK = 12, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.37E-01 &   1.38E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK = 13, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.36E-01 &   2.08E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK = 14, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.91E-01 &   2.16E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK = 15, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.38E-01 &   1.99E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK = 16, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.51E-01 &   6.64E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK = 17, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.12E-01 &   1.03E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK = 18, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  5.01E-01 &   2.80E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK = 19, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.43E-02 &   3.89E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK = 20, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.68E-01 &   8.05E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK = 21, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.20E-02 &   3.05-148
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    4, SYMMETRY BLOCK = 22, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.79E-02 &   0.00E+00
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK =  1, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  5.45E-01 &   1.12E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK =  2, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.32E+00 &   2.83E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK =  3, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.96E-01 &   1.92E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK =  4, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.44E-01 &   2.04E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK =  5, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.78E-01 &   1.43E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK =  6, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.70E-01 &   2.10E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK =  7, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  5.44E-01 &   2.34E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK =  8, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  5.52E-01 &   2.14E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK =  9, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.96E-01 &   2.82E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK = 10, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.50E-01 &   1.99E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK = 11, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.19E+00 &   2.81E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK = 12, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.39E-01 &   1.69E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK = 13, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.26E+00 &   2.24E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK = 14, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.46E-01 &   2.35E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK = 15, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.07E-01 &   2.14E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK = 16, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.67E-01 &   1.05E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK = 17, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  5.73E-01 &   1.57E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK = 18, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.65E-01 &   3.37E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK = 19, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.41E-01 &   7.75E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK = 20, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.02E-01 &   9.79E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK = 21, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.72E-01 &   1.46-149
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    5, SYMMETRY BLOCK = 22, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.25E-05 &   0.00E+00
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK =  1, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.63E-01 &   1.08E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK =  2, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.04E-01 &   2.61E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK =  3, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.78E-01 &   1.85E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK =  4, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.78E-01 &   2.02E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK =  5, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.02E-01 &   1.49E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK =  6, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.82E-01 &   1.98E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK =  7, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.87E-01 &   2.48E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK =  8, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.79E-01 &   1.83E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK =  9, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.88E-01 &   2.43E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK = 10, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.92E-01 &   1.76E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK = 11, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.26E+00 &   2.76E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK = 12, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.75E-01 &   1.71E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK = 13, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.03E+00 &   1.56E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK = 14, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.17E+00 &   2.30E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK = 15, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.58E-01 &   2.38E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK = 16, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.65E-01 &   1.00E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK = 17, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  3.86E-01 &   1.18E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK = 18, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.13E-01 &   3.92E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK = 19, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.92E-01 &   5.17E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK = 20, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.44E-01 &   1.16E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK = 21, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.09E-01 &   3.39-149
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    6, SYMMETRY BLOCK = 22, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.11E-02 &   0.00E+00
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK =  1, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.25E+00 &   1.14E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK =  2, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.17E+00 &   2.29E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK =  3, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.02E+00 &   2.08E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK =  4, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.21E-01 &   1.22E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK =  5, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.14E-01 &   1.41E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK =  6, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.77E-01 &   1.10E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK =  7, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.67E-01 &   1.86E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK =  8, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.90E-01 &   1.79E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK =  9, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.13E-01 &   9.93E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK = 10, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.77E-01 &   1.38E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK = 11, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.50E-01 &   1.71E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK = 12, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.25E-01 &   1.20E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK = 13, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.55E-01 &   8.69E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK = 14, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.91E-01 &   8.80E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK = 15, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.25E-01 &   1.18E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK = 16, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.19E-01 &   5.09E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK = 17, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.37E-01 &   9.20E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK = 18, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.23E-01 &   5.24E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK = 19, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.88E-01 &   3.78E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK = 20, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.67E-01 &   1.35E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK = 21, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.76E-01 &   3.71-150
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    7, SYMMETRY BLOCK = 22, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.27E-01 &   0.00E+00
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK =  1, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.46E-01 &   1.26E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK =  2, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.88E+00 &   2.29E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK =  3, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.40E+00 &   2.52E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK =  4, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.76E-01 &   1.62E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK =  5, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.77E-01 &   1.87E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK =  6, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.02E+00 &   1.27E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK =  7, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.22E-01 &   2.57E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK =  8, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.28E-01 &   2.09E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK =  9, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.74E-01 &   1.02E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK = 10, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  5.32E-01 &   1.29E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK = 11, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.94E-01 &   1.82E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK = 12, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.47E-01 &   1.37E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK = 13, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  5.95E-01 &   1.06E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK = 14, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  5.05E-01 &   9.25E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK = 15, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.83E-01 &   5.05E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK = 16, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.55E-01 &   4.38E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK = 17, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.81E-01 &   5.01E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK = 18, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.10E-01 &   5.98E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK = 19, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.72E-01 &   4.14E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK = 20, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.99E-01 &   1.57E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK = 21, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.39E-01 &   2.93-155
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    8, SYMMETRY BLOCK = 22, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.23E-02 &   0.00E+00
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK =  1, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.70E+00 &   1.34E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK =  2, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.97E+00 &   2.77E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK =  3, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.96E+00 &   3.72E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK =  4, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.22E+00 &   1.68E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK =  5, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.19E+00 &   1.58E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK =  6, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.09E-01 &   1.55E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK =  7, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.95E-01 &   2.11E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK =  8, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.82E-01 &   1.70E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK =  9, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.55E-01 &   1.36E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK = 10, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  5.93E-01 &   1.41E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK = 11, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.52E-01 &   1.66E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK = 12, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.72E-01 &   1.47E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK = 13, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.39E-01 &   1.21E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK = 14, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  3.27E-01 &   7.41E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK = 15, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.06E-01 &   7.58E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK = 16, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.44E-01 &   4.95E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK = 17, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.84E-01 &   3.93E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK = 18, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.47E-01 &   5.43E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK = 19, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.37E-01 &   4.47E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK = 20, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.60E-01 &   1.80E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK = 21, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.90E-01 &   4.64-150
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    9, SYMMETRY BLOCK = 22, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.22E-04 &   0.00E+00
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK =  1, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.51E+00 &   1.32E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK =  2, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.79E+00 &   3.22E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK =  3, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.21E+00 &   3.66E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK =  4, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.74E+00 &   1.90E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK =  5, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.15E+00 &   1.49E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK =  6, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.33E-01 &   1.75E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK =  7, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.64E-01 &   1.16E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK =  8, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.11E-01 &   1.35E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK =  9, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.05E-01 &   1.79E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK = 10, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.24E-01 &   1.48E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK = 11, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.05E+00 &   1.16E-01
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK = 12, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  3.41E-01 &   5.37E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK = 13, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.64E-01 &   4.06E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK = 14, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.86E-01 &   5.67E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK = 15, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.79E-01 &   6.20E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK = 16, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  3.07E-01 &   5.52E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK = 17, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.19E-01 &   4.44E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK = 18, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.92E-01 &   5.92E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK = 19, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.80E-01 &   4.78E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK = 20, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.65E-01 &   2.05E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK = 21, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.72E-01 &   9.85-151
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =   10, SYMMETRY BLOCK = 22, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.72E-02 &   0.00E+00
+
+  ==================================================== C2-H2 system ====================================================
+
+  LEVEL  30 WITH ENERGY    512.349000000000 IS NEVER OPEN
+  LEVEL  33 WITH ENERGY    545.928000000000 IS NEVER OPEN
+
+  STATE-TO-STATE INTEGRAL CROSS SECTIONS IN ANGSTROM**2 BETWEEN   31 LEVELS WITH THRESHOLD ENERGIES (IN CM-1):
+
+    1     0.000000000000
+    2   121.706000000000
+    3   365.118000000000
+    4     2.583000000000
+    5   124.289000000000
+    6   367.701000000000
+    7     8.610000000000
+    8   130.316000000000
+    9   373.728000000000
+   10    18.081000000000
+   11   139.787000000000
+   12   383.199000000000
+   13    30.996000000000
+   14   152.702000000000
+   15   396.114000000000
+   16    47.355000000000
+   17   169.061000000000
+   18   412.473000000000
+   19    67.158000000000
+   20   188.864000000000
+   21   432.276000000000
+   22    90.405000000000
+   23   212.111000000000
+   24   455.523000000000
+   25   117.096000000000
+   26   238.802000000000
+   27   482.214000000000
+   28   147.231000000000
+   29   268.937000000000
+   31   180.810000000000
+   32   302.516000000000
+
+   ENERGY (CM-1)    JTOTL  JSTEP  JTOTU      F    I         SIG(F,I)
+   500.0000000          0      1     10      1    1          7.72421      
+   500.0000000          0      1     10      3    1         0.357889      
+   500.0000000          0      1     10      4    1         0.728640      
+   500.0000000          0      1     10      6    1         0.381209      
+   500.0000000          0      1     10      7    1         0.375094      
+   500.0000000          0      1     10      9    1         0.601157      
+   500.0000000          0      1     10     10    1         5.027374E-02  
+   500.0000000          0      1     10     12    1         0.309138      
+   500.0000000          0      1     10     13    1         0.586037      
+   500.0000000          0      1     10     15    1         0.528504      
+   500.0000000          0      1     10     16    1         2.643436E-02  
+   500.0000000          0      1     10     18    1         0.329670      
+   500.0000000          0      1     10     19    1         0.534021      
+   500.0000000          0      1     10     21    1         0.244964      
+   500.0000000          0      1     10     22    1         3.527661E-02  
+   500.0000000          0      1     10     24    1         0.153840      
+   500.0000000          0      1     10     25    1         0.359339      
+   500.0000000          0      1     10     27    1         4.710758E-02  
+   500.0000000          0      1     10     28    1         3.411017E-02  
+   500.0000000          0      1     10     31    1         0.359535      
+
+   500.0000000          0      1     10      2    2          10.6209      
+   500.0000000          0      1     10      5    2          1.37380      
+   500.0000000          0      1     10      8    2          1.64947      
+   500.0000000          0      1     10     11    2         0.594137      
+   500.0000000          0      1     10     14    2          1.22862      
+   500.0000000          0      1     10     17    2         0.480226      
+   500.0000000          0      1     10     20    2         0.763526      
+   500.0000000          0      1     10     23    2         0.513517      
+   500.0000000          0      1     10     26    2         0.385262      
+   500.0000000          0      1     10     29    2         0.175267      
+   500.0000000          0      1     10     32    2         0.450852      
+
+   500.0000000          0      1     10      1    3         0.265335      
+   500.0000000          0      1     10      3    3          26.1587      
+   500.0000000          0      1     10      4    3         0.726059      
+   500.0000000          0      1     10      6    3          2.30866      
+   500.0000000          0      1     10      7    3         0.258758      
+   500.0000000          0      1     10      9    3          3.56470      
+   500.0000000          0      1     10     10    3         0.173702      
+   500.0000000          0      1     10     12    3          2.73668      
+   500.0000000          0      1     10     13    3         0.390845      
+   500.0000000          0      1     10     15    3          3.22490      
+   500.0000000          0      1     10     16    3         0.225956      
+   500.0000000          0      1     10     18    3          2.75586      
+   500.0000000          0      1     10     19    3         0.487886      
+   500.0000000          0      1     10     21    3          2.70983      
+   500.0000000          0      1     10     22    3         0.429157      
+   500.0000000          0      1     10     24    3          1.46066      
+   500.0000000          0      1     10     25    3         0.587275      
+   500.0000000          0      1     10     27    3         0.841997      
+   500.0000000          0      1     10     28    3         0.910227      
+   500.0000000          0      1     10     31    3         0.268277      
+
+   500.0000000          0      1     10      1    4         0.146485      
+   500.0000000          0      1     10      3    4         0.196882      
+   500.0000000          0      1     10      4    4          7.40788      
+   500.0000000          0      1     10      6    4         0.657444      
+   500.0000000          0      1     10      7    4         0.279585      
+   500.0000000          0      1     10      9    4         0.265104      
+   500.0000000          0      1     10     10    4         0.269672      
+   500.0000000          0      1     10     12    4         0.517741      
+   500.0000000          0      1     10     13    4         0.308381      
+   500.0000000          0      1     10     15    4         0.521307      
+   500.0000000          0      1     10     16    4         0.319815      
+   500.0000000          0      1     10     18    4         0.478115      
+   500.0000000          0      1     10     19    4         0.180447      
+   500.0000000          0      1     10     21    4         0.454096      
+   500.0000000          0      1     10     22    4         0.315014      
+   500.0000000          0      1     10     24    4         0.338542      
+   500.0000000          0      1     10     25    4         0.289653      
+   500.0000000          0      1     10     27    4         0.115575      
+   500.0000000          0      1     10     28    4         0.158811      
+   500.0000000          0      1     10     31    4         0.181218      
+
+   500.0000000          0      1     10      2    5         0.276648      
+   500.0000000          0      1     10      5    5          10.8822      
+   500.0000000          0      1     10      8    5          1.38894      
+   500.0000000          0      1     10     11    5          1.08741      
+   500.0000000          0      1     10     14    5          1.07319      
+   500.0000000          0      1     10     17    5         0.632630      
+   500.0000000          0      1     10     20    5         0.721986      
+   500.0000000          0      1     10     23    5         0.706424      
+   500.0000000          0      1     10     26    5         0.564313      
+   500.0000000          0      1     10     29    5         0.517895      
+   500.0000000          0      1     10     32    5         0.427443      
+
+   500.0000000          0      1     10      1    6         5.762847E-02  
+   500.0000000          0      1     10      3    6         0.470747      
+   500.0000000          0      1     10      4    6         0.494371      
+   500.0000000          0      1     10      6    6          30.8598      
+   500.0000000          0      1     10      7    6         0.376690      
+   500.0000000          0      1     10      9    6          3.32130      
+   500.0000000          0      1     10     10    6         0.263811      
+   500.0000000          0      1     10     12    6          3.19962      
+   500.0000000          0      1     10     13    6         0.307077      
+   500.0000000          0      1     10     15    6          3.34357      
+   500.0000000          0      1     10     16    6         0.326643      
+   500.0000000          0      1     10     18    6          2.40549      
+   500.0000000          0      1     10     19    6         0.295383      
+   500.0000000          0      1     10     21    6          2.51285      
+   500.0000000          0      1     10     22    6         0.283202      
+   500.0000000          0      1     10     24    6          1.43271      
+   500.0000000          0      1     10     25    6         0.239612      
+   500.0000000          0      1     10     27    6         0.568937      
+   500.0000000          0      1     10     28    6         0.641267      
+   500.0000000          0      1     10     31    6         0.304588      
+
+   500.0000000          0      1     10      1    7         4.240738E-02  
+   500.0000000          0      1     10      3    7         3.945921E-02  
+   500.0000000          0      1     10      4    7         0.157230      
+   500.0000000          0      1     10      6    7         0.281716      
+   500.0000000          0      1     10      7    7          8.64369      
+   500.0000000          0      1     10      9    7         0.497214      
+   500.0000000          0      1     10     10    7         0.493824      
+   500.0000000          0      1     10     12    7         0.594837      
+   500.0000000          0      1     10     13    7         0.324716      
+   500.0000000          0      1     10     15    7         0.446760      
+   500.0000000          0      1     10     16    7         0.266701      
+   500.0000000          0      1     10     18    7         0.351073      
+   500.0000000          0      1     10     19    7         0.581699      
+   500.0000000          0      1     10     21    7         0.245652      
+   500.0000000          0      1     10     22    7         0.270390      
+   500.0000000          0      1     10     24    7         0.213937      
+   500.0000000          0      1     10     25    7         0.196085      
+   500.0000000          0      1     10     27    7         8.366622E-02  
+   500.0000000          0      1     10     28    7         0.144528      
+   500.0000000          0      1     10     31    7         0.302299      
+
+   500.0000000          0      1     10      2    8         0.187543      
+   500.0000000          0      1     10      5    8         0.784214      
+   500.0000000          0      1     10      8    8          10.0118      
+   500.0000000          0      1     10     11    8          1.45716      
+   500.0000000          0      1     10     14    8         0.938078      
+   500.0000000          0      1     10     17    8         0.825114      
+   500.0000000          0      1     10     20    8         0.810603      
+   500.0000000          0      1     10     23    8         0.883240      
+   500.0000000          0      1     10     26    8         0.864418      
+   500.0000000          0      1     10     29    8         0.810644      
+   500.0000000          0      1     10     32    8         0.565843      
+
+   500.0000000          0      1     10      1    9         5.289793E-02  
+   500.0000000          0      1     10      3    9         0.423084      
+   500.0000000          0      1     10      4    9         0.116035      
+   500.0000000          0      1     10      6    9          1.93324      
+   500.0000000          0      1     10      7    9         0.386984      
+   500.0000000          0      1     10      9    9          32.8135      
+   500.0000000          0      1     10     10    9         0.379457      
+   500.0000000          0      1     10     12    9          4.69612      
+   500.0000000          0      1     10     13    9         0.407309      
+   500.0000000          0      1     10     15    9          3.42732      
+   500.0000000          0      1     10     16    9         0.219044      
+   500.0000000          0      1     10     18    9          3.12118      
+   500.0000000          0      1     10     19    9         0.249087      
+   500.0000000          0      1     10     21    9          2.57945      
+   500.0000000          0      1     10     22    9         0.297893      
+   500.0000000          0      1     10     24    9          2.01284      
+   500.0000000          0      1     10     25    9         0.381156      
+   500.0000000          0      1     10     27    9         0.669346      
+   500.0000000          0      1     10     28    9         0.381489      
+   500.0000000          0      1     10     31    9         0.234875      
+
+   500.0000000          0      1     10      1   10         4.012304E-03  
+   500.0000000          0      1     10      3   10         1.869870E-02  
+   500.0000000          0      1     10      4   10         0.107055      
+   500.0000000          0      1     10      6   10         0.139275      
+   500.0000000          0      1     10      7   10         0.348597      
+   500.0000000          0      1     10      9   10         0.344163      
+   500.0000000          0      1     10     10   10          8.96157      
+   500.0000000          0      1     10     12   10         0.572025      
+   500.0000000          0      1     10     13   10         0.293270      
+   500.0000000          0      1     10     15   10         0.490010      
+   500.0000000          0      1     10     16   10         0.400762      
+   500.0000000          0      1     10     18   10         0.413130      
+   500.0000000          0      1     10     19   10         0.432410      
+   500.0000000          0      1     10     21   10         0.410684      
+   500.0000000          0      1     10     22   10         0.373100      
+   500.0000000          0      1     10     24   10         0.262718      
+   500.0000000          0      1     10     25   10         0.330530      
+   500.0000000          0      1     10     27   10         8.571125E-02  
+   500.0000000          0      1     10     28   10         0.178050      
+   500.0000000          0      1     10     31   10         0.286340      
+
+   500.0000000          0      1     10      2   11         4.799691E-02  
+   500.0000000          0      1     10      5   11         0.436230      
+   500.0000000          0      1     10      8   11          1.03533      
+   500.0000000          0      1     10     11   11          10.5970      
+   500.0000000          0      1     10     14   11          1.08457      
+   500.0000000          0      1     10     17   11         0.910804      
+   500.0000000          0      1     10     20   11          1.08294      
+   500.0000000          0      1     10     23   11          1.07929      
+   500.0000000          0      1     10     26   11         0.874259      
+   500.0000000          0      1     10     29   11         0.789708      
+   500.0000000          0      1     10     32   11         0.703162      
+
+   500.0000000          0      1     10      1   12         2.035930E-02  
+   500.0000000          0      1     10      3   12         0.243101      
+   500.0000000          0      1     10      4   12         0.169607      
+   500.0000000          0      1     10      6   12          1.39391      
+   500.0000000          0      1     10      7   12         0.346503      
+   500.0000000          0      1     10      9   12          3.51479      
+   500.0000000          0      1     10     10   12         0.472033      
+   500.0000000          0      1     10     12   12          34.3703      
+   500.0000000          0      1     10     13   12         0.446755      
+   500.0000000          0      1     10     15   12          4.21335      
+   500.0000000          0      1     10     16   12         0.344394      
+   500.0000000          0      1     10     18   12          3.73836      
+   500.0000000          0      1     10     19   12         0.368501      
+   500.0000000          0      1     10     21   12          3.30438      
+   500.0000000          0      1     10     22   12         0.449868      
+   500.0000000          0      1     10     24   12          2.47455      
+   500.0000000          0      1     10     25   12         0.541081      
+   500.0000000          0      1     10     27   12         0.918604      
+   500.0000000          0      1     10     28   12         0.465368      
+   500.0000000          0      1     10     31   12         0.354415      
+
+   500.0000000          0      1     10      1   13         3.675101E-02  
+   500.0000000          0      1     10      3   13         3.306000E-02  
+   500.0000000          0      1     10      4   13         9.619496E-02  
+   500.0000000          0      1     10      6   13         0.127385      
+   500.0000000          0      1     10      7   13         0.180114      
+   500.0000000          0      1     10      9   13         0.290281      
+   500.0000000          0      1     10     10   13         0.230441      
+   500.0000000          0      1     10     12   13         0.425407      
+   500.0000000          0      1     10     13   13          8.70042      
+   500.0000000          0      1     10     15   13         0.605464      
+   500.0000000          0      1     10     16   13         0.540305      
+   500.0000000          0      1     10     18   13         0.465360      
+   500.0000000          0      1     10     19   13         0.571261      
+   500.0000000          0      1     10     21   13         0.397029      
+   500.0000000          0      1     10     22   13         0.705323      
+   500.0000000          0      1     10     24   13         0.254545      
+   500.0000000          0      1     10     25   13         0.372986      
+   500.0000000          0      1     10     27   13         9.629420E-02  
+   500.0000000          0      1     10     28   13         0.250278      
+   500.0000000          0      1     10     31   13         0.323450      
+
+   500.0000000          0      1     10      2   14         7.872202E-02  
+   500.0000000          0      1     10      5   14         0.341467      
+   500.0000000          0      1     10      8   14         0.528641      
+   500.0000000          0      1     10     11   14         0.860219      
+   500.0000000          0      1     10     14   14          11.0005      
+   500.0000000          0      1     10     17   14          1.34188      
+   500.0000000          0      1     10     20   14          1.20237      
+   500.0000000          0      1     10     23   14          1.02476      
+   500.0000000          0      1     10     26   14         0.933939      
+   500.0000000          0      1     10     29   14          1.05611      
+   500.0000000          0      1     10     32   14         0.823987      
+
+   500.0000000          0      1     10      1   15         2.992556E-02  
+   500.0000000          0      1     10      3   15         0.246300      
+   500.0000000          0      1     10      4   15         0.146828      
+   500.0000000          0      1     10      6   15          1.25237      
+   500.0000000          0      1     10      7   15         0.223752      
+   500.0000000          0      1     10      9   15          2.20546      
+   500.0000000          0      1     10     10   15         0.347654      
+   500.0000000          0      1     10     12   15          3.62253      
+   500.0000000          0      1     10     13   15         0.546686      
+   500.0000000          0      1     10     15   15          39.0786      
+   500.0000000          0      1     10     16   15         0.458249      
+   500.0000000          0      1     10     18   15          5.31186      
+   500.0000000          0      1     10     19   15         0.401164      
+   500.0000000          0      1     10     21   15          4.59534      
+   500.0000000          0      1     10     22   15         0.377571      
+   500.0000000          0      1     10     24   15          3.31513      
+   500.0000000          0      1     10     25   15         0.499650      
+   500.0000000          0      1     10     27   15          1.11869      
+   500.0000000          0      1     10     28   15         0.476394      
+   500.0000000          0      1     10     31   15         0.447883      
+
+   500.0000000          0      1     10      1   16         1.390470E-03  
+   500.0000000          0      1     10      3   16         1.603140E-02  
+   500.0000000          0      1     10      4   16         8.367823E-02  
+   500.0000000          0      1     10      6   16         0.113656      
+   500.0000000          0      1     10      7   16         0.124084      
+   500.0000000          0      1     10      9   16         0.130941      
+   500.0000000          0      1     10     10   16         0.264136      
+   500.0000000          0      1     10     12   16         0.275067      
+   500.0000000          0      1     10     13   16         0.453198      
+   500.0000000          0      1     10     15   16         0.425697      
+   500.0000000          0      1     10     16   16          9.06015      
+   500.0000000          0      1     10     18   16         0.624764      
+   500.0000000          0      1     10     19   16         0.924548      
+   500.0000000          0      1     10     21   16         0.424246      
+   500.0000000          0      1     10     22   16         0.416319      
+   500.0000000          0      1     10     24   16         0.398709      
+   500.0000000          0      1     10     25   16         0.287105      
+   500.0000000          0      1     10     27   16         0.148527      
+   500.0000000          0      1     10     28   16         0.529729      
+   500.0000000          0      1     10     31   16         0.417273      
+
+   500.0000000          0      1     10      2   17         2.614012E-02  
+   500.0000000          0      1     10      5   17         0.171004      
+   500.0000000          0      1     10      8   17         0.395020      
+   500.0000000          0      1     10     11   17         0.613706      
+   500.0000000          0      1     10     14   17          1.13998      
+   500.0000000          0      1     10     17   17          12.3170      
+   500.0000000          0      1     10     20   17          1.20803      
+   500.0000000          0      1     10     23   17          1.36184      
+   500.0000000          0      1     10     26   17          1.06998      
+   500.0000000          0      1     10     29   17         0.914720      
+   500.0000000          0      1     10     32   17         0.967466      
+
+   500.0000000          0      1     10      1   18         1.793572E-02  
+   500.0000000          0      1     10      3   18         0.202232      
+   500.0000000          0      1     10      4   18         0.129387      
+   500.0000000          0      1     10      6   18         0.865704      
+   500.0000000          0      1     10      7   18         0.168941      
+   500.0000000          0      1     10      9   18          1.92978      
+   500.0000000          0      1     10     10   18         0.281626      
+   500.0000000          0      1     10     12   18          3.08823      
+   500.0000000          0      1     10     13   18         0.403723      
+   500.0000000          0      1     10     15   18          5.10377      
+   500.0000000          0      1     10     16   18         0.646192      
+   500.0000000          0      1     10     18   18          45.0945      
+   500.0000000          0      1     10     19   18         0.584542      
+   500.0000000          0      1     10     21   18          6.87665      
+   500.0000000          0      1     10     22   18         0.631464      
+   500.0000000          0      1     10     24   18          4.68609      
+   500.0000000          0      1     10     25   18         0.663005      
+   500.0000000          0      1     10     27   18          2.00504      
+   500.0000000          0      1     10     28   18         0.705418      
+   500.0000000          0      1     10     31   18         0.654401      
+
+   500.0000000          0      1     10      1   19         2.467511E-02  
+   500.0000000          0      1     10      3   19         3.040696E-02  
+   500.0000000          0      1     10      4   19         4.147355E-02  
+   500.0000000          0      1     10      6   19         9.028436E-02  
+   500.0000000          0      1     10      7   19         0.237738      
+   500.0000000          0      1     10      9   19         0.130798      
+   500.0000000          0      1     10     10   19         0.250348      
+   500.0000000          0      1     10     12   19         0.258541      
+   500.0000000          0      1     10     13   19         0.420911      
+   500.0000000          0      1     10     15   19         0.327362      
+   500.0000000          0      1     10     16   19         0.812152      
+   500.0000000          0      1     10     18   19         0.496452      
+   500.0000000          0      1     10     19   19          8.85182      
+   500.0000000          0      1     10     21   19         0.628490      
+   500.0000000          0      1     10     22   19         0.435085      
+   500.0000000          0      1     10     24   19         0.566078      
+   500.0000000          0      1     10     25   19         0.618588      
+   500.0000000          0      1     10     27   19         0.230774      
+   500.0000000          0      1     10     28   19         0.644805      
+   500.0000000          0      1     10     31   19         0.554896      
+
+   500.0000000          0      1     10      2   20         3.713324E-02  
+   500.0000000          0      1     10      5   20         0.174366      
+   500.0000000          0      1     10      8   20         0.346730      
+   500.0000000          0      1     10     11   20         0.651954      
+   500.0000000          0      1     10     14   20         0.912638      
+   500.0000000          0      1     10     17   20          1.07933      
+   500.0000000          0      1     10     20   20          12.7283      
+   500.0000000          0      1     10     23   20          1.48020      
+   500.0000000          0      1     10     26   20          1.50457      
+   500.0000000          0      1     10     29   20          1.13823      
+   500.0000000          0      1     10     32   20          1.34929      
+
+   500.0000000          0      1     10      1   21         1.446835E-02  
+   500.0000000          0      1     10      3   21         0.215881      
+   500.0000000          0      1     10      4   21         0.133409      
+   500.0000000          0      1     10      6   21         0.981772      
+   500.0000000          0      1     10      7   21         0.128333      
+   500.0000000          0      1     10      9   21          1.73138      
+   500.0000000          0      1     10     10   21         0.303929      
+   500.0000000          0      1     10     12   21          2.96345      
+   500.0000000          0      1     10     13   21         0.373934      
+   500.0000000          0      1     10     15   21          4.79337      
+   500.0000000          0      1     10     16   21         0.476368      
+   500.0000000          0      1     10     18   21          7.46544      
+   500.0000000          0      1     10     19   21         0.803369      
+   500.0000000          0      1     10     21   21          51.8309      
+   500.0000000          0      1     10     22   21          1.03890      
+   500.0000000          0      1     10     24   21          8.34755      
+   500.0000000          0      1     10     25   21         0.929331      
+   500.0000000          0      1     10     27   21          3.20780      
+   500.0000000          0      1     10     28   21         0.836062      
+   500.0000000          0      1     10     31   21         0.868205      
+
+   500.0000000          0      1     10      1   22         1.484924E-03  
+   500.0000000          0      1     10      3   22         2.436616E-02  
+   500.0000000          0      1     10      4   22         6.595798E-02  
+   500.0000000          0      1     10      6   22         7.885702E-02  
+   500.0000000          0      1     10      7   22         0.100672      
+   500.0000000          0      1     10      9   22         0.142504      
+   500.0000000          0      1     10     10   22         0.196784      
+   500.0000000          0      1     10     12   22         0.287536      
+   500.0000000          0      1     10     13   22         0.473435      
+   500.0000000          0      1     10     15   22         0.280686      
+   500.0000000          0      1     10     16   22         0.333159      
+   500.0000000          0      1     10     18   22         0.488571      
+   500.0000000          0      1     10     19   22         0.396361      
+   500.0000000          0      1     10     21   22         0.740413      
+   500.0000000          0      1     10     22   22          9.83692      
+   500.0000000          0      1     10     24   22         0.622221      
+   500.0000000          0      1     10     25   22         0.910574      
+   500.0000000          0      1     10     27   22         0.232906      
+   500.0000000          0      1     10     28   22         0.529546      
+   500.0000000          0      1     10     31   22         0.704674      
+
+   500.0000000          0      1     10      2   23         2.326810E-02  
+   500.0000000          0      1     10      5   23         0.158952      
+   500.0000000          0      1     10      8   23         0.351989      
+   500.0000000          0      1     10     11   23         0.605364      
+   500.0000000          0      1     10     14   23         0.724685      
+   500.0000000          0      1     10     17   23          1.13363      
+   500.0000000          0      1     10     20   23          1.37907      
+   500.0000000          0      1     10     23   23          14.3299      
+   500.0000000          0      1     10     26   23          1.68142      
+   500.0000000          0      1     10     29   23          1.43787      
+   500.0000000          0      1     10     32   23          1.81379      
+
+   500.0000000          0      1     10      1   24         1.192712E-02  
+   500.0000000          0      1     10      3   24         0.152745      
+   500.0000000          0      1     10      4   24         0.130557      
+   500.0000000          0      1     10      6   24         0.734772      
+   500.0000000          0      1     10      7   24         0.146707      
+   500.0000000          0      1     10      9   24          1.77348      
+   500.0000000          0      1     10     10   24         0.255213      
+   500.0000000          0      1     10     12   24          2.91309      
+   500.0000000          0      1     10     13   24         0.314692      
+   500.0000000          0      1     10     15   24          4.53913      
+   500.0000000          0      1     10     16   24         0.587664      
+   500.0000000          0      1     10     18   24          6.67787      
+   500.0000000          0      1     10     19   24         0.949822      
+   500.0000000          0      1     10     21   24          10.9574      
+   500.0000000          0      1     10     22   24          1.14602      
+   500.0000000          0      1     10     24   24          66.9937      
+   500.0000000          0      1     10     25   24          1.21307      
+   500.0000000          0      1     10     27   24          7.35396      
+   500.0000000          0      1     10     28   24          1.27406      
+   500.0000000          0      1     10     31   24         0.880937      
+
+   500.0000000          0      1     10      1   25         1.421906E-02  
+   500.0000000          0      1     10      3   25         3.134451E-02  
+   500.0000000          0      1     10      4   25         5.701184E-02  
+   500.0000000          0      1     10      6   25         6.271921E-02  
+   500.0000000          0      1     10      7   25         6.862923E-02  
+   500.0000000          0      1     10      9   25         0.171403      
+   500.0000000          0      1     10     10   25         0.163879      
+   500.0000000          0      1     10     12   25         0.325101      
+   500.0000000          0      1     10     13   25         0.235350      
+   500.0000000          0      1     10     15   25         0.349171      
+   500.0000000          0      1     10     16   25         0.215980      
+   500.0000000          0      1     10     18   25         0.482219      
+   500.0000000          0      1     10     19   25         0.529745      
+   500.0000000          0      1     10     21   25         0.622614      
+   500.0000000          0      1     10     22   25         0.855981      
+   500.0000000          0      1     10     24   25         0.619133      
+   500.0000000          0      1     10     25   25          10.1065      
+   500.0000000          0      1     10     27   25         0.355455      
+   500.0000000          0      1     10     28   25         0.993163      
+   500.0000000          0      1     10     31   25         0.995909      
+
+   500.0000000          0      1     10      2   26         1.690837E-02  
+   500.0000000          0      1     10      5   26         0.122987      
+   500.0000000          0      1     10      8   26         0.333667      
+   500.0000000          0      1     10     11   26         0.474962      
+   500.0000000          0      1     10     14   26         0.639714      
+   500.0000000          0      1     10     17   26         0.862698      
+   500.0000000          0      1     10     20   26          1.35775      
+   500.0000000          0      1     10     23   26          1.62861      
+   500.0000000          0      1     10     26   26          16.2526      
+   500.0000000          0      1     10     29   26          2.40255      
+   500.0000000          0      1     10     32   26          1.99226      
+
+   500.0000000          0      1     10      1   27         8.025990E-03  
+   500.0000000          0      1     10      3   27         0.193496      
+   500.0000000          0      1     10      4   27         9.794744E-02  
+   500.0000000          0      1     10      6   27         0.641207      
+   500.0000000          0      1     10      7   27         0.126083      
+   500.0000000          0      1     10      9   27          1.29601      
+   500.0000000          0      1     10     10   27         0.182976      
+   500.0000000          0      1     10     12   27          2.37643      
+   500.0000000          0      1     10     13   27         0.261615      
+   500.0000000          0      1     10     15   27          3.36608      
+   500.0000000          0      1     10     16   27         0.481085      
+   500.0000000          0      1     10     18   27          6.27901      
+   500.0000000          0      1     10     19   27         0.850930      
+   500.0000000          0      1     10     21   27          9.25332      
+   500.0000000          0      1     10     22   27         0.942696      
+   500.0000000          0      1     10     24   27          16.1608      
+   500.0000000          0      1     10     25   27          1.53047      
+   500.0000000          0      1     10     27   27          93.8312      
+   500.0000000          0      1     10     28   27          2.07362      
+   500.0000000          0      1     10     31   27          1.65947      
+
+   500.0000000          0      1     10      1   28         1.306658E-03  
+   500.0000000          0      1     10      3   28         4.703073E-02  
+   500.0000000          0      1     10      4   28         3.026065E-02  
+   500.0000000          0      1     10      6   28         0.162496      
+   500.0000000          0      1     10      7   28         4.896982E-02  
+   500.0000000          0      1     10      9   28         0.166077      
+   500.0000000          0      1     10     10   28         8.546109E-02  
+   500.0000000          0      1     10     12   28         0.270685      
+   500.0000000          0      1     10     13   28         0.152882      
+   500.0000000          0      1     10     15   28         0.322292      
+   500.0000000          0      1     10     16   28         0.385779      
+   500.0000000          0      1     10     18   28         0.496690      
+   500.0000000          0      1     10     19   28         0.534572      
+   500.0000000          0      1     10     21   28         0.542249      
+   500.0000000          0      1     10     22   28         0.481908      
+   500.0000000          0      1     10     24   28         0.629509      
+   500.0000000          0      1     10     25   28         0.961462      
+   500.0000000          0      1     10     27   28         0.466228      
+   500.0000000          0      1     10     28   28          12.4060      
+   500.0000000          0      1     10     31   28          1.36563      
+
+   500.0000000          0      1     10      2   29         7.755287E-03  
+   500.0000000          0      1     10      5   29         0.113798      
+   500.0000000          0      1     10      8   29         0.315479      
+   500.0000000          0      1     10     11   29         0.432551      
+   500.0000000          0      1     10     14   29         0.729337      
+   500.0000000          0      1     10     17   29         0.743573      
+   500.0000000          0      1     10     20   29          1.03560      
+   500.0000000          0      1     10     23   29          1.40414      
+   500.0000000          0      1     10     26   29          2.42228      
+   500.0000000          0      1     10     29   29          18.7783      
+   500.0000000          0      1     10     32   29          2.84198      
+
+   500.0000000          0      1     10      1   31         1.373656E-02  
+   500.0000000          0      1     10      3   31         1.382531E-02  
+   500.0000000          0      1     10      4   31         3.443975E-02  
+   500.0000000          0      1     10      6   31         7.697966E-02  
+   500.0000000          0      1     10      7   31         0.102158      
+   500.0000000          0      1     10      9   31         0.101982      
+   500.0000000          0      1     10     10   31         0.137078      
+   500.0000000          0      1     10     12   31         0.205608      
+   500.0000000          0      1     10     13   31         0.197060      
+   500.0000000          0      1     10     15   31         0.302209      
+   500.0000000          0      1     10     16   31         0.303085      
+   500.0000000          0      1     10     18   31         0.459560      
+   500.0000000          0      1     10     19   31         0.458826      
+   500.0000000          0      1     10     21   31         0.561619      
+   500.0000000          0      1     10     22   31         0.639599      
+   500.0000000          0      1     10     24   31         0.434125      
+   500.0000000          0      1     10     25   31         0.961591      
+   500.0000000          0      1     10     27   31         0.372133      
+   500.0000000          0      1     10     28   31          1.36205      
+   500.0000000          0      1     10     31   31          13.8264      
+
+   500.0000000          0      1     10      2   32         2.106433E-02  
+   500.0000000          0      1     10      5   32         9.917130E-02  
+   500.0000000          0      1     10      8   32         0.232516      
+   500.0000000          0      1     10     11   32         0.406670      
+   500.0000000          0      1     10     14   32         0.600836      
+   500.0000000          0      1     10     17   32         0.830400      
+   500.0000000          0      1     10     20   32          1.29622      
+   500.0000000          0      1     10     23   32          1.87023      
+   500.0000000          0      1     10     26   32          2.12087      
+   500.0000000          0      1     10     29   32          3.00080      
+   500.0000000          0      1     10     32   32          23.1875      
+
+  TOTAL INELASTIC INTEGRAL CROSS SECTIONS IN ANGSTROM**2 FROM LEVEL
+   6.04224E+00                                                 1
+   7.61467E+00                                                 2
+   2.43268E+01                                                 3
+   5.99389E+00                                                 4
+   7.39688E+00                                                 5
+   2.08455E+01                                                 6
+   5.53419E+00                                                 7
+   8.12686E+00                                                 8
+   2.19688E+01                                                 9
+   5.49054E+00                                                10
+   8.04429E+00                                                11
+   2.37799E+01                                                12
+   6.00193E+00                                                13
+   8.19209E+00                                                14
+   2.56234E+01                                                15
+   6.05910E+00                                                16
+   7.86789E+00                                                17
+   2.96441E+01                                                18
+   6.79986E+00                                                19
+   8.67445E+00                                                20
+   3.56130E+01                                                21
+   6.61071E+00                                                22
+   9.31005E+00                                                23
+   4.20131E+01                                                24
+   7.14903E+00                                                25
+   9.83211E+00                                                26
+   4.77813E+01                                                27
+   7.15149E+00                                                28
+   1.00465E+01                                                29
+   6.73766E+00                                                31
+   1.04788E+01                                                32
+
+
+
+  ---- MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ---
+ |                                                                            |
+ |                Non-reactive quantum scattering calculations                |
+ |                     on atomic and molecular collisions                     |
+ |                                                                            |
+ |              Copyright (C) 2022 J. M. Hutson & C. R. Le Sueur              |
+ |                                                                            |
+ |                               Version 2022.0                               |
+ |                                                                            |
+ |                    This run used     108.79 cpu secs and                   |
+ |             313576 of the allocated 100000000 words of storage             |
+ |                                                                            |
+  ---- MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ---

@@ -1,0 +1,1239 @@
+  ---- MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ---
+ |                                                                            |
+ |                Non-reactive quantum scattering calculations                |
+ |                     on atomic and molecular collisions                     |
+ |                                                                            |
+ |              Copyright (C) 2022 J. M. Hutson & C. R. Le Sueur              |
+ |                                                                            |
+ |                               Version 2022.0                               |
+ |                                                                            |
+ |                       Run on 07 Jun 2025   at 15:17:54                     |
+ |                                                                            |
+  ---- MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ---
+
+
+  This program is free software: you can redistribute it and/or modify it under
+  the terms of the GNU General Public License, version 3, as published by
+  the Free Software Foundation.
+
+  Publications resulting from the use of this program should cite both the
+  version of the program used:
+
+  J. M. Hutson & C. R. Le Sueur, MOLSCAT: a program for non-reactive quantum
+  scattering calculation on atomic and molecular collisions,
+  Version 2022.0, https//github.com/molscat/molscat
+
+  and the published paper:
+
+  J. M. Hutson & C. R. Le Sueur, Comput. Phys. Commun., 241, 9-18 (2019).
+
+
+  USING CODATA 2018 RECOMMENDED VALUES OF FUNDAMENTAL PHYSICAL CONSTANTS
+
+  MEMORY ALLOCATED TO MAIN WORKING ARRAY IS 100000000 (8-BYTE) WORDS (  762.94 MB)
+  2 INTEGERS CAN BE STORED IN EACH WORD.
+
+  PRINT LEVEL (IPRINT) =  1     OTHER PRINT CONTROLS  ISIGPR = 1
+
+  REDUCED MASS FOR INTERACTION =   1.908900000 ATOMIC MASS UNITS (DALTONS)
+
+  ======================================================================================================================
+
+  COUPLED STATES APPROXIMATION OF MCGUIRE AND KOURI (C.F.  J. CHEM. PHYS. 60, 2488 (1974))  WILL BE USED.
+
+           ITYPE = 23
+           L(I) = JTOT + ( 0) * (J(I)-2*M)
+
+  INTERACTION TYPE IS    LINEAR ROTOR - LINEAR ROTOR.  
+
+  QUANTUM NUMBERS OF ROTOR 1 OBTAINED FROM J1MIN =  0, J1MAX = 21, J1STEP = 2
+
+  QUANTUM NUMBERS OF ROTOR 2 OBTAINED FROM J2MIN =  0, J2MAX =  2, J2STEP = 2
+
+  ENERGY LEVELS OF ROTOR 1 OBTAINED FROM B(E) =    0.430500
+
+  ENERGY LEVELS OF ROTOR 2 OBTAINED FROM B(E) =   10.853000
+
+  *** NOTE.  IN CS CALCULATION MINUS/PLUS M-VALUE ASSUMED TO BE IDENTICAL.
+
+  QUANTUM NUMBERS FOR INTERACTING PAIR:
+  EACH PAIR STATE IS LABELLED BY  3 QUANTUM NUMBERS
+  EACH CHANNEL FUNCTION IS FORMED BY COMBINING A PAIR STATE WITH A VALUE OF L.
+  THE RESULTING BASIS SET IS ASYMPTOTICALLY DIAGONAL.
+
+  PAIR STATE    - PAIR STATE QUANTUM NUMBERS -   PAIR LEVEL     PAIR ENERGY (CM-1)
+                       J1        J2       J12
+        1               0         0         0       1             0.0000000
+        2               0         2         2       2            65.1180000
+        3               2         0         2       3             2.5830000
+        4               2         2         0       4            67.7010000
+        5               2         2         1       4            67.7010000
+        6               2         2         2       4            67.7010000
+        7               2         2         3       4            67.7010000
+        8               2         2         4       4            67.7010000
+        9               4         0         4       5             8.6100000
+       10               4         2         2       6            73.7280000
+       11               4         2         3       6            73.7280000
+       12               4         2         4       6            73.7280000
+       13               4         2         5       6            73.7280000
+       14               4         2         6       6            73.7280000
+       15               6         0         6       7            18.0810000
+       16               6         2         4       8            83.1990000
+       17               6         2         5       8            83.1990000
+       18               6         2         6       8            83.1990000
+       19               6         2         7       8            83.1990000
+       20               6         2         8       8            83.1990000
+       21               8         0         8       9            30.9960000
+       22               8         2         6      10            96.1140000
+       23               8         2         7      10            96.1140000
+       24               8         2         8      10            96.1140000
+       25               8         2         9      10            96.1140000
+       26               8         2        10      10            96.1140000
+       27              10         0        10      11            47.3550000
+       28              10         2         8      12           112.4730000
+       29              10         2         9      12           112.4730000
+       30              10         2        10      12           112.4730000
+       31              10         2        11      12           112.4730000
+       32              10         2        12      12           112.4730000
+       33              12         0        12      13            67.1580000
+       34              12         2        10      14           132.2760000
+       35              12         2        11      14           132.2760000
+       36              12         2        12      14           132.2760000
+       37              12         2        13      14           132.2760000
+       38              12         2        14      14           132.2760000
+       39              14         0        14      15            90.4050000
+       40              14         2        12      16           155.5230000
+       41              14         2        13      16           155.5230000
+       42              14         2        14      16           155.5230000
+       43              14         2        15      16           155.5230000
+       44              14         2        16      16           155.5230000
+       45              16         0        16      17           117.0960000
+       46              16         2        14      18           182.2140000
+       47              16         2        15      18           182.2140000
+       48              16         2        16      18           182.2140000
+       49              16         2        17      18           182.2140000
+       50              16         2        18      18           182.2140000
+       51              18         0        18      19           147.2310000
+       52              18         2        16      20           212.3490000
+       53              18         2        17      20           212.3490000
+       54              18         2        18      20           212.3490000
+       55              18         2        19      20           212.3490000
+       56              18         2        20      20           212.3490000
+       57              20         0        20      21           180.8100000
+       58              20         2        18      22           245.9280000
+       59              20         2        19      22           245.9280000
+       60              20         2        20      22           245.9280000
+       61              20         2        21      22           245.9280000
+       62              20         2        22      22           245.9280000
+
+  ======================================================================================================================
+  GENERAL-PURPOSE POTENL ROUTINE (MAY 18)
+  IHOMO  = 2 SPECIFIES HOMONUCLEAR SYMMETRY FOR ROTOR 1.
+  IHOMO2 = 2 SPECIFIES HOMONUCLEAR SYMMETRY FOR ROTOR 2.
+
+  ANGULAR DEPENDENCE OF POTENTIAL EXPANDED IN TERMS OF
+  CONTRACTED NORMALISED SPHERICAL HARMONICS,
+  SUM(M1,M2,M) C(L1,M1,L2,M2,L,M) Y(L1,M1) Y(L2,M2) Y(L,M)
+  SEE GREEN, J. CHEM. PHYS. 62, 2271 (1975)
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   1
+  WHICH HAS LAM1 =   0,  LAM2 =   0,  LAM =   0
+
+                 6.85292124E+10 * EXP(   -4.0000 * R )
+                -3.44066272E+10 * EXP(   -3.5000 * R )
+                 7.30097888E+09 * EXP(   -3.0000 * R )
+                -7.93063276E+08 * EXP(   -2.5000 * R )
+                 4.80115511E+07 * EXP(   -2.0000 * R )
+                -1.66876123E+06 * EXP(   -1.5000 * R )
+                 1.67823286E+04 * EXP(   -1.0000 * R )
+                -6.76741979E+01 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   2
+  WHICH HAS LAM1 =   0,  LAM2 =   2,  LAM =   2
+
+                -1.64098009E+10 * EXP(   -4.0000 * R )
+                 7.37789666E+09 * EXP(   -3.5000 * R )
+                -1.38032714E+09 * EXP(   -3.0000 * R )
+                 1.45038284E+08 * EXP(   -2.5000 * R )
+                -9.42535774E+06 * EXP(   -2.0000 * R )
+                 3.72939122E+05 * EXP(   -1.5000 * R )
+                -7.98565979E+03 * EXP(   -1.0000 * R )
+                -9.03083510E-01 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   3
+  WHICH HAS LAM1 =   0,  LAM2 =   4,  LAM =   4
+
+                 6.95067888E+08 * EXP(   -4.0000 * R )
+                -4.86744986E+08 * EXP(   -3.5000 * R )
+                 1.24986874E+08 * EXP(   -3.0000 * R )
+                -1.53340299E+07 * EXP(   -2.5000 * R )
+                 9.56856437E+05 * EXP(   -2.0000 * R )
+                -2.86221422E+04 * EXP(   -1.5000 * R )
+                 2.79604003E+02 * EXP(   -1.0000 * R )
+                 2.48211257E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   4
+  WHICH HAS LAM1 =   2,  LAM2 =   0,  LAM =   2
+
+                 1.04530821E+11 * EXP(   -4.0000 * R )
+                -5.01603001E+10 * EXP(   -3.5000 * R )
+                 1.00850087E+10 * EXP(   -3.0000 * R )
+                -1.03322921E+09 * EXP(   -2.5000 * R )
+                 5.85687190E+07 * EXP(   -2.0000 * R )
+                -1.80082734E+06 * EXP(   -1.5000 * R )
+                 2.01493438E+04 * EXP(   -1.0000 * R )
+                -1.44513222E+01 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   5
+  WHICH HAS LAM1 =   2,  LAM2 =   2,  LAM =   0
+
+                -5.05308762E+10 * EXP(   -4.0000 * R )
+                 2.16606369E+10 * EXP(   -3.5000 * R )
+                -3.85795993E+09 * EXP(   -3.0000 * R )
+                 3.80620314E+08 * EXP(   -2.5000 * R )
+                -2.24814610E+07 * EXP(   -2.0000 * R )
+                 7.62888005E+05 * EXP(   -1.5000 * R )
+                -1.75030750E+04 * EXP(   -1.0000 * R )
+                -4.14507852E+00 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   6
+  WHICH HAS LAM1 =   2,  LAM2 =   2,  LAM =   2
+
+                 3.25696102E+10 * EXP(   -4.0000 * R )
+                -1.40739377E+10 * EXP(   -3.5000 * R )
+                 2.51463425E+09 * EXP(   -3.0000 * R )
+                -2.46243493E+08 * EXP(   -2.5000 * R )
+                 1.42837676E+07 * EXP(   -2.0000 * R )
+                -4.73205617E+05 * EXP(   -1.5000 * R )
+                 1.05777962E+04 * EXP(   -1.0000 * R )
+                 2.70304588E+00 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   7
+  WHICH HAS LAM1 =   2,  LAM2 =   2,  LAM =   4
+
+                -4.47329008E+10 * EXP(   -4.0000 * R )
+                 1.95933301E+10 * EXP(   -3.5000 * R )
+                -3.53635858E+09 * EXP(   -3.0000 * R )
+                 3.46746235E+08 * EXP(   -2.5000 * R )
+                -1.99919283E+07 * EXP(   -2.0000 * R )
+                 6.57267424E+05 * EXP(   -1.5000 * R )
+                -1.45725369E+04 * EXP(   -1.0000 * R )
+                -3.50713598E+00 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   8
+  WHICH HAS LAM1 =   2,  LAM2 =   4,  LAM =   2
+
+                 3.11535593E+09 * EXP(   -4.0000 * R )
+                -1.51679588E+09 * EXP(   -3.5000 * R )
+                 2.94532662E+08 * EXP(   -3.0000 * R )
+                -2.76241823E+07 * EXP(   -2.5000 * R )
+                 1.23004543E+06 * EXP(   -2.0000 * R )
+                -2.13427750E+04 * EXP(   -1.5000 * R )
+                -1.92809492E+01 * EXP(   -1.0000 * R )
+                -9.20430453E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   9
+  WHICH HAS LAM1 =   2,  LAM2 =   4,  LAM =   4
+
+                -2.59736719E+09 * EXP(   -4.0000 * R )
+                 1.24733106E+09 * EXP(   -3.5000 * R )
+                -2.40243690E+08 * EXP(   -3.0000 * R )
+                 2.25922899E+07 * EXP(   -2.5000 * R )
+                -1.02958692E+06 * EXP(   -2.0000 * R )
+                 1.95001844E+04 * EXP(   -1.5000 * R )
+                -3.48167005E+01 * EXP(   -1.0000 * R )
+                 9.10029829E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  10
+  WHICH HAS LAM1 =   2,  LAM2 =   4,  LAM =   6
+
+                 3.77413430E+09 * EXP(   -4.0000 * R )
+                -1.77059885E+09 * EXP(   -3.5000 * R )
+                 3.34480282E+08 * EXP(   -3.0000 * R )
+                -3.11750484E+07 * EXP(   -2.5000 * R )
+                 1.43280330E+06 * EXP(   -2.0000 * R )
+                -2.84698440E+04 * EXP(   -1.5000 * R )
+                 8.91239906E+01 * EXP(   -1.0000 * R )
+                -9.56893042E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  11
+  WHICH HAS LAM1 =   4,  LAM2 =   0,  LAM =   4
+
+                 5.72959460E+10 * EXP(   -4.0000 * R )
+                -2.32475059E+10 * EXP(   -3.5000 * R )
+                 3.94790945E+09 * EXP(   -3.0000 * R )
+                -3.30907534E+08 * EXP(   -2.5000 * R )
+                 1.46521814E+07 * EXP(   -2.0000 * R )
+                -3.19481709E+05 * EXP(   -1.5000 * R )
+                 1.85028554E+03 * EXP(   -1.0000 * R )
+                 5.71526548E-01 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  12
+  WHICH HAS LAM1 =   4,  LAM2 =   2,  LAM =   2
+
+                -4.96874745E+10 * EXP(   -4.0000 * R )
+                 1.90153311E+10 * EXP(   -3.5000 * R )
+                -2.94674345E+09 * EXP(   -3.0000 * R )
+                 2.39960980E+08 * EXP(   -2.5000 * R )
+                -1.11213475E+07 * EXP(   -2.0000 * R )
+                 2.66874305E+05 * EXP(   -1.5000 * R )
+                -4.33673109E+03 * EXP(   -1.0000 * R )
+                 2.60169449E-01 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  13
+  WHICH HAS LAM1 =   4,  LAM2 =   2,  LAM =   4
+
+                 4.15186833E+10 * EXP(   -4.0000 * R )
+                -1.62758472E+10 * EXP(   -3.5000 * R )
+                 2.59515468E+09 * EXP(   -3.0000 * R )
+                -2.18562481E+08 * EXP(   -2.5000 * R )
+                 1.05039541E+07 * EXP(   -2.0000 * R )
+                -2.64590453E+05 * EXP(   -1.5000 * R )
+                 4.39753568E+03 * EXP(   -1.0000 * R )
+                -1.15947501E-01 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  14
+  WHICH HAS LAM1 =   4,  LAM2 =   2,  LAM =   6
+
+                -5.54327693E+10 * EXP(   -4.0000 * R )
+                 2.21991017E+10 * EXP(   -3.5000 * R )
+                -3.62431973E+09 * EXP(   -3.0000 * R )
+                 3.13420194E+08 * EXP(   -2.5000 * R )
+                -1.54882837E+07 * EXP(   -2.0000 * R )
+                 4.04142862E+05 * EXP(   -1.5000 * R )
+                -6.95702794E+03 * EXP(   -1.0000 * R )
+                -6.25625339E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  15
+  WHICH HAS LAM1 =   4,  LAM2 =   4,  LAM =   0
+
+                 1.88162828E+10 * EXP(   -4.0000 * R )
+                -6.85127401E+09 * EXP(   -3.5000 * R )
+                 9.94019178E+08 * EXP(   -3.0000 * R )
+                -7.32876279E+07 * EXP(   -2.5000 * R )
+                 2.88292738E+06 * EXP(   -2.0000 * R )
+                -5.86801997E+04 * EXP(   -1.5000 * R )
+                 4.48082824E+02 * EXP(   -1.0000 * R )
+                -4.92402790E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  16
+  WHICH HAS LAM1 =   4,  LAM2 =   4,  LAM =   2
+
+                -9.83614907E+09 * EXP(   -4.0000 * R )
+                 3.58912115E+09 * EXP(   -3.5000 * R )
+                -5.22333129E+08 * EXP(   -3.0000 * R )
+                 3.86721932E+07 * EXP(   -2.5000 * R )
+                -1.52966056E+06 * EXP(   -2.0000 * R )
+                 3.13742780E+04 * EXP(   -1.5000 * R )
+                -2.42047136E+02 * EXP(   -1.0000 * R )
+                 2.68646890E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  17
+  WHICH HAS LAM1 =   4,  LAM2 =   4,  LAM =   4
+
+                 8.24680290E+09 * EXP(   -4.0000 * R )
+                -3.02546196E+09 * EXP(   -3.5000 * R )
+                 4.43676942E+08 * EXP(   -3.0000 * R )
+                -3.31878127E+07 * EXP(   -2.5000 * R )
+                 1.33060647E+06 * EXP(   -2.0000 * R )
+                -2.78032447E+04 * EXP(   -1.5000 * R )
+                 2.20461802E+02 * EXP(   -1.0000 * R )
+                -2.67761785E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  18
+  WHICH HAS LAM1 =   4,  LAM2 =   4,  LAM =   6
+
+                -8.44408895E+09 * EXP(   -4.0000 * R )
+                 3.12626799E+09 * EXP(   -3.5000 * R )
+                -4.64198812E+08 * EXP(   -3.0000 * R )
+                 3.52886834E+07 * EXP(   -2.5000 * R )
+                -1.44407674E+06 * EXP(   -2.0000 * R )
+                 3.09677887E+04 * EXP(   -1.5000 * R )
+                -2.54733561E+02 * EXP(   -1.0000 * R )
+                 3.37939362E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  19
+  WHICH HAS LAM1 =   4,  LAM2 =   4,  LAM =   8
+
+                 1.15785905E+10 * EXP(   -4.0000 * R )
+                -4.34279566E+09 * EXP(   -3.5000 * R )
+                 6.55859795E+08 * EXP(   -3.0000 * R )
+                -5.09270815E+07 * EXP(   -2.5000 * R )
+                 2.13841380E+06 * EXP(   -2.0000 * R )
+                -4.72702446E+04 * EXP(   -1.5000 * R )
+                 4.05675194E+02 * EXP(   -1.0000 * R )
+                -5.95441333E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  20
+  WHICH HAS LAM1 =   6,  LAM2 =   0,  LAM =   6
+
+                 1.09873842E+10 * EXP(   -4.0000 * R )
+                -1.70898605E+09 * EXP(   -3.5000 * R )
+                -2.34517604E+08 * EXP(   -3.0000 * R )
+                 8.11985435E+07 * EXP(   -2.5000 * R )
+                -7.55233502E+06 * EXP(   -2.0000 * R )
+                 3.09211758E+05 * EXP(   -1.5000 * R )
+                -5.26952252E+03 * EXP(   -1.0000 * R )
+                 3.66467302E+00 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  21
+  WHICH HAS LAM1 =   6,  LAM2 =   2,  LAM =   4
+
+                -3.67589028E+10 * EXP(   -4.0000 * R )
+                 1.36941622E+10 * EXP(   -3.5000 * R )
+                -2.04451162E+09 * EXP(   -3.0000 * R )
+                 1.59049892E+08 * EXP(   -2.5000 * R )
+                -7.06016202E+06 * EXP(   -2.0000 * R )
+                 1.69887174E+05 * EXP(   -1.5000 * R )
+                -3.01257143E+03 * EXP(   -1.0000 * R )
+                -4.66561285E-01 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  22
+  WHICH HAS LAM1 =   6,  LAM2 =   2,  LAM =   6
+
+                 2.43528564E+10 * EXP(   -4.0000 * R )
+                -8.89282465E+09 * EXP(   -3.5000 * R )
+                 1.28316185E+09 * EXP(   -3.0000 * R )
+                -9.34270926E+07 * EXP(   -2.5000 * R )
+                 3.67912168E+06 * EXP(   -2.0000 * R )
+                -7.10712921E+04 * EXP(   -1.5000 * R )
+                 9.08350176E+02 * EXP(   -1.0000 * R )
+                 4.57393059E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  23
+  WHICH HAS LAM1 =   6,  LAM2 =   2,  LAM =   8
+
+                -2.24371859E+10 * EXP(   -4.0000 * R )
+                 7.81925763E+09 * EXP(   -3.5000 * R )
+                -1.03418139E+09 * EXP(   -3.0000 * R )
+                 6.15901716E+07 * EXP(   -2.5000 * R )
+                -1.36628148E+06 * EXP(   -2.0000 * R )
+                -1.82353543E+04 * EXP(   -1.5000 * R )
+                 1.25775188E+03 * EXP(   -1.0000 * R )
+                 2.41569968E-01 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  24
+  WHICH HAS LAM1 =   6,  LAM2 =   4,  LAM =   2
+
+                 1.47864001E+10 * EXP(   -4.0000 * R )
+                -5.29800254E+09 * EXP(   -3.5000 * R )
+                 7.49476162E+08 * EXP(   -3.0000 * R )
+                -5.30860030E+07 * EXP(   -2.5000 * R )
+                 1.95234286E+06 * EXP(   -2.0000 * R )
+                -3.51419915E+04 * EXP(   -1.5000 * R )
+                 2.00590893E+02 * EXP(   -1.0000 * R )
+                -1.04689311E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  25
+  WHICH HAS LAM1 =   6,  LAM2 =   4,  LAM =   4
+
+                -9.20201429E+09 * EXP(   -4.0000 * R )
+                 3.27200008E+09 * EXP(   -3.5000 * R )
+                -4.57196140E+08 * EXP(   -3.0000 * R )
+                 3.17422384E+07 * EXP(   -2.5000 * R )
+                -1.12737763E+06 * EXP(   -2.0000 * R )
+                 1.89178214E+04 * EXP(   -1.5000 * R )
+                -8.55857779E+01 * EXP(   -1.0000 * R )
+                -5.54788911E-03 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  26
+  WHICH HAS LAM1 =   6,  LAM2 =   4,  LAM =   6
+
+                 7.05016825E+09 * EXP(   -4.0000 * R )
+                -2.47211000E+09 * EXP(   -3.5000 * R )
+                 3.37491475E+08 * EXP(   -3.0000 * R )
+                -2.25234247E+07 * EXP(   -2.5000 * R )
+                 7.42313900E+05 * EXP(   -2.0000 * R )
+                -1.04110624E+04 * EXP(   -1.5000 * R )
+                 1.17592846E+01 * EXP(   -1.0000 * R )
+                 1.95806599E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  27
+  WHICH HAS LAM1 =   6,  LAM2 =   4,  LAM =   8
+
+                -5.73033513E+09 * EXP(   -4.0000 * R )
+                 1.96041900E+09 * EXP(   -3.5000 * R )
+                -2.56275299E+08 * EXP(   -3.0000 * R )
+                 1.57740501E+07 * EXP(   -2.5000 * R )
+                -4.32396426E+05 * EXP(   -2.0000 * R )
+                 2.73363499E+03 * EXP(   -1.5000 * R )
+                 6.49712366E+01 * EXP(   -1.0000 * R )
+                -3.46577591E-02 * EXP(   -0.2000 * R )
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER  28
+  WHICH HAS LAM1 =   6,  LAM2 =   4,  LAM =  10
+
+                 5.35609964E+09 * EXP(   -4.0000 * R )
+                -1.74639767E+09 * EXP(   -3.5000 * R )
+                 2.07767858E+08 * EXP(   -3.0000 * R )
+                -1.02841584E+07 * EXP(   -2.5000 * R )
+                 1.03992854E+05 * EXP(   -2.0000 * R )
+                 7.45257983E+03 * EXP(   -1.5000 * R )
+                -1.88749696E+02 * EXP(   -1.0000 * R )
+                 5.90574762E-02 * EXP(   -0.2000 * R )
+
+  POTENL PROCESSING FINISHED.
+
+  POTENTIAL RETURNED IN UNITS OF EPSIL  =  1.0000000     CM-1
+        CODED WITH R IN UNITS OF RM     =  1.0000000     ANGSTROM
+
+  ALL LENGTHS ARE IN UNITS OF ANGSTROM UNLESS OTHERWISE STATED
+
+  INTERACTION MATRIX USES  28 BLOCKS OF VL ARRAY FOR R-DEPENDENT TERMS IN POTENTIAL
+
+  ======================================================================================================================
+
+  PROPAGATION METHODS FOR COUPLED EQUATIONS SPECIFIED BY IPROPS =  6
+
+  COUPLED EQUATIONS WILL BE PROPAGATED OUTWARDS IN 1 SEGMENT 
+
+  PROPAGATION RANGE IS CONTROLLED BY VARIABLES RMIN AND RMAX, WITH INPUT VALUES
+  RMIN =   2.500     RMAX =   50.00    
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  SEGMENT 1 WILL BE PROPAGATED OUTWARDS
+
+  FROM RMIN CHOSEN USING IRMSET =  9 TO RMAX =     50.00
+
+  COUPLED EQUATIONS SOLVED BY DIABATIC MODIFIED LOG-DERIVATIVE PROPAGATOR OF MANOLOPOULOS
+
+  PROPAGATION STEP SIZE DETERMINED USING STEP =   20.0     (PER HALF WAVELENGTH)
+  STEP SIZE CONSTANT THROUGHOUT RANGE
+  STEP SIZE MAY BE ADJUSTED SLIGHTLY SO THAT RANGE IS A WHOLE NUMBER OF STEPS
+
+  LOG-DERIVATIVE MATRIX INITIALISED IN THE LOCAL EIGENBASIS AT RMIN
+  LOCALLY CLOSED CHANNELS INITIALISED WITH A WKB BOUNDARY CONDITION
+  LOCALLY  OPEN  CHANNELS INITIALISED WITH THE VALUE  1.000E+04
+
+  ======================================================================================================================
+
+  INPUT ENERGIES IN UNITS OF CM-1 BY DEFAULT.
+
+  CALCULATIONS WILL BE PERFORMED FOR    1 ENERGY  
+  ENERGY    1           =   500.0000000     CM-1
+
+  ======================================================================================================================
+
+  TOTAL ANGULAR MOMENTUM JTOT RUNS FROM   0  TO      1  IN STEPS OF   1
+
+  EACH JTOT IS SPLIT INTO A MAXIMUM OF  23 SYMMETRY BLOCKS
+
+  STATE-TO-STATE INTEGRAL CROSS-SECTIONS WILL BE COMPUTED BUT NOT STORED ON DISK
+
+  ======================================================================================================================
+
+  INITIALIZATION DONE.  TIME WAS   0.00 CPU SECS.      1742 WORDS OF STORAGE USED.
+
+  ==================================================== C2-H2 system ====================================================
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  1, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.53E-02 &   8.33E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  2, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  3.51E-02 &   4.36E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  3, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  3.18E-02 &   5.85E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  4, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.60E-02 &   2.57E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  5, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.03E-02 &   1.82E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  6, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.09E-02 &   1.26E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  7, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.44E-02 &   1.50E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  8, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.12E-02 &   2.24E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK =  9, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.13E-02 &   1.77E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 10, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.60E-03 &   1.22E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 11, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.43E-03 &   1.24E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 12, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.83E-03 &   1.34E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 13, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.94E-03 &   1.94E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 14, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  7.20E-03 &   2.45E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 15, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.82E-03 &   1.62E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 16, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.91E-03 &   1.58E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 17, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  9.18E-03 &   1.80E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 18, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  6.90E-03 &   2.07E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 19, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.11E-02 &   2.55E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 20, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  8.36E-03 &   1.94E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 21, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  5.97E-03 &   2.25E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 22, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.18E-03 &   0.00E+00
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    0, SYMMETRY BLOCK = 23, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  3.27E-03 &   0.00E+00
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK =  1, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.16E-01 &   2.48E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK =  2, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.11E-01 &   1.30E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK =  3, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.02E-01 &   1.77E-02
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK =  4, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  3.92E-02 &   7.70E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK =  5, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  3.22E-02 &   5.46E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK =  6, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.81E-02 &   3.76E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK =  7, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.69E-02 &   4.45E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK =  8, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.98E-02 &   6.71E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK =  9, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.82E-02 &   5.28E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 10, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.57E-02 &   3.69E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 11, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.64E-02 &   3.70E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 12, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  3.05E-02 &   4.03E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 13, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.58E-02 &   5.79E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 14, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.35E-02 &   7.35E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 15, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.31E-02 &   4.83E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 16, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  3.95E-02 &   4.74E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 17, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.89E-02 &   5.42E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 18, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.54E-02 &   6.22E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 19, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.44E-02 &   7.65E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 20, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  2.47E-02 &   5.81E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 21, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.77E-02 &   6.60E-03
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 22, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  1.29E-02 &   0.00E+00
+  *** FINDRM. UNABLE TO FIND INNER CLASSICAL TURNING POINT. PROPAGATION WILL START AT ORIGIN
+
+  FOR JTOT =    1, SYMMETRY BLOCK = 23, ENERGY(  1) =  500.0000    : MAX DIAG & OFF-DIAG =  4.13E-03 &   0.00E+00
+
+  ==================================================== C2-H2 system ====================================================
+
+
+  STATE-TO-STATE INTEGRAL CROSS SECTIONS IN ANGSTROM**2 BETWEEN   22 LEVELS WITH THRESHOLD ENERGIES (IN CM-1):
+
+    1     0.000000000000
+    2    65.118000000000
+    3     2.583000000000
+    4    67.701000000000
+    5     8.610000000000
+    6    73.728000000000
+    7    18.081000000000
+    8    83.199000000000
+    9    30.996000000000
+   10    96.114000000000
+   11    47.355000000000
+   12   112.473000000000
+   13    67.158000000000
+   14   132.276000000000
+   15    90.405000000000
+   16   155.523000000000
+   17   117.096000000000
+   18   182.214000000000
+   19   147.231000000000
+   20   212.349000000000
+   21   180.810000000000
+   22   245.928000000000
+
+   ENERGY (CM-1)    JTOTL  JSTEP  JTOTU      F    I         SIG(F,I)
+   500.0000000          0      1      1      1    1         0.191029      
+   500.0000000          0      1      1      2    1         2.367535E-02  
+   500.0000000          0      1      1      3    1         1.202784E-02  
+   500.0000000          0      1      1      4    1         4.338195E-03  
+   500.0000000          0      1      1      5    1         1.030551E-02  
+   500.0000000          0      1      1      6    1         1.574971E-02  
+   500.0000000          0      1      1      7    1         1.578139E-03  
+   500.0000000          0      1      1      8    1         1.311102E-02  
+   500.0000000          0      1      1      9    1         2.567912E-03  
+   500.0000000          0      1      1     10    1         1.984159E-02  
+   500.0000000          0      1      1     11    1         3.734114E-03  
+   500.0000000          0      1      1     12    1         3.316750E-02  
+   500.0000000          0      1      1     13    1         3.197378E-03  
+   500.0000000          0      1      1     14    1         3.149280E-03  
+   500.0000000          0      1      1     15    1         2.454832E-02  
+   500.0000000          0      1      1     16    1         7.838178E-03  
+   500.0000000          0      1      1     17    1         1.452977E-04  
+   500.0000000          0      1      1     18    1         6.675023E-03  
+   500.0000000          0      1      1     19    1         8.616866E-03  
+   500.0000000          0      1      1     20    1         8.899451E-03  
+   500.0000000          0      1      1     21    1         4.488571E-03  
+   500.0000000          0      1      1     22    1         7.024618E-03  
+
+   500.0000000          0      1      1      1    2         5.444087E-03  
+   500.0000000          0      1      1      2    2         0.270535      
+   500.0000000          0      1      1      3    2         1.544734E-03  
+   500.0000000          0      1      1      4    2         2.215556E-02  
+   500.0000000          0      1      1      5    2         6.182325E-03  
+   500.0000000          0      1      1      6    2         1.092461E-02  
+   500.0000000          0      1      1      7    2         1.954096E-03  
+   500.0000000          0      1      1      8    2         1.881298E-02  
+   500.0000000          0      1      1      9    2         2.302526E-03  
+   500.0000000          0      1      1     10    2         3.621214E-02  
+   500.0000000          0      1      1     11    2         3.828670E-03  
+   500.0000000          0      1      1     12    2         1.648861E-02  
+   500.0000000          0      1      1     13    2         1.412757E-03  
+   500.0000000          0      1      1     14    2         1.391005E-02  
+   500.0000000          0      1      1     15    2         2.754457E-03  
+   500.0000000          0      1      1     16    2         2.132022E-02  
+   500.0000000          0      1      1     17    2         5.188386E-03  
+   500.0000000          0      1      1     18    2         9.589642E-03  
+   500.0000000          0      1      1     19    2         4.200821E-03  
+   500.0000000          0      1      1     20    2         2.371248E-02  
+   500.0000000          0      1      1     21    2         5.844401E-03  
+   500.0000000          0      1      1     22    2         2.167216E-02  
+
+   500.0000000          0      1      1      1    3         2.418060E-03  
+   500.0000000          0      1      1      2    3         1.350531E-03  
+   500.0000000          0      1      1      3    3         0.245286      
+   500.0000000          0      1      1      4    3         1.257062E-02  
+   500.0000000          0      1      1      5    3         5.706430E-03  
+   500.0000000          0      1      1      6    3         2.192581E-02  
+   500.0000000          0      1      1      7    3         9.169202E-03  
+   500.0000000          0      1      1      8    3         1.635188E-02  
+   500.0000000          0      1      1      9    3         7.983895E-03  
+   500.0000000          0      1      1     10    3         1.457218E-02  
+   500.0000000          0      1      1     11    3         6.598358E-03  
+   500.0000000          0      1      1     12    3         1.300875E-02  
+   500.0000000          0      1      1     13    3         6.788420E-03  
+   500.0000000          0      1      1     14    3         1.186344E-02  
+   500.0000000          0      1      1     15    3         2.248136E-03  
+   500.0000000          0      1      1     16    3         1.986548E-02  
+   500.0000000          0      1      1     17    3         4.518070E-03  
+   500.0000000          0      1      1     18    3         9.789210E-03  
+   500.0000000          0      1      1     19    3         6.224013E-03  
+   500.0000000          0      1      1     20    3         1.701611E-02  
+   500.0000000          0      1      1     21    3         2.078305E-03  
+   500.0000000          0      1      1     22    3         1.176484E-02  
+
+   500.0000000          0      1      1      1    4         2.007034E-04  
+   500.0000000          0      1      1      2    4         4.457587E-03  
+   500.0000000          0      1      1      3    4         2.892831E-03  
+   500.0000000          0      1      1      4    4         0.273717      
+   500.0000000          0      1      1      5    4         4.807721E-03  
+   500.0000000          0      1      1      6    4         2.063982E-02  
+   500.0000000          0      1      1      7    4         2.100388E-03  
+   500.0000000          0      1      1      8    4         2.139516E-02  
+   500.0000000          0      1      1      9    4         3.213377E-03  
+   500.0000000          0      1      1     10    4         2.567057E-02  
+   500.0000000          0      1      1     11    4         4.422629E-03  
+   500.0000000          0      1      1     12    4         2.495857E-02  
+   500.0000000          0      1      1     13    4         3.044555E-03  
+   500.0000000          0      1      1     14    4         2.403395E-02  
+   500.0000000          0      1      1     15    4         3.499458E-03  
+   500.0000000          0      1      1     16    4         2.546574E-02  
+   500.0000000          0      1      1     17    4         2.888456E-03  
+   500.0000000          0      1      1     18    4         2.315665E-02  
+   500.0000000          0      1      1     19    4         4.792877E-03  
+   500.0000000          0      1      1     20    4         1.774009E-02  
+   500.0000000          0      1      1     21    4         3.073107E-03  
+   500.0000000          0      1      1     22    4         1.464866E-02  
+
+   500.0000000          0      1      1      1    5         1.165120E-03  
+   500.0000000          0      1      1      2    5         3.039656E-03  
+   500.0000000          0      1      1      3    5         3.209122E-03  
+   500.0000000          0      1      1      4    5         1.174883E-02  
+   500.0000000          0      1      1      5    5         0.207746      
+   500.0000000          0      1      1      6    5         1.318293E-02  
+   500.0000000          0      1      1      7    5         1.580582E-02  
+   500.0000000          0      1      1      8    5         1.986362E-02  
+   500.0000000          0      1      1      9    5         9.824083E-03  
+   500.0000000          0      1      1     10    5         1.512129E-02  
+   500.0000000          0      1      1     11    5         8.217661E-03  
+   500.0000000          0      1      1     12    5         1.306660E-02  
+   500.0000000          0      1      1     13    5         9.506372E-03  
+   500.0000000          0      1      1     14    5         1.693579E-02  
+   500.0000000          0      1      1     15    5         4.988757E-03  
+   500.0000000          0      1      1     16    5         1.212847E-02  
+   500.0000000          0      1      1     17    5         3.813141E-03  
+   500.0000000          0      1      1     18    5         1.213049E-02  
+   500.0000000          0      1      1     19    5         6.562017E-03  
+   500.0000000          0      1      1     20    5         1.073069E-02  
+   500.0000000          0      1      1     21    5         5.642732E-03  
+   500.0000000          0      1      1     22    5         7.841107E-03  
+
+   500.0000000          0      1      1      1    6         4.105285E-04  
+   500.0000000          0      1      1      2    6         1.238363E-03  
+   500.0000000          0      1      1      3    6         2.842804E-03  
+   500.0000000          0      1      1      4    6         1.162869E-02  
+   500.0000000          0      1      1      5    6         3.039354E-03  
+   500.0000000          0      1      1      6    6         0.291119      
+   500.0000000          0      1      1      7    6         3.881260E-03  
+   500.0000000          0      1      1      8    6         2.879769E-02  
+   500.0000000          0      1      1      9    6         3.042478E-03  
+   500.0000000          0      1      1     10    6         2.043997E-02  
+   500.0000000          0      1      1     11    6         2.459934E-03  
+   500.0000000          0      1      1     12    6         2.408612E-02  
+   500.0000000          0      1      1     13    6         3.067219E-03  
+   500.0000000          0      1      1     14    6         2.343235E-02  
+   500.0000000          0      1      1     15    6         2.582528E-03  
+   500.0000000          0      1      1     16    6         2.285049E-02  
+   500.0000000          0      1      1     17    6         3.083880E-03  
+   500.0000000          0      1      1     18    6         2.120854E-02  
+   500.0000000          0      1      1     19    6         2.747362E-03  
+   500.0000000          0      1      1     20    6         1.904982E-02  
+   500.0000000          0      1      1     21    6         2.922147E-03  
+   500.0000000          0      1      1     22    6         1.971703E-02  
+
+   500.0000000          0      1      1      1    7         1.259499E-04  
+   500.0000000          0      1      1      2    7         6.782191E-04  
+   500.0000000          0      1      1      3    7         3.640028E-03  
+   500.0000000          0      1      1      4    7         3.623318E-03  
+   500.0000000          0      1      1      5    7         1.115754E-02  
+   500.0000000          0      1      1      6    7         1.188378E-02  
+   500.0000000          0      1      1      7    7         0.212515      
+   500.0000000          0      1      1      8    7         2.410541E-02  
+   500.0000000          0      1      1      9    7         9.464409E-03  
+   500.0000000          0      1      1     10    7         1.854948E-02  
+   500.0000000          0      1      1     11    7         7.934855E-03  
+   500.0000000          0      1      1     12    7         1.595644E-02  
+   500.0000000          0      1      1     13    7         6.745641E-03  
+   500.0000000          0      1      1     14    7         2.018206E-02  
+   500.0000000          0      1      1     15    7         8.886178E-03  
+   500.0000000          0      1      1     16    7         1.691545E-02  
+   500.0000000          0      1      1     17    7         5.707223E-03  
+   500.0000000          0      1      1     18    7         8.923639E-03  
+   500.0000000          0      1      1     19    7         5.680041E-03  
+   500.0000000          0      1      1     20    7         1.029521E-02  
+   500.0000000          0      1      1     21    7         6.908438E-03  
+   500.0000000          0      1      1     22    7         1.010052E-02  
+
+   500.0000000          0      1      1      1    8         2.419715E-04  
+   500.0000000          0      1      1      2    8         1.509931E-03  
+   500.0000000          0      1      1      3    8         1.501123E-03  
+   500.0000000          0      1      1      4    8         8.534884E-03  
+   500.0000000          0      1      1      5    8         3.242537E-03  
+   500.0000000          0      1      1      6    8         2.038989E-02  
+   500.0000000          0      1      1      7    8         5.574292E-03  
+   500.0000000          0      1      1      8    8         0.293361      
+   500.0000000          0      1      1      9    8         4.924026E-03  
+   500.0000000          0      1      1     10    8         2.835598E-02  
+   500.0000000          0      1      1     11    8         3.290165E-03  
+   500.0000000          0      1      1     12    8         2.242828E-02  
+   500.0000000          0      1      1     13    8         4.663265E-03  
+   500.0000000          0      1      1     14    8         2.135418E-02  
+   500.0000000          0      1      1     15    8         2.923061E-03  
+   500.0000000          0      1      1     16    8         2.631617E-02  
+   500.0000000          0      1      1     17    8         3.867490E-03  
+   500.0000000          0      1      1     18    8         2.204311E-02  
+   500.0000000          0      1      1     19    8         3.712123E-03  
+   500.0000000          0      1      1     20    8         1.975283E-02  
+   500.0000000          0      1      1     21    8         4.093970E-03  
+   500.0000000          0      1      1     22    8         1.989602E-02  
+
+   500.0000000          0      1      1      1    9         1.610366E-04  
+   500.0000000          0      1      1      2    9         6.279434E-04  
+   500.0000000          0      1      1      3    9         2.490462E-03  
+   500.0000000          0      1      1      4    9         4.355725E-03  
+   500.0000000          0      1      1      5    9         5.449233E-03  
+   500.0000000          0      1      1      6    9         7.319835E-03  
+   500.0000000          0      1      1      7    9         7.436789E-03  
+   500.0000000          0      1      1      8    9         1.673158E-02  
+   500.0000000          0      1      1      9    9         0.233451      
+   500.0000000          0      1      1     10    9         3.618950E-02  
+   500.0000000          0      1      1     11    9         1.266773E-02  
+   500.0000000          0      1      1     12    9         1.844230E-02  
+   500.0000000          0      1      1     13    9         7.357715E-03  
+   500.0000000          0      1      1     14    9         1.679625E-02  
+   500.0000000          0      1      1     15    9         9.465531E-03  
+   500.0000000          0      1      1     16    9         1.554858E-02  
+   500.0000000          0      1      1     17    9         5.161090E-03  
+   500.0000000          0      1      1     18    9         1.402872E-02  
+   500.0000000          0      1      1     19    9         5.188919E-03  
+   500.0000000          0      1      1     20    9         1.343299E-02  
+   500.0000000          0      1      1     21    9         6.498890E-03  
+   500.0000000          0      1      1     22    9         1.071226E-02  
+
+   500.0000000          0      1      1      1   10         2.889806E-04  
+   500.0000000          0      1      1      2   10         2.293601E-03  
+   500.0000000          0      1      1      3   10         1.055692E-03  
+   500.0000000          0      1      1      4   10         8.081314E-03  
+   500.0000000          0      1      1      5   10         1.947960E-03  
+   500.0000000          0      1      1      6   10         1.142094E-02  
+   500.0000000          0      1      1      7   10         3.385099E-03  
+   500.0000000          0      1      1      8   10         2.237737E-02  
+   500.0000000          0      1      1      9   10         8.404857E-03  
+   500.0000000          0      1      1     10   10         0.300017      
+   500.0000000          0      1      1     11   10         3.256053E-03  
+   500.0000000          0      1      1     12   10         3.224919E-02  
+   500.0000000          0      1      1     13   10         3.031573E-03  
+   500.0000000          0      1      1     14   10         2.657886E-02  
+   500.0000000          0      1      1     15   10         4.232175E-03  
+   500.0000000          0      1      1     16   10         2.863803E-02  
+   500.0000000          0      1      1     17   10         3.250739E-03  
+   500.0000000          0      1      1     18   10         2.587636E-02  
+   500.0000000          0      1      1     19   10         4.306371E-03  
+   500.0000000          0      1      1     20   10         2.274967E-02  
+   500.0000000          0      1      1     21   10         3.343917E-03  
+   500.0000000          0      1      1     22   10         2.191960E-02  
+
+   500.0000000          0      1      1      1   11         1.964177E-04  
+   500.0000000          0      1      1      2   11         8.758149E-04  
+   500.0000000          0      1      1      3   11         1.726432E-03  
+   500.0000000          0      1      1      4   11         5.028376E-03  
+   500.0000000          0      1      1      5   11         3.823314E-03  
+   500.0000000          0      1      1      6   11         4.964161E-03  
+   500.0000000          0      1      1      7   11         5.229731E-03  
+   500.0000000          0      1      1      8   11         9.377406E-03  
+   500.0000000          0      1      1      9   11         1.062545E-02  
+   500.0000000          0      1      1     10   11         1.175959E-02  
+   500.0000000          0      1      1     11   11         0.267174      
+   500.0000000          0      1      1     12   11         3.444640E-02  
+   500.0000000          0      1      1     13   11         1.491580E-02  
+   500.0000000          0      1      1     14   11         2.039734E-02  
+   500.0000000          0      1      1     15   11         9.974113E-03  
+   500.0000000          0      1      1     16   11         1.729461E-02  
+   500.0000000          0      1      1     17   11         5.019256E-03  
+   500.0000000          0      1      1     18   11         2.224643E-02  
+   500.0000000          0      1      1     19   11         8.622978E-03  
+   500.0000000          0      1      1     20   11         1.727354E-02  
+   500.0000000          0      1      1     21   11         8.266128E-03  
+   500.0000000          0      1      1     22   11         1.122597E-02  
+
+   500.0000000          0      1      1      1   12         4.075599E-04  
+   500.0000000          0      1      1      2   12         8.811182E-04  
+   500.0000000          0      1      1      3   12         7.951242E-04  
+   500.0000000          0      1      1      4   12         6.629070E-03  
+   500.0000000          0      1      1      5   12         1.420169E-03  
+   500.0000000          0      1      1      6   12         1.135468E-02  
+   500.0000000          0      1      1      7   12         2.456757E-03  
+   500.0000000          0      1      1      8   12         1.493299E-02  
+   500.0000000          0      1      1      9   12         3.613677E-03  
+   500.0000000          0      1      1     10   12         2.720854E-02  
+   500.0000000          0      1      1     11   12         8.046919E-03  
+   500.0000000          0      1      1     12   12         0.311151      
+   500.0000000          0      1      1     13   12         4.557369E-03  
+   500.0000000          0      1      1     14   12         3.411850E-02  
+   500.0000000          0      1      1     15   12         4.088361E-03  
+   500.0000000          0      1      1     16   12         2.619724E-02  
+   500.0000000          0      1      1     17   12         5.972173E-03  
+   500.0000000          0      1      1     18   12         2.703409E-02  
+   500.0000000          0      1      1     19   12         4.182491E-03  
+   500.0000000          0      1      1     20   12         2.818641E-02  
+   500.0000000          0      1      1     21   12         3.545962E-03  
+   500.0000000          0      1      1     22   12         2.657043E-02  
+
+   500.0000000          0      1      1      1   13         1.477388E-04  
+   500.0000000          0      1      1      2   13         2.838831E-04  
+   500.0000000          0      1      1      3   13         1.560235E-03  
+   500.0000000          0      1      1      4   13         3.040735E-03  
+   500.0000000          0      1      1      5   13         3.885208E-03  
+   500.0000000          0      1      1      6   13         5.437192E-03  
+   500.0000000          0      1      1      7   13         3.905451E-03  
+   500.0000000          0      1      1      8   13         1.167516E-02  
+   500.0000000          0      1      1      9   13         5.421245E-03  
+   500.0000000          0      1      1     10   13         9.617814E-03  
+   500.0000000          0      1      1     11   13         1.310250E-02  
+   500.0000000          0      1      1     12   13         1.713705E-02  
+   500.0000000          0      1      1     13   13         0.272049      
+   500.0000000          0      1      1     14   13         3.077093E-02  
+   500.0000000          0      1      1     15   13         9.959937E-03  
+   500.0000000          0      1      1     16   13         2.720275E-02  
+   500.0000000          0      1      1     17   13         1.505462E-02  
+   500.0000000          0      1      1     18   13         2.882744E-02  
+   500.0000000          0      1      1     19   13         6.845481E-03  
+   500.0000000          0      1      1     20   13         1.865767E-02  
+   500.0000000          0      1      1     21   13         1.061500E-02  
+   500.0000000          0      1      1     22   13         1.747256E-02  
+
+   500.0000000          0      1      1      1   14         3.425699E-05  
+   500.0000000          0      1      1      2   14         6.580187E-04  
+   500.0000000          0      1      1      3   14         6.419029E-04  
+   500.0000000          0      1      1      4   14         5.650898E-03  
+   500.0000000          0      1      1      5   14         1.629455E-03  
+   500.0000000          0      1      1      6   14         9.778746E-03  
+   500.0000000          0      1      1      7   14         2.750749E-03  
+   500.0000000          0      1      1      8   14         1.258616E-02  
+   500.0000000          0      1      1      9   14         2.913438E-03  
+   500.0000000          0      1      1     10   14         1.985098E-02  
+   500.0000000          0      1      1     11   14         4.218117E-03  
+   500.0000000          0      1      1     12   14         3.020294E-02  
+   500.0000000          0      1      1     13   14         7.243994E-03  
+   500.0000000          0      1      1     14   14         0.353711      
+   500.0000000          0      1      1     15   14         5.761309E-03  
+   500.0000000          0      1      1     16   14         3.253791E-02  
+   500.0000000          0      1      1     17   14         5.854632E-03  
+   500.0000000          0      1      1     18   14         2.998718E-02  
+   500.0000000          0      1      1     19   14         4.054077E-03  
+   500.0000000          0      1      1     20   14         2.970384E-02  
+   500.0000000          0      1      1     21   14         4.673942E-03  
+   500.0000000          0      1      1     22   14         3.644183E-02  
+
+   500.0000000          0      1      1      1   15         1.033330E-03  
+   500.0000000          0      1      1      2   15         5.042255E-04  
+   500.0000000          0      1      1      3   15         4.707178E-04  
+   500.0000000          0      1      1      4   15         3.183995E-03  
+   500.0000000          0      1      1      5   15         1.857413E-03  
+   500.0000000          0      1      1      6   15         4.170534E-03  
+   500.0000000          0      1      1      7   15         4.686836E-03  
+   500.0000000          0      1      1      8   15         6.666953E-03  
+   500.0000000          0      1      1      9   15         6.353570E-03  
+   500.0000000          0      1      1     10   15         1.223175E-02  
+   500.0000000          0      1      1     11   15         7.981760E-03  
+   500.0000000          0      1      1     12   15         1.400515E-02  
+   500.0000000          0      1      1     13   15         9.073469E-03  
+   500.0000000          0      1      1     14   15         2.229464E-02  
+   500.0000000          0      1      1     15   15         0.294668      
+   500.0000000          0      1      1     16   15         3.677541E-02  
+   500.0000000          0      1      1     17   15         1.250665E-02  
+   500.0000000          0      1      1     18   15         2.783533E-02  
+   500.0000000          0      1      1     19   15         8.979925E-03  
+   500.0000000          0      1      1     20   15         2.425614E-02  
+   500.0000000          0      1      1     21   15         1.040147E-02  
+   500.0000000          0      1      1     22   15         2.443313E-02  
+
+   500.0000000          0      1      1      1   16         7.846155E-05  
+   500.0000000          0      1      1      2   16         9.281216E-04  
+   500.0000000          0      1      1      3   16         9.891482E-04  
+   500.0000000          0      1      1      4   16         5.510010E-03  
+   500.0000000          0      1      1      5   16         1.073857E-03  
+   500.0000000          0      1      1      6   16         8.775395E-03  
+   500.0000000          0      1      1      7   16         2.121645E-03  
+   500.0000000          0      1      1      8   16         1.427370E-02  
+   500.0000000          0      1      1      9   16         2.481921E-03  
+   500.0000000          0      1      1     10   16         1.968306E-02  
+   500.0000000          0      1      1     11   16         3.291240E-03  
+   500.0000000          0      1      1     12   16         2.134119E-02  
+   500.0000000          0      1      1     13   16         5.893237E-03  
+   500.0000000          0      1      1     14   16         2.994287E-02  
+   500.0000000          0      1      1     15   16         8.745445E-03  
+   500.0000000          0      1      1     16   16         0.397180      
+   500.0000000          0      1      1     17   16         6.498760E-03  
+   500.0000000          0      1      1     18   16         4.336545E-02  
+   500.0000000          0      1      1     19   16         6.280741E-03  
+   500.0000000          0      1      1     20   16         3.657752E-02  
+   500.0000000          0      1      1     21   16         7.060889E-03  
+   500.0000000          0      1      1     22   16         4.200693E-02  
+
+   500.0000000          0      1      1      1   17         5.749429E-06  
+   500.0000000          0      1      1      2   17         8.928322E-04  
+   500.0000000          0      1      1      3   17         8.892825E-04  
+   500.0000000          0      1      1      4   17         2.470508E-03  
+   500.0000000          0      1      1      5   17         1.334590E-03  
+   500.0000000          0      1      1      6   17         4.681585E-03  
+   500.0000000          0      1      1      7   17         2.829687E-03  
+   500.0000000          0      1      1      8   17         8.292157E-03  
+   500.0000000          0      1      1      9   17         3.256589E-03  
+   500.0000000          0      1      1     10   17         8.831939E-03  
+   500.0000000          0      1      1     11   17         3.775831E-03  
+   500.0000000          0      1      1     12   17         1.923179E-02  
+   500.0000000          0      1      1     13   17         1.289245E-02  
+   500.0000000          0      1      1     14   17         2.129746E-02  
+   500.0000000          0      1      1     15   17         1.175682E-02  
+   500.0000000          0      1      1     16   17         2.568945E-02  
+   500.0000000          0      1      1     17   17         0.302844      
+   500.0000000          0      1      1     18   17         4.004332E-02  
+   500.0000000          0      1      1     19   17         1.669217E-02  
+   500.0000000          0      1      1     20   17         3.551793E-02  
+   500.0000000          0      1      1     21   17         1.501650E-02  
+   500.0000000          0      1      1     22   17         3.025339E-02  
+
+   500.0000000          0      1      1      1   18         6.365083E-05  
+   500.0000000          0      1      1      2   18         3.976721E-04  
+   500.0000000          0      1      1      3   18         4.643224E-04  
+   500.0000000          0      1      1      4   18         4.772888E-03  
+   500.0000000          0      1      1      5   18         1.023124E-03  
+   500.0000000          0      1      1      6   18         7.758742E-03  
+   500.0000000          0      1      1      7   18         1.066205E-03  
+   500.0000000          0      1      1      8   18         1.138928E-02  
+   500.0000000          0      1      1      9   18         2.133166E-03  
+   500.0000000          0      1      1     10   18         1.694190E-02  
+   500.0000000          0      1      1     11   18         4.032912E-03  
+   500.0000000          0      1      1     12   18         2.097898E-02  
+   500.0000000          0      1      1     13   18         5.949175E-03  
+   500.0000000          0      1      1     14   18         2.628747E-02  
+   500.0000000          0      1      1     15   18         6.305656E-03  
+   500.0000000          0      1      1     16   18         4.130983E-02  
+   500.0000000          0      1      1     17   18         9.649732E-03  
+   500.0000000          0      1      1     18   18         0.402530      
+   500.0000000          0      1      1     19   18         9.343729E-03  
+   500.0000000          0      1      1     20   18         5.414292E-02  
+   500.0000000          0      1      1     21   18         7.000385E-03  
+   500.0000000          0      1      1     22   18         5.531183E-02  
+
+   500.0000000          0      1      1      1   19         3.300861E-04  
+   500.0000000          0      1      1      2   19         6.998153E-04  
+   500.0000000          0      1      1      3   19         1.185957E-03  
+   500.0000000          0      1      1      4   19         3.968518E-03  
+   500.0000000          0      1      1      5   19         2.223382E-03  
+   500.0000000          0      1      1      6   19         4.037597E-03  
+   500.0000000          0      1      1      7   19         2.726319E-03  
+   500.0000000          0      1      1      8   19         7.704994E-03  
+   500.0000000          0      1      1      9   19         3.169642E-03  
+   500.0000000          0      1      1     10   19         1.132653E-02  
+   500.0000000          0      1      1     11   19         6.279747E-03  
+   500.0000000          0      1      1     12   19         1.303870E-02  
+   500.0000000          0      1      1     13   19         5.675201E-03  
+   500.0000000          0      1      1     14   19         1.427683E-02  
+   500.0000000          0      1      1     15   19         8.172092E-03  
+   500.0000000          0      1      1     16   19         2.403516E-02  
+   500.0000000          0      1      1     17   19         1.615937E-02  
+   500.0000000          0      1      1     18   19         3.753590E-02  
+   500.0000000          0      1      1     19   19         0.359079      
+   500.0000000          0      1      1     20   19         5.149576E-02  
+   500.0000000          0      1      1     21   19         2.360465E-02  
+   500.0000000          0      1      1     22   19         4.626742E-02  
+
+   500.0000000          0      1      1      1   20         8.361720E-05  
+   500.0000000          0      1      1      2   20         9.689043E-04  
+   500.0000000          0      1      1      3   20         7.952678E-04  
+   500.0000000          0      1      1      4   20         3.602818E-03  
+   500.0000000          0      1      1      5   20         8.917825E-04  
+   500.0000000          0      1      1      6   20         6.866772E-03  
+   500.0000000          0      1      1      7   20         1.212035E-03  
+   500.0000000          0      1      1      8   20         1.005620E-02  
+   500.0000000          0      1      1      9   20         2.012615E-03  
+   500.0000000          0      1      1     10   20         1.467626E-02  
+   500.0000000          0      1      1     11   20         3.085466E-03  
+   500.0000000          0      1      1     12   20         2.155229E-02  
+   500.0000000          0      1      1     13   20         3.793930E-03  
+   500.0000000          0      1      1     14   20         2.565706E-02  
+   500.0000000          0      1      1     15   20         5.414229E-03  
+   500.0000000          0      1      1     16   20         3.433246E-02  
+   500.0000000          0      1      1     17   20         8.433617E-03  
+   500.0000000          0      1      1     18   20         5.334857E-02  
+   500.0000000          0      1      1     19   20         1.263066E-02  
+   500.0000000          0      1      1     20   20         0.482346      
+   500.0000000          0      1      1     21   20         1.410383E-02  
+   500.0000000          0      1      1     22   20         6.543865E-02  
+
+   500.0000000          0      1      1      1   21         1.714924E-04  
+   500.0000000          0      1      1      2   21         9.710650E-04  
+   500.0000000          0      1      1      3   21         3.949724E-04  
+   500.0000000          0      1      1      4   21         2.537866E-03  
+   500.0000000          0      1      1      5   21         1.906888E-03  
+   500.0000000          0      1      1      6   21         4.283199E-03  
+   500.0000000          0      1      1      7   21         3.307228E-03  
+   500.0000000          0      1      1      8   21         8.475271E-03  
+   500.0000000          0      1      1      9   21         3.959419E-03  
+   500.0000000          0      1      1     10   21         8.772029E-03  
+   500.0000000          0      1      1     11   21         6.004074E-03  
+   500.0000000          0      1      1     12   21         1.102535E-02  
+   500.0000000          0      1      1     13   21         8.777204E-03  
+   500.0000000          0      1      1     14   21         1.641656E-02  
+   500.0000000          0      1      1     15   21         9.440918E-03  
+   500.0000000          0      1      1     16   21         2.694973E-02  
+   500.0000000          0      1      1     17   21         1.449905E-02  
+   500.0000000          0      1      1     18   21         2.804836E-02  
+   500.0000000          0      1      1     19   21         2.354272E-02  
+   500.0000000          0      1      1     20   21         5.735108E-02  
+   500.0000000          0      1      1     21   21         0.407275      
+   500.0000000          0      1      1     22   21         5.923157E-02  
+
+   500.0000000          0      1      1      1   22         6.743448E-05  
+   500.0000000          0      1      1      2   22         9.047590E-04  
+   500.0000000          0      1      1      3   22         5.617794E-04  
+   500.0000000          0      1      1      4   22         3.039566E-03  
+   500.0000000          0      1      1      5   22         6.657874E-04  
+   500.0000000          0      1      1      6   22         7.261563E-03  
+   500.0000000          0      1      1      7   22         1.214927E-03  
+   500.0000000          0      1      1      8   22         1.034898E-02  
+   500.0000000          0      1      1      9   22         1.639819E-03  
+   500.0000000          0      1      1     10   22         1.444773E-02  
+   500.0000000          0      1      1     11   22         2.048755E-03  
+   500.0000000          0      1      1     12   22         2.075769E-02  
+   500.0000000          0      1      1     13   22         3.630072E-03  
+   500.0000000          0      1      1     14   22         3.216040E-02  
+   500.0000000          0      1      1     15   22         5.572127E-03  
+   500.0000000          0      1      1     16   22         4.028455E-02  
+   500.0000000          0      1      1     17   22         7.339513E-03  
+   500.0000000          0      1      1     18   22         5.568345E-02  
+   500.0000000          0      1      1     19   22         1.159463E-02  
+   500.0000000          0      1      1     20   22         6.685922E-02  
+   500.0000000          0      1      1     21   22         1.488249E-02  
+   500.0000000          0      1      1     22   22         0.559830      
+
+  TOTAL INELASTIC INTEGRAL CROSS SECTIONS IN ANGSTROM**2 FROM LEVEL
+   2.14680E-01                                                 1
+   2.35456E-01                                                 2
+   2.03812E-01                                                 3
+   2.37103E-01                                                 4
+   2.04524E-01                                                 5
+   2.22529E-01                                                 6
+   2.07464E-01                                                 7
+   2.28615E-01                                                 8
+   2.16063E-01                                                 9
+   2.38688E-01                                                10
+   2.23289E-01                                                11
+   2.42200E-01                                                12
+   2.40621E-01                                                13
+   2.47174E-01                                                14
+   2.39702E-01                                                15
+   2.66920E-01                                                16
+   2.65652E-01                                                17
+   2.86324E-01                                                18
+   2.83914E-01                                                19
+   2.88957E-01                                                20
+   2.96066E-01                                                21
+   3.00965E-01                                                22
+
+
+
+  ---- MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ---
+ |                                                                            |
+ |                Non-reactive quantum scattering calculations                |
+ |                     on atomic and molecular collisions                     |
+ |                                                                            |
+ |              Copyright (C) 2022 J. M. Hutson & C. R. Le Sueur              |
+ |                                                                            |
+ |                               Version 2022.0                               |
+ |                                                                            |
+ |                    This run used       7.29 cpu secs and                   |
+ |             161462 of the allocated 100000000 words of storage             |
+ |                                                                            |
+  ---- MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ---
