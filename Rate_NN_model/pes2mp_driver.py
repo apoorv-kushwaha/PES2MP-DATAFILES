@@ -1814,7 +1814,6 @@ def create_generic_model(hp, input_dim, num_outputs, NN_hyperpara):
     import tensorflow as tf
     from tensorflow.keras.models import Model
     from tensorflow.keras.layers import Input, Dense, Concatenate
-    tf.config.optimizer.set_jit(True)  # Enables XLA globally
 
     deep_l = NN_hyperpara['NN_nodes']     # number of units per layer
     hidd_l = NN_hyperpara['NN_layers']    # number of hidden layer (between input and output) per branch
@@ -1833,7 +1832,7 @@ def create_generic_model(hp, input_dim, num_outputs, NN_hyperpara):
     hidden_layers = hp.Choice(f'hidden_layers', hidd_l)  # Number of hidden layers for R
     for h in range(hidden_layers):
         for i in range(0,branches,1):
-            globals()[f'x_th{i}'] = Dense(units_pl, activation='relu')(combined)  # Gaussian Error activation
+            globals()[f'x_th{i}'] = Dense(units_pl, activation='gelu')(combined)  # Gaussian Error activation
         combined = Concatenate()([globals()[f'x_th{i}'] for i in range(branches)])
 
     for i in range(branches):
